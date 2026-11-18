@@ -61,4 +61,9 @@ STORYBOARD.md에는 대사 시각과 포즈·카메라 연결이 있다.
 PREVIEW.jpg는 최종 MP4에서 추출한 8개 장면의 미리보기다.
 
 사용자가 공개 업로드를 허용한 irewon1-lgtm/yoonsu-english-video의 hello-officer-40s-20261118 브랜치로 전달한다.
-수령 링크의 응답과 다운로드 파일 해시는 업로드 후 확인한다.
+공개 MP4 링크를 실제로 내려받아 HTTP 200, 13,192,300바이트와 원본 SHA256 일치를 확인했다. 응답 형식은 application/octet-stream이다.
+
+검증한 MP4 링크는 아래와 같다.
+
+https://raw.githubusercontent.com/irewon1-lgtm/yoonsu-english-video/e82bb38852f908a152b202266d8cd7c0f41eab6e/deliverables/HELLO_OFFICER_40S.mp4
+
