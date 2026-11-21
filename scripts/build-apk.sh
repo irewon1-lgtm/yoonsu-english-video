@@ -37,7 +37,7 @@ mapfile -t classes < <(find "$out/classes" -type f -name '*.class')
 cp "$out/resources.apk" "$out/unsigned.apk"
 (cd "$out/dex" && zip -q -u "$out/unsigned.apk" classes.dex)
 "$BUILD_TOOLS/zipalign" -f 4 "$out/unsigned.apk" "$out/aligned.apk"
-output="$out/Yoonsu_Star_Album_v2.apk"
+output="$out/Yoonsu_Star_Album.apk"
 "$BUILD_TOOLS/apksigner" sign --ks "$SIGNING_STORE" --ks-key-alias "${SIGNING_ALIAS:-star-album}" \
     --ks-pass "file:$SIGNING_PASSWORD_FILE" --out "$output" "$out/aligned.apk"
 "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$output"

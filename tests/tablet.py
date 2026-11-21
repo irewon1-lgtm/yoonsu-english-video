@@ -71,13 +71,15 @@ def check():
             errors = []
             page.on("pageerror", lambda error: errors.append(str(error)))
             page.add_init_script('''
-                let denyOnce = true;
+                let denyOnce = sessionStorage.getItem("deny-test-mic") === "yes";
+                window.micRequests = 0;
                 const send = window.testMicEvent = (type, token = 0) =>
                     document.dispatchEvent(new CustomEvent("native-mic", {detail:{type,token}}));
                 window.NativeMic = {
-                    authorize() { setTimeout(() => {
+                    authorize() { window.micRequests++; setTimeout(() => {
                       send(denyOnce ? "permission-denied" : "permission-granted");
                       denyOnce = false;
+                      sessionStorage.removeItem("deny-test-mic");
                     },25); },
                     listen(level, token) { window.listening = {level,token}; },
                     stop() { window.listening = null; }
@@ -103,10 +105,26 @@ def check():
             for slug, count in episodes:
                 if test_episode and slug != test_episode:
                     continue
+                if slug == "red-ball" and slug != exercise_mic:
+                    page.evaluate('sessionStorage.setItem("deny-test-mic", "yes")')
                 page.locator(f'a[href*="/{slug}/"]').click()
                 page.wait_for_function('film.videoWidth===1920 && film.videoHeight===1080')
                 assert page.locator("video").bounding_box() == {"x": 0, "y": 0, "width": 1280, "height": 800}
                 assert page.locator("video").evaluate("(e)=>getComputedStyle(e).objectFit") == "cover"
+                if slug == "red-ball" and slug != exercise_mic:
+                    expect(page.locator("#mic-note")).to_contain_text("앱의 마이크 권한")
+                else:
+                    expect(page.locator("#mic")).to_have_attribute("aria-pressed", "true")
+                assert page.evaluate("micRequests === 1 && !window.listening")
+                page.evaluate('''() => {
+                    window.repeatObservations = [];
+                    const status = document.querySelector("#status");
+                    new MutationObserver(() => {
+                        if (status.textContent === "한 번 더 들어요.") {
+                            repeatObservations.push([turn,film.currentTime,Boolean(window.listening)]);
+                        }
+                    }).observe(status,{characterData:true,childList:true,subtree:true});
+                }''')
                 page.locator("#start").click()
                 page.locator("video").evaluate("(v)=>v.playbackRate=8")
                 gates = page.evaluate("turns")
@@ -114,6 +132,8 @@ def check():
                 for i, (start, end, phrase) in enumerate(gates):
                     expect(page.locator("#next")).to_be_visible(timeout=11000)
                     expect(page.locator("#phrase")).to_have_text(phrase)
+                    repeated = page.evaluate(f"repeatObservations.find(([i]) => i === {i})")
+                    assert repeated and repeated[1] < start and not repeated[2], (slug, i, repeated)
                     hint = page.evaluate(f"episode.hints?.[{i}]")
                     if hint:
                         expect(page.locator("#status")).to_contain_text(hint)
@@ -123,13 +143,32 @@ def check():
                         page.wait_for_timeout(4200)
                         assert abs(page.evaluate("film.currentTime") - start) < .08
                     if i == 0 and slug == exercise_mic:
-                        page.locator("#mic").click()
-                        expect(page.locator("#mic-note")).to_contain_text("앱의 마이크 권한")
-                        page.locator("#mic").click()
                         page.wait_for_function("window.listening?.level === 8")
-                        page.evaluate('testMicEvent("onset",listening.token); testMicEvent("end",listening.token)')
+                        page.evaluate('''
+                            window.firstToken = listening.token;
+                            testMicEvent("onset",firstToken);
+                            testMicEvent("end",firstToken);
+                        ''')
+                        page.wait_for_function("listening.token !== firstToken")
+                        page.wait_for_timeout(680)
+                        assert page.evaluate("film.paused")
+                        page.evaluate('testMicEvent("onset",listening.token)')
+                        page.wait_for_timeout(440)
+                        assert page.evaluate("film.paused")
+                        page.evaluate('''
+                            window.utteranceEnded = performance.now();
+                            film.addEventListener("playing", () => {
+                                window.resumeDelay = performance.now() - utteranceEnded;
+                            }, {once: true});
+                            testMicEvent("end",listening.token);
+                        ''')
+                        page.wait_for_timeout(820)
+                        assert page.evaluate("film.paused")
                         expect(page.locator("#next")).to_be_hidden()
                         page.wait_for_function(f"film.currentTime >= {end}-.05")
+                        page.wait_for_function("typeof window.resumeDelay === 'number'")
+                        assert page.evaluate("resumeDelay >= 990"), page.evaluate("resumeDelay")
+                        print(f"PASS automatic microphone, interrupted answer, {page.evaluate('resumeDelay'):.0f} ms resume", flush=True)
                         page.locator("#mic").click()
                     else:
                         page.locator("#next").click()

@@ -12,8 +12,10 @@ let turn = 0;
 let state = "ready";
 let voice;
 let micPending = false;
+let automaticMicStarted = false;
 let leaving = false;
 let displayTimer;
+let repeating = false;
 let startupTimer;
 let stallTimer;
 let recoveryTimer;
@@ -36,6 +38,7 @@ film.addEventListener("click", showControls);
 let micMessage = "";
 let voiceState = "idle";
 let armTimer;
+let finishTimer;
 let resumeAt;
 let sensitivity = 8;
 try {
@@ -101,14 +104,16 @@ function buffering() {
 }
 
 const status = {
-  ready: "영상에서 “Your turn, Yoonsu!”를 들으면 따라 말해요.",
-  playing: "잘 듣고, 윤수 차례를 기다려요.",
+  ready: "윤수 차례 안내 뒤 문장을 한 번 더 듣고 따라 말해요.",
+  playing: "문장을 한 번 더 듣고 윤수 차례를 기다려요.",
   paused: "영상이 잠시 멈췄어요.",
   done: "영어놀이를 마쳤어요!",
 };
 function update() {
   const waiting = state === "waiting";
+  const modeling = state === "playing" && repeating;
   player.classList.toggle("waiting", waiting);
+  player.classList.toggle("modeling", modeling);
   player.classList.toggle("playing", state === "playing");
   if (state !== "playing") showControls();
   el.start.hidden = state !== "ready" || !startupReady;
@@ -117,15 +122,15 @@ function update() {
   el.play.hidden = state !== "playing" && state !== "paused";
   el.play.textContent = state === "paused" ? "재생" : "일시정지";
   el.restart.hidden = state === "ready";
-  el.phrase.hidden = !waiting;
-  el.phrase.textContent = waiting ? turns[turn][2] : "";
+  el.phrase.hidden = !waiting && !modeling;
+  el.phrase.textContent = waiting || modeling ? turns[turn][2] : "";
   el.status.textContent = waiting
-    ? voiceState === "heard" ? "듣고 있어요…" : voiceState === "listening"
+    ? voiceState === "heard" || voiceState === "settling" ? "듣고 있어요…" : voiceState === "listening"
       ? "윤수 차례 " + (turn + 1) + "/" + turns.length + " · 아래 문장을 말해 봐요."
       : "윤수 차례 " + (turn + 1) + "/" + turns.length + " · 말하고 ‘계속’을 눌러요."
-    : status[state];
+    : modeling ? "한 번 더 들어요." : status[state];
   const hint = waiting && episode.hints?.[turn];
-  if (hint && voiceState !== "heard") {
+  if (hint && voiceState !== "heard" && voiceState !== "settling") {
     el.status.textContent = "윤수 차례 " + (turn + 1) + "/" + turns.length + " · " + hint;
   }
   el.mic.disabled = micPending;
@@ -140,6 +145,7 @@ function update() {
 
 function stopListening() {
   clearTimeout(armTimer);
+  clearTimeout(finishTimer);
   voice?.stop();
   voiceState = "idle";
 }
@@ -149,19 +155,29 @@ function armListening() {
   update();
   if (!voice || state !== "waiting" || document.hidden) return;
   const activeTurn = turn;
-  // Keep the final syllable of the sheriff's cue out of the mic window.
+  // Keep the final syllable of the repeated sentence out of the mic window.
   armTimer = setTimeout(() => {
     if (!voice || state !== "waiting" || activeTurn !== turn || document.hidden) return;
     voiceState = "listening";
-    voice.listen(sensitivity, result => {
-      if (state !== "waiting" || turn !== activeTurn) return;
+    const onSpeech = result => {
+      if (!voice || state !== "waiting" || turn !== activeTurn || document.hidden) return;
       if (result === "onset") {
+        clearTimeout(finishTimer);
         voiceState = "heard";
         update();
-      } else if (result === "end") {
-        advance();
+      } else if (result === "end" && voiceState === "heard") {
+        voiceState = "settling";
+        finishTimer = setTimeout(() => {
+          if (state === "waiting" && turn === activeTurn &&
+              voiceState === "settling" && !document.hidden) advance();
+        }, 1000);
+        // Installed launchers end each native recording at the first pause.
+        // Start the next capture immediately so further words cancel the timer.
+        if (window.NativeMic) voice.listen(sensitivity, onSpeech);
+        update();
       }
-    });
+    };
+    voice.listen(sensitivity, onSpeech);
     update();
   }, 150);
 }
@@ -181,7 +197,14 @@ function checkTime() {
     el.progress.value = at;
     if (state === "playing") lastPosition = at;
     if (state === "playing" && turn < turns.length && at >= turns[turn][0]) {
+      repeating = false;
       pauseAtTurn();
+    } else if (state === "playing") {
+      const again = episode.repeatStarts?.[turn] !== undefined && at >= episode.repeatStarts[turn];
+      if (again !== repeating) {
+        repeating = again;
+        update();
+      }
     }
   }
 }
@@ -255,6 +278,7 @@ function advance() {
   if (state !== "waiting") return;
   const past = turns[turn][1];
   stopListening();
+  repeating = false;
   turn += 1;
   state = "paused";
   // Jump past the original four-second countdown once the learner is ready.
@@ -299,7 +323,10 @@ film.addEventListener("ended", () => {
 });
 film.addEventListener("error", handleMediaError);
 el.retry.addEventListener("click", retryPlayback);
-el.start.addEventListener("click", play);
+el.start.addEventListener("click", () => {
+  prepareMicrophone();
+  void play();
+});
 el.next.addEventListener("click", advance);
 el.play.addEventListener("click", () => {
   if (state === "paused") void play();
@@ -314,6 +341,7 @@ el.play.addEventListener("click", () => {
 el.restart.addEventListener("click", () => {
   automaticRetry = 0;
   stopListening();
+  repeating = false;
   state = "paused";
   turn = 0;
   resumeAt = 0;
@@ -363,15 +391,9 @@ function micLost() {
   micMessage = "마이크 연결이 끊겼어요. 다시 켜거나 ‘계속’을 눌러 주세요.";
   update();
 }
-el.mic.addEventListener("click", async () => {
+async function openMicrophone() {
+  if (voice || micPending || leaving) return;
   micMessage = "";
-  if (voice) {
-    stopListening();
-    voice.close();
-    voice = undefined;
-    update();
-    return;
-  }
   micPending = true;
   update();
   try {
@@ -389,6 +411,24 @@ el.mic.addEventListener("click", async () => {
     micPending = false;
     update();
   }
+}
+
+function prepareMicrophone() {
+  if (automaticMicStarted) return;
+  automaticMicStarted = true;
+  void openMicrophone();
+}
+
+el.mic.addEventListener("click", () => {
+  automaticMicStarted = true;
+  if (!voice) {
+    void openMicrophone();
+    return;
+  }
+  stopListening();
+  voice.close();
+  voice = undefined;
+  update();
 });
 el.sensitivity.addEventListener("input", () => {
   sensitivity = Number(el.sensitivity.value);
@@ -407,7 +447,14 @@ window.addEventListener("pagehide", () => {
   voice?.close();
   voice = undefined;
 }, { capture: true });
-window.addEventListener("pageshow", () => { leaving = false; update(); });
+window.addEventListener("pageshow", event => {
+  leaving = false;
+  if (event.persisted && window.NativeMic) {
+    automaticMicStarted = false;
+    prepareMicrophone();
+  }
+  update();
+});
 window.addEventListener("app-paused", () => {
   stopListening();
   if (state === "playing") {
@@ -429,3 +476,4 @@ startupTimer = setTimeout(() => {
 }, 5500);
 prepareStart();
 update();
+if (window.NativeMic) prepareMicrophone();

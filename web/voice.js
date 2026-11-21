@@ -171,9 +171,10 @@ const PhonicsVoice = (() => {
       };
       return {
         listen(level, report) {
-          const gate = new Gate(level);
+          let gate = new Gate(level);
           const frames = new SampleFrames(context.sampleRate, pcm => {
             const result = gate.feed(pcm);
+            if (result === "end") gate = new Gate(level);
             if (result !== "wait") report(result);
             return enabled;
           });

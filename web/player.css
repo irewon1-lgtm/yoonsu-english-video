@@ -155,7 +155,7 @@ input[type="range"] { display: block; accent-color: #225545; }
     margin: 0; padding: .5rem .75rem; color: #26332e;
     background: #fffbf1f5; border-radius: .65rem;
   }
-  .player.playing .controls { display: none; }
+  .player.playing:not(.modeling) .controls { display: none; }
   body.clean-view .lesson > header,
   body.clean-view .player.playing .footer,
   body.clean-view .player.playing .help,

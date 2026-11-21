@@ -100,11 +100,11 @@ public final class AlbumActivity extends Activity {
             }
             @Override public void onPageStarted(WebView web, String url, android.graphics.Bitmap icon) {
                 mic.stop();
-                askingMic = false;
                 bars(isPlayer(url));
             }
             @Override public void onPageFinished(WebView web, String url) {
                 if (HOME.equals(url)) {
+                    askOnLaunch();
                     applyAvailable();
                     checkUpdate();
                 }
@@ -211,10 +211,22 @@ public final class AlbumActivity extends Activity {
     void authorizeMicrophone() {
         if (!visible || !onPlayer()) { micEvent("permission-denied", 0); return; }
         if (granted()) { micEvent("permission-granted", 0); return; }
+        requestMicrophone();
+    }
+
+    private void requestMicrophone() {
         if (!askingMic) {
             askingMic = true;
             requestPermissions(new String[]{Manifest.permission.RECORD_AUDIO}, MIC_PERMISSION);
         }
+    }
+
+    private boolean askedOnLaunch;
+
+    private void askOnLaunch() {
+        if (askedOnLaunch || !visible) return;
+        askedOnLaunch = true;
+        if (!granted()) requestMicrophone();
     }
 
     @Override public void onRequestPermissionsResult(int code, String[] permissions, int[] results) {
@@ -238,6 +250,7 @@ public final class AlbumActivity extends Activity {
         if (view != null) view.onResume();
         bars(onPlayer());
         js("window.dispatchEvent(new Event('app-resumed'))");
+        if (view != null && HOME.equals(view.getUrl())) askOnLaunch();
         checkUpdate();
     }
 
