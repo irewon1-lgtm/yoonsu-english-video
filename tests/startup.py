@@ -42,6 +42,13 @@ with TemporaryDirectory() as scratch:
             "connectionType": "cellular3g"
         })
         url = base + f"episodes/{slug}/index.html"
+        page.add_init_script('''window.NativeMic = {
+          authorize() { queueMicrotask(() => document.dispatchEvent(new CustomEvent("native-mic", {
+            detail:{type:"permission-granted"}
+          }))); },
+          listen(level, token) { window.micToken = token; },
+          stop() { window.micToken = undefined; }
+        };''')
         page.goto(url, wait_until="domcontentloaded")
         page.wait_for_function('typeof turns !== "undefined"')
         page.evaluate("""() => {
@@ -62,7 +69,7 @@ with TemporaryDirectory() as scratch:
             page.evaluate("film.load()")
             expect(page.locator("#start")).to_have_text("다시 재생")
         page.locator("#start").click(timeout=20000)
-        expect(page.locator("#next")).to_be_visible(timeout=41000)
+        page.wait_for_function("state === 'waiting'", timeout=41000)
         assert page.evaluate("film.paused && Math.abs(film.currentTime - turns[0][0]) < .09")
         events = page.evaluate("log")
         start, end, _ = page.evaluate("turns[0]")
@@ -84,7 +91,14 @@ with TemporaryDirectory() as scratch:
             expect(page.locator("#status")).to_contain_text("윤수 차례 1/" + str(page.evaluate("turns.length")))
             page.wait_for_timeout(4300)
             assert page.evaluate("film.paused && Math.abs(film.currentTime - turns[0][0]) < .09")
-            page.locator("#next").click()
+            expect(page.locator("#next")).to_have_count(0)
+            page.wait_for_function("typeof micToken === 'number'")
+            page.evaluate("""() => {
+              const token = micToken;
+              for (const type of ["onset", "end"]) {
+                document.dispatchEvent(new CustomEvent("native-mic", {detail:{type, token}}));
+              }
+            }""")
             page.wait_for_function(f"film.currentTime >= {end + 1.5} && !film.paused",timeout=16000)
             if inject:
                 assert page.evaluate("film.currentSrc.includes('reconnect=')")

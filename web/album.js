@@ -7,6 +7,7 @@ const episodes = [
   { id: "red-ball", title: "사라진 빨간 공" },
   { id: "number-friends", title: "안녕, 넘버랜드!" },
   { id: "christmas-star", title: "크리스마스 별" },
+  { id: "wash-day", title: "뽀득뽀득 씻기 클럽" },
 ];
 
 const slotsPerPage = 6;

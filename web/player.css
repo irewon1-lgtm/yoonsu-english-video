@@ -83,8 +83,6 @@ progress::-moz-progress-bar { background: var(--coral); }
 #status { margin: 0; font-size: .96rem; line-height: 1.45; color: var(--muted); }
 .waiting #status { font-weight: 700; color: var(--ink); }
 #phrase { margin: .2rem 0 0; font-weight: 850; font-size: clamp(1.02rem, 3.3vw, 1.44rem); line-height: 1.2; }
-.next { padding: .3rem .85rem; background: #225545; color: #fff; white-space: nowrap; font-size: .94rem; }
-.next:hover { background: #163d31; }
 .footer {
   padding: .2rem clamp(.7rem, 3vw, 1.35rem) .35rem;
   border-top: 1px solid var(--line);
@@ -125,7 +123,7 @@ input[type="range"] { display: block; accent-color: #225545; }
   .controls { min-height: 5rem; padding-inline: 1.6rem; }
   #phrase { font-size: clamp(1.35rem, 3.35vw, 2.5rem); }
   .footer { gap: .4rem; }
-  .quiet, .next { font-size: 1.05rem; }
+  .quiet { font-size: 1.05rem; }
 }
 @media (orientation: landscape) {
   body { background: #101729; }

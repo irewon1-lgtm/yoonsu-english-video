@@ -4,7 +4,7 @@ const element = id => document.getElementById(id);
 const film = element("film");
 const player = document.querySelector(".player");
 const el = Object.fromEntries([
-  "start", "progress", "status", "phrase", "next", "play", "mic", "restart",
+  "start", "progress", "status", "phrase", "play", "mic", "restart",
   "settings", "sensitivity", "level", "mic-note", "buffer", "buffer-text", "retry",
 ].map(id => [id, element(id)]));
 
@@ -118,20 +118,19 @@ function update() {
   if (state !== "playing") showControls();
   el.start.hidden = state !== "ready" || !startupReady;
   el.start.textContent = needsReload ? "다시 재생" : "▶ 시작";
-  el.next.hidden = !waiting;
   el.play.hidden = state !== "playing" && state !== "paused";
   el.play.textContent = state === "paused" ? "재생" : "일시정지";
-  el.restart.hidden = state === "ready";
+  el.restart.hidden = state === "ready" || waiting;
   el.phrase.hidden = !waiting && !modeling;
   el.phrase.textContent = waiting || modeling ? turns[turn][2] : "";
-  el.status.textContent = waiting
-    ? voiceState === "heard" || voiceState === "settling" ? "듣고 있어요…" : voiceState === "listening"
-      ? "윤수 차례 " + (turn + 1) + "/" + turns.length + " · 아래 문장을 말해 봐요."
-      : "윤수 차례 " + (turn + 1) + "/" + turns.length + " · 말하고 ‘계속’을 눌러요."
-    : modeling ? "한 번 더 들어요." : status[state];
-  const hint = waiting && episode.hints?.[turn];
-  if (hint && voiceState !== "heard" && voiceState !== "settling") {
-    el.status.textContent = "윤수 차례 " + (turn + 1) + "/" + turns.length + " · " + hint;
+  if (waiting) {
+    const prompt = !voice
+      ? micPending ? "마이크 권한을 확인하고 있어요." : "마이크를 켜고 문장을 말해 봐요."
+      : episode.hints?.[turn] || "아래 문장을 말해 봐요.";
+    el.status.textContent = voiceState === "heard" || voiceState === "settling"
+      ? "듣고 있어요…" : "윤수 차례 " + (turn + 1) + "/" + turns.length + " · " + prompt;
+  } else {
+    el.status.textContent = modeling ? "한 번 더 들어요." : status[state];
   }
   el.mic.disabled = micPending;
   el.mic.textContent = micPending ? "권한 확인 중…" : voice ? "마이크 끄기" : "마이크 켜기";
@@ -210,6 +209,7 @@ function checkTime() {
 }
 
 async function play() {
+  if (state === "waiting") return;
   const originalState = state;
   state = "playing";
   clearTimeout(startupTimer);
@@ -275,13 +275,13 @@ function retryPlayback() {
 }
 
 function advance() {
-  if (state !== "waiting") return;
+  if (state !== "waiting" || voiceState !== "settling" || !voice || document.hidden) return;
   const past = turns[turn][1];
   stopListening();
   repeating = false;
   turn += 1;
   state = "paused";
-  // Jump past the original four-second countdown once the learner is ready.
+  // Resume at the end of this turn after the learner finishes speaking.
   resumeAt = past;
   void play();
 }
@@ -291,7 +291,17 @@ film.addEventListener("progress", prepareStart);
 film.addEventListener("loadeddata", prepareStart);
 film.addEventListener("waiting", buffering);
 film.addEventListener("stalled", buffering);
-film.addEventListener("seeking", buffering);
+film.addEventListener("seeking", () => {
+  if (state === "waiting") {
+    const at = turns[turn][0];
+    if (Math.abs(film.currentTime - at) > .001) film.currentTime = at;
+  } else {
+    buffering();
+  }
+});
+film.addEventListener("play", () => {
+  if (state !== "playing") film.pause();
+});
 film.addEventListener("playing", clearStall);
 film.addEventListener("canplay", () => {
   prepareStart();
@@ -312,6 +322,12 @@ film.addEventListener("pause", () => {
   }
 });
 film.addEventListener("ended", () => {
+  if (state !== "playing") return;
+  if (turn < turns.length) {
+    repeating = false;
+    pauseAtTurn();
+    return;
+  }
   clearStall();
   state = "done";
   stopListening();
@@ -324,10 +340,10 @@ film.addEventListener("ended", () => {
 film.addEventListener("error", handleMediaError);
 el.retry.addEventListener("click", retryPlayback);
 el.start.addEventListener("click", () => {
+  if (state !== "ready") return;
   prepareMicrophone();
   void play();
 });
-el.next.addEventListener("click", advance);
 el.play.addEventListener("click", () => {
   if (state === "paused") void play();
   else if (state === "playing") {
@@ -339,6 +355,8 @@ el.play.addEventListener("click", () => {
   }
 });
 el.restart.addEventListener("click", () => {
+  if (state === "waiting") return;
+  if (state === "done") void openMicrophone();
   automaticRetry = 0;
   stopListening();
   repeating = false;
@@ -388,7 +406,7 @@ function micLost() {
   stopListening();
   voice?.close();
   voice = undefined;
-  micMessage = "마이크 연결이 끊겼어요. 다시 켜거나 ‘계속’을 눌러 주세요.";
+  micMessage = "마이크 연결이 끊겼어요. 마이크를 다시 켜 주세요.";
   update();
 }
 async function openMicrophone() {
@@ -403,10 +421,10 @@ async function openMicrophone() {
     armListening();
   } catch (error) {
     micMessage = error.message === "SECURE_BROWSER_REQUIRED"
-      ? "이 화면에서 마이크를 사용할 수 없어요. ‘계속’을 눌러 주세요."
+      ? "마이크를 지원하는 브라우저에서 보안 연결(HTTPS)로 열어 주세요."
       : error.message === "ANDROID_MIC_PERMISSION"
-        ? "앱의 마이크 권한을 허용한 뒤 다시 눌러 주세요. ‘계속’ 버튼으로도 진행할 수 있어요."
-        : "마이크를 켤 수 없어요. 다시 시도하거나 ‘계속’을 눌러 주세요.";
+        ? "앱의 마이크 권한을 허용한 뒤 마이크를 다시 켜 주세요."
+        : "마이크를 켤 수 없어요. 브라우저의 마이크 권한과 연결을 확인한 뒤 다시 켜 주세요.";
   } finally {
     micPending = false;
     update();

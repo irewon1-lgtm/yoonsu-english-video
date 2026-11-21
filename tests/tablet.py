@@ -86,9 +86,11 @@ def check():
                 };
             ''')
             page.goto(base)
-            expect(page.locator(".card")).to_have_count(6)
-            expect(page.locator(".empty")).to_have_count(0)
-            deck = page.locator(".sheet")
+            episode_count = len(list((root / "episodes").glob("*/data.js")))
+            slots = ((episode_count + 5) // 6) * 6
+            expect(page.locator("a.card")).to_have_count(episode_count)
+            expect(page.locator(".empty")).to_have_count(slots - episode_count)
+            deck = page.locator(".sheet").first
             assert columns(deck) == 3
             assert page.locator(".album").bounding_box()["width"] >= 1210
             page.screenshot(path=OUT / "tab-album-landscape.png")
@@ -100,6 +102,8 @@ def check():
             print("PASS Galaxy Tab layout at 1280x800 and 800x1280", flush=True)
 
             episodes = (("rainbow", 12), ("sandwich", 12), ("bubbles", 12), ("red-ball", 6), ("number-friends", 12), ("christmas-star", 12))
+            if (root / "episodes/wash-day/data.js").is_file():
+                episodes += (("wash-day", 12),)
             test_episode = os.environ.get("ALBUM_TEST_EPISODE")
             exercise_mic = test_episode or "rainbow"
             for slug, count in episodes:
@@ -107,6 +111,9 @@ def check():
                     continue
                 if slug == "red-ball" and slug != exercise_mic:
                     page.evaluate('sessionStorage.setItem("deny-test-mic", "yes")')
+                if slug == "wash-day":
+                    page.locator("#next-page").click()
+                    expect(page.locator("#counter")).to_have_text("2 / 2")
                 page.locator(f'a[href*="/{slug}/"]').click()
                 page.wait_for_function('film.videoWidth===1920 && film.videoHeight===1080')
                 assert page.locator("video").bounding_box() == {"x": 0, "y": 0, "width": 1280, "height": 800}
@@ -130,19 +137,42 @@ def check():
                 gates = page.evaluate("turns")
                 assert len(gates) == count
                 for i, (start, end, phrase) in enumerate(gates):
-                    expect(page.locator("#next")).to_be_visible(timeout=11000)
+                    page.wait_for_function(f"state === 'waiting' && turn === {i}", timeout=11000)
+                    expect(page.locator("#next")).to_have_count(0)
                     expect(page.locator("#phrase")).to_have_text(phrase)
                     repeated = page.evaluate(f"repeatObservations.find(([i]) => i === {i})")
                     assert repeated and repeated[1] < start and not repeated[2], (slug, i, repeated)
                     hint = page.evaluate(f"episode.hints?.[{i}]")
+                    if i == 0 and slug == "red-ball" and slug != exercise_mic:
+                        expect(page.locator("#status")).to_contain_text("마이크를 켜고")
+                        page.locator("#mic").click()
+                        expect(page.locator("#mic")).to_have_attribute("aria-pressed", "true")
                     if hint:
                         expect(page.locator("#status")).to_contain_text(hint)
                     page.wait_for_function(f"film.paused && !film.seeking && Math.abs(film.currentTime-{start})<.08")
                     if i == 0:
                         page.screenshot(path=OUT / f"{slug}-landscape.png")
+                        page.locator("video").tap(position={"x": 30, "y": 150})
+                        expect(page.locator("#play")).to_be_hidden()
+                        expect(page.locator("#restart")).to_be_hidden()
+                        page.evaluate('''() => {
+                            film.currentTime = film.duration;
+                            film.play().catch(() => {});
+                            for (const id of ["play", "start", "restart", "retry"]) {
+                                document.getElementById(id).click();
+                            }
+                        }''')
+                        page.keyboard.press("ArrowRight")
+                        page.wait_for_function(f"film.paused && !film.seeking && Math.abs(film.currentTime-{start})<.08")
                         page.wait_for_timeout(4200)
                         assert abs(page.evaluate("film.currentTime") - start) < .08
                     if i == 0 and slug == exercise_mic:
+                        page.wait_for_function("window.listening?.level === 8")
+                        page.evaluate('testMicEvent("capture-error", listening.token)')
+                        expect(page.locator("#mic-note")).to_contain_text("연결이 끊겼어요")
+                        expect(page.locator("#mic")).to_have_attribute("aria-pressed", "false")
+                        assert page.evaluate("state === 'waiting' && film.paused")
+                        page.locator("#mic").click()
                         page.wait_for_function("window.listening?.level === 8")
                         page.evaluate('''
                             window.firstToken = listening.token;
@@ -164,17 +194,29 @@ def check():
                         ''')
                         page.wait_for_timeout(820)
                         assert page.evaluate("film.paused")
-                        expect(page.locator("#next")).to_be_hidden()
+                        page.wait_for_function(f"turn === {i+1}")
                         page.wait_for_function(f"film.currentTime >= {end}-.05")
                         page.wait_for_function("typeof window.resumeDelay === 'number'")
                         assert page.evaluate("resumeDelay >= 990"), page.evaluate("resumeDelay")
                         print(f"PASS automatic microphone, interrupted answer, {page.evaluate('resumeDelay'):.0f} ms resume", flush=True)
                         page.locator("#mic").click()
+                        expect(page.locator("#mic")).to_have_attribute("aria-pressed", "false")
+                        page.locator("#mic").click()
                     else:
-                        page.locator("#next").click()
+                        page.wait_for_function("window.listening?.level === 8")
+                        page.evaluate('''() => {
+                            const token = listening.token;
+                            testMicEvent("onset", token);
+                            testMicEvent("end", token);
+                        }''')
+                        page.wait_for_function(f"turn === {i+1}")
                 expect(page.locator("#status")).to_contain_text("마쳤어요", timeout=8000)
+                if slug == exercise_mic:
+                    page.locator("#restart").click()
+                    expect(page.locator("#mic")).to_have_attribute("aria-pressed", "true")
+                    assert page.evaluate("turn === 0 && state === 'playing'")
                 page.locator(".home").click()
-                expect(page.locator(".card")).to_have_count(6)
+                expect(page.locator("a.card")).to_have_count(episode_count)
                 print(f"PASS {slug}: 1080p, full landscape, {count} stops", flush=True)
 
             assert not errors, errors
