@@ -19,11 +19,15 @@
 
     <section class="player" aria-label="비눗방울 소동 영상">
       <div class="screen">
-        <video id="film" src="film.mp4" poster="cover.jpg" playsinline preload="metadata"
+        <video id="film" src="film.mp4" poster="cover.jpg" playsinline preload="auto"
           disablepictureinpicture disableremoteplayback aria-label="윤수와 레브라도 경장"></video>
         <button type="button" class="start" id="start">
           <span aria-hidden="true">▶</span> 시작
         </button>
+        <div class="buffer" id="buffer" hidden>
+          <span id="buffer-text" role="status"></span>
+          <button type="button" id="retry" hidden>다시 연결</button>
+        </div>
       </div>
       <progress id="progress" max="180" value="0" aria-label="영상 진행"></progress>
 

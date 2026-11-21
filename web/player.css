@@ -171,3 +171,25 @@ input[type="range"] { display: block; accent-color: #225545; }
   }
   .player.playing .help { top: 4rem; }
 }
+.buffer {
+  position: absolute;
+  z-index: 4;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: max-content;
+  max-width: min(88%, 26rem);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .45rem .65rem;
+  border-radius: .7rem;
+  background: #182338ed;
+  color: #fff8e7;
+  padding: .65rem .88rem;
+  box-shadow: 0 5px 18px #18233855;
+  text-align: center;
+  font-size: .95rem;
+  font-weight: 700;
+}
+.buffer button { background: #fff8e7; color: #182338; padding: .2rem .75rem; }

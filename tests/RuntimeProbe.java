@@ -51,9 +51,10 @@ public class RuntimeProbe {
                 AlbumCatalog.MAX_BUNDLE);
         AlbumCatalog initial = AlbumCatalog.load(old, key);
         AlbumCatalog fresh = AlbumCatalog.load(hosted, key);
-        check(initial.version == 1 && fresh.version == 2, "remote content version update");
+        int expectedVersion = args.length > 3 ? Integer.parseInt(args[3]) : 2;
+        check(initial.version < fresh.version && fresh.version == expectedVersion, "remote content version update");
         check(fresh.videos.size() == 3 && fresh.files.containsKey("album.js"), "latest catalog files");
-        System.out.println("PASS Hosted authenticated update 1 → 2");
+        System.out.println("PASS Hosted authenticated update " + initial.version + " → " + fresh.version);
 
         for (AlbumCatalog.Video video : fresh.videos.values()) {
             int last = (int) ((video.size - 1) / AlbumCatalog.CHUNK);

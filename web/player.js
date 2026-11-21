@@ -5,7 +5,7 @@ const film = element("film");
 const player = document.querySelector(".player");
 const el = Object.fromEntries([
   "start", "progress", "status", "phrase", "next", "play", "mic", "restart",
-  "settings", "sensitivity", "level", "mic-note",
+  "settings", "sensitivity", "level", "mic-note", "buffer", "buffer-text", "retry",
 ].map(id => [id, element(id)]));
 
 let turn = 0;
@@ -14,6 +14,17 @@ let voice;
 let micPending = false;
 let leaving = false;
 let displayTimer;
+let startupTimer;
+let stallTimer;
+let recoveryTimer;
+let startupReady = false;
+let loading = false;
+let reconnectable = false;
+let needsReload = false;
+let automaticRetry = 0;
+let mediaRequest = 0;
+let lastPosition = 0;
+const source = film.getAttribute("src");
 function showControls() {
   clearTimeout(displayTimer);
   document.body.classList.remove("clean-view");
@@ -32,6 +43,63 @@ try {
   if (Number.isInteger(saved) && saved >= 1 && saved <= 10) sensitivity = saved;
 } catch { /* Stored preferences may be unavailable in a file viewer. */ }
 
+function setBuffer(message = "", retry = false) {
+  loading = Boolean(message);
+  reconnectable = retry;
+  el.buffer.hidden = !loading;
+  el["buffer-text"].textContent = message;
+  el.retry.hidden = !retry;
+  if (loading) showControls();
+}
+
+function bufferedAt(position) {
+  for (let i = 0; i < film.buffered.length; i++) {
+    if (film.buffered.start(i) <= position + .05 && position <= film.buffered.end(i)) {
+      return film.buffered.end(i) - position;
+    }
+  }
+  return 0;
+}
+
+function prepareStart() {
+  // Fill the start of the video before showing Start. On systems that defer
+  // preload to a user gesture the timer below reveals Start for that gesture.
+  if (state === "ready" && !startupReady && bufferedAt(0) >= 5) {
+    startupReady = true;
+    clearTimeout(startupTimer);
+    setBuffer();
+    update();
+  }
+}
+
+function clearStall() {
+  clearTimeout(stallTimer);
+  clearTimeout(recoveryTimer);
+  stallTimer = undefined;
+  recoveryTimer = undefined;
+  if (loading || reconnectable) setBuffer();
+}
+
+function buffering() {
+  if (state !== "playing" || stallTimer !== undefined || recoveryTimer !== undefined) return;
+  stallTimer = setTimeout(() => {
+    stallTimer = undefined;
+    if (state !== "playing" || film.ended) return;
+    if (film.readyState < HTMLMediaElement.HAVE_FUTURE_DATA || film.seeking) {
+      setBuffer("영상을 불러오는 중이에요.", true);
+      if (automaticRetry < 1) {
+        recoveryTimer = setTimeout(() => {
+          recoveryTimer = undefined;
+          if (state === "playing" && !document.hidden &&
+              (film.readyState < HTMLMediaElement.HAVE_FUTURE_DATA || film.seeking)) {
+            reconnectOnce();
+          }
+        }, 4000);
+      }
+    }
+  }, 1000);
+}
+
 const status = {
   ready: "영상에서 “Your turn, Yoonsu!”를 들으면 따라 말해요.",
   playing: "잘 듣고, 윤수 차례를 기다려요.",
@@ -43,7 +111,8 @@ function update() {
   player.classList.toggle("waiting", waiting);
   player.classList.toggle("playing", state === "playing");
   if (state !== "playing") showControls();
-  el.start.hidden = state !== "ready";
+  el.start.hidden = state !== "ready" || !startupReady;
+  el.start.textContent = needsReload ? "다시 재생" : "▶ 시작";
   el.next.hidden = !waiting;
   el.play.hidden = state !== "playing" && state !== "paused";
   el.play.textContent = state === "paused" ? "재생" : "일시정지";
@@ -52,7 +121,8 @@ function update() {
   el.phrase.textContent = waiting ? turns[turn][2] : "";
   el.status.textContent = waiting
     ? voiceState === "heard" ? "듣고 있어요…" : voiceState === "listening"
-      ? "윤수 차례! 아래 문장을 말해 봐요." : "윤수 차례! 말한 다음 ‘계속’을 눌러요."
+      ? "윤수 차례 " + (turn + 1) + "/" + turns.length + " · 아래 문장을 말해 봐요."
+      : "윤수 차례 " + (turn + 1) + "/" + turns.length + " · 말하고 ‘계속’을 눌러요."
     : status[state];
   el.mic.disabled = micPending;
   el.mic.textContent = micPending ? "권한 확인 중…" : voice ? "마이크 끄기" : "마이크 켜기";
@@ -94,33 +164,87 @@ function armListening() {
 
 function pauseAtTurn() {
   state = "waiting";
+  clearStall();
   film.pause();
-  film.currentTime = turns[turn][0];
+  const [at] = turns[turn];
+  if (film.currentTime - at > .06) film.currentTime = at;
   armListening();
 }
 
 function checkTime() {
-  el.progress.value = film.currentTime;
-  if (state === "playing" && turn < turns.length &&
-      film.currentTime >= turns[turn][0]) pauseAtTurn();
+  if (!film.seeking && film.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+    const at = film.currentTime;
+    el.progress.value = at;
+    if (state === "playing") lastPosition = at;
+    if (state === "playing" && turn < turns.length && at >= turns[turn][0]) {
+      pauseAtTurn();
+    }
+  }
 }
 
 async function play() {
   const originalState = state;
   state = "playing";
+  clearTimeout(startupTimer);
+  clearStall();
+  if (needsReload) {
+    needsReload = false;
+    film.src = source + "?reconnect=" + (++mediaRequest);
+    film.load();
+  }
   if (resumeAt !== undefined) {
+    // A pre-metadata seek is retained by the browser as the playback start.
     film.currentTime = resumeAt;
+    lastPosition = resumeAt;
     resumeAt = undefined;
   }
   update();
   showControls();
+  buffering();
   try { await film.play(); }
   catch (error) {
     if (state !== "playing" || error.name === "AbortError") return;
+    if (film.error) {
+      handleMediaError();
+      return;
+    }
+    clearStall();
     state = originalState === "ready" ? "ready" : "paused";
     update();
     el.status.textContent = "재생 버튼을 다시 눌러 주세요.";
   }
+}
+
+function reconnectOnce() {
+  automaticRetry += 1;
+  needsReload = true;
+  resumeAt = lastPosition;
+  void play();
+}
+
+function handleMediaError() {
+  if (!film.error) return;
+  clearStall();
+  needsReload = true;
+  if (state === "waiting" || state === "done" || leaving) return;
+  if (state === "playing" && automaticRetry < 1) {
+    reconnectOnce();
+    return;
+  }
+  if (state === "playing") state = "paused";
+  startupReady = true;
+  clearTimeout(startupTimer);
+  resumeAt = lastPosition;
+  update();
+  if (state !== "ready") setBuffer("연결이 끊겼어요. 멈춘 곳에서 이어 볼 수 있어요.", true);
+}
+
+function retryPlayback() {
+  if (state !== "playing" && state !== "paused" && state !== "ready") return;
+  automaticRetry = 0;
+  needsReload = true;
+  resumeAt = lastPosition;
+  void play();
 }
 
 function advance() {
@@ -135,6 +259,16 @@ function advance() {
 }
 
 film.addEventListener("timeupdate", checkTime);
+film.addEventListener("progress", prepareStart);
+film.addEventListener("loadeddata", prepareStart);
+film.addEventListener("waiting", buffering);
+film.addEventListener("stalled", buffering);
+film.addEventListener("seeking", buffering);
+film.addEventListener("playing", clearStall);
+film.addEventListener("canplay", () => {
+  prepareStart();
+  if (state === "playing" && !film.seeking) clearStall();
+});
 if ("requestVideoFrameCallback" in film) {
   const watch = () => {
     checkTime();
@@ -143,12 +277,14 @@ if ("requestVideoFrameCallback" in film) {
   film.requestVideoFrameCallback(watch);
 }
 film.addEventListener("pause", () => {
-  if (state === "playing" && !film.ended && film.paused) {
+  if (state === "playing" && !film.ended && film.paused && !film.error) {
+    clearStall();
     state = "paused";
     update();
   }
 });
 film.addEventListener("ended", () => {
+  clearStall();
   state = "done";
   stopListening();
   if (voice) {
@@ -157,10 +293,8 @@ film.addEventListener("ended", () => {
   }
   update();
 });
-film.addEventListener("error", () => {
-  stopListening();
-  el.status.textContent = "영상을 열 수 없어요. 인터넷 연결을 확인하고 사진첩에서 다시 열어 주세요.";
-});
+film.addEventListener("error", handleMediaError);
+el.retry.addEventListener("click", retryPlayback);
 el.start.addEventListener("click", play);
 el.next.addEventListener("click", advance);
 el.play.addEventListener("click", () => {
@@ -174,6 +308,7 @@ el.play.addEventListener("click", () => {
   }
 });
 el.restart.addEventListener("click", () => {
+  automaticRetry = 0;
   stopListening();
   state = "paused";
   turn = 0;
@@ -262,6 +397,8 @@ document.addEventListener("visibilitychange", () => {
 });
 window.addEventListener("pagehide", () => {
   leaving = true;
+  clearTimeout(startupTimer);
+  clearStall();
   stopListening();
   voice?.close();
   voice = undefined;
@@ -270,6 +407,7 @@ window.addEventListener("pageshow", () => { leaving = false; update(); });
 window.addEventListener("app-paused", () => {
   stopListening();
   if (state === "playing") {
+    clearStall();
     state = "paused";
     film.pause();
   }
@@ -278,4 +416,12 @@ window.addEventListener("app-paused", () => {
 window.addEventListener("app-resumed", () => {
   if (state === "waiting") armListening();
 });
+setBuffer("영상을 준비하고 있어요.");
+startupTimer = setTimeout(() => {
+  if (state !== "ready") return;
+  startupReady = true;
+  setBuffer();
+  update();
+}, 5500);
+prepareStart();
 update();
