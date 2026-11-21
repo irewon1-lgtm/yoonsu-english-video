@@ -1,0 +1,7 @@
+numpy
+scipy
+Pillow
+cairocffi
+opencv-python-headless
+onnx
+onnxruntime

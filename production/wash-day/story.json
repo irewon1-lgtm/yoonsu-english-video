@@ -1,0 +1,19 @@
+[
+ {"action":"arrive","role":"S","line":"Look at those muddy hands!","target":false},
+ {"action":"arrive","role":"Y","line":"Let's get cleaned up!","target":false},
+ {"action":"tap","role":"1","line":"Turn on the tap.","target":true},
+ {"action":"soap","role":"Y","line":"I need some soap.","target":true},
+ {"action":"rub","role":"2","line":"Rub your hands together.","target":true},
+ {"action":"rinse","role":"Y","line":"Rinse off the bubbles.","target":true},
+ {"action":"splash","role":"1","line":"Wash your face gently.","target":true},
+ {"action":"cheeks","role":"Y","line":"My cheeks are clean!","target":true},
+ {"action":"brush","role":"2","line":"Time to brush.","target":false},
+ {"action":"brush","role":"Y","line":"I brush my teeth.","target":true},
+ {"action":"spit","role":"S","line":"Spit out the toothpaste.","target":true},
+ {"action":"feet","role":"Y","line":"What about my feet?","target":false},
+ {"action":"feet","role":"1","line":"Wash both feet.","target":true},
+ {"action":"toes","role":"2","line":"Wash between your toes.","target":true},
+ {"action":"towel","role":"Y","line":"Pass me the towel.","target":true},
+ {"action":"finish","role":"Y","line":"I'm clean and cozy!","target":true},
+ {"action":"finish","role":"S","line":"All ready for your story, Yoonsu!","target":false}
+]
