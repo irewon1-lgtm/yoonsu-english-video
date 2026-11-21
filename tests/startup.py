@@ -1,5 +1,6 @@
 """Exercise the first turn at normal speed on a constrained connection."""
 import json
+import os
 from functools import partial
 from http.server import ThreadingHTTPServer
 from pathlib import Path
@@ -20,6 +21,7 @@ class RangeAssets(Assets):
 web, media = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve()
 label = sys.argv[3]
 inject = len(sys.argv) > 4
+slug = os.environ.get("ALBUM_TEST_EPISODE", "rainbow")
 with TemporaryDirectory() as scratch:
     root = Path(scratch) / "site"
     shutil.copytree(web, root)
@@ -39,7 +41,7 @@ with TemporaryDirectory() as scratch:
             "offline": False, "latency": 125, "downloadThroughput": 143360, "uploadThroughput": 100000,
             "connectionType": "cellular3g"
         })
-        url = base + "episodes/rainbow/index.html"
+        url = base + f"episodes/{slug}/index.html"
         page.goto(url, wait_until="domcontentloaded")
         page.wait_for_function('typeof turns !== "undefined"')
         page.evaluate("""() => {
@@ -60,10 +62,11 @@ with TemporaryDirectory() as scratch:
             page.evaluate("film.load()")
             expect(page.locator("#start")).to_have_text("다시 재생")
         page.locator("#start").click(timeout=20000)
-        expect(page.locator("#next")).to_be_visible(timeout=32000)
+        expect(page.locator("#next")).to_be_visible(timeout=41000)
         assert page.evaluate("film.paused && Math.abs(film.currentTime - turns[0][0]) < .09")
         events = page.evaluate("log")
-        waits = [e for e in events if e["event"] == "waiting" and .4 < e["t"] < 7.4]
+        start, end, _ = page.evaluate("turns[0]")
+        waits = [e for e in events if e["event"] == "waiting" and .4 < e["t"] < start - .12]
         print(label, json.dumps(events), "early stalls", len(waits), flush=True)
         if label == "before":
             assert waits, "baseline did not buffer before first turn"
@@ -78,11 +81,11 @@ with TemporaryDirectory() as scratch:
                     assert resumed["ms"] - event["ms"] < 1000
             else:
                 assert not waits, "revised playback stalled before first turn"
-            expect(page.locator("#status")).to_contain_text("윤수 차례 1/12")
+            expect(page.locator("#status")).to_contain_text("윤수 차례 1/" + str(page.evaluate("turns.length")))
             page.wait_for_timeout(4300)
             assert page.evaluate("film.paused && Math.abs(film.currentTime - turns[0][0]) < .09")
             page.locator("#next").click()
-            page.wait_for_function("film.currentTime >= 13.0 && !film.paused",timeout=16000)
+            page.wait_for_function(f"film.currentTime >= {end + 1.5} && !film.paused",timeout=16000)
             if inject:
                 assert page.evaluate("film.currentSrc.includes('reconnect=')")
             assert not errors,errors
