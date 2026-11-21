@@ -6,6 +6,7 @@ const episodes = [
   { id: "bubbles", title: "비눗방울 소동" },
   { id: "red-ball", title: "사라진 빨간 공" },
   { id: "number-friends", title: "안녕, 넘버랜드!" },
+  { id: "christmas-star", title: "크리스마스 별" },
 ];
 
 const slotsPerPage = 6;

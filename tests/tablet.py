@@ -85,7 +85,7 @@ def check():
             ''')
             page.goto(base)
             expect(page.locator(".card")).to_have_count(6)
-            expect(page.locator(".empty")).to_have_count(1)
+            expect(page.locator(".empty")).to_have_count(0)
             deck = page.locator(".sheet")
             assert columns(deck) == 3
             assert page.locator(".album").bounding_box()["width"] >= 1210
@@ -97,7 +97,7 @@ def check():
             page.set_viewport_size({"width": 1280, "height": 800})
             print("PASS Galaxy Tab layout at 1280x800 and 800x1280", flush=True)
 
-            episodes = (("rainbow", 12), ("sandwich", 12), ("bubbles", 12), ("red-ball", 6), ("number-friends", 12))
+            episodes = (("rainbow", 12), ("sandwich", 12), ("bubbles", 12), ("red-ball", 6), ("number-friends", 12), ("christmas-star", 12))
             test_episode = os.environ.get("ALBUM_TEST_EPISODE")
             exercise_mic = test_episode or "rainbow"
             for slug, count in episodes:

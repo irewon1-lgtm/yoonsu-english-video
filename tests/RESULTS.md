@@ -51,3 +51,14 @@
 | `ALBUM_TEST_EPISODE=number-friends python tests/startup.py … after` | 1.17Mbps, 125ms에서 6.45초의 첫 발화 차례 전 의도치 않은 재생 정지 0회 |
 | `RuntimeProbe.java` | 실제 GitHub 원격 목록 4 → 5 인증, 5편의 원격 Range 응답 20개 원본 일치, 변조 목록 거부 |
 | 기기 | 에뮬레이션 화면과 브리지 이벤트를 검증했습니다. 실제 갤럭시탭의 마이크는 실기 검증 대상입니다. |
+
+## 크리스마스 별 · 콘텐츠 6
+
+| 검증 | 관측 |
+|---|---|
+| 영상과 자막 | 1080p, 30fps, 180초, 5,400프레임. 12개 응답 구간에 영어 대사 중첩 없음. Blender에서 장면 12개와 모든 연결 파일 확인 |
+| 윤수 자세 | 여덟 가지 자세를 사용한 전편의 5,400프레임에서 연속 변형 사각형의 네 꼭짓점을 검사. 최종본에서 뒤집힌 사각형 0개 |
+| `ALBUM_TEST_EPISODE=christmas-star python tests/tablet.py …` | 6칸에 6편, 태블릿 방향별 화면, 1080p 재생, 12번 정지, 계속 버튼, 마이크 브리지 이벤트와 종 세기 안내 |
+| `ALBUM_TEST_EPISODE=christmas-star python tests/startup.py … after` | 1.17Mbps, 125ms에서 첫 발화 정지 전 버퍼링 0회 |
+| `RuntimeProbe.java` | 실제 GitHub 목록 5 → 6 인증, 영상 6편의 원격 Range 응답 24개가 로컬 스트림과 일치, 변조 목록 거부 |
+| 기기 | 브라우저에서 태블릿 크기 및 마이크 브리지 이벤트를 재현했습니다. 실제 갤럭시탭의 마이크는 실기 검증 대상입니다. |
