@@ -1,0 +1,173 @@
+/* Generated using AppDeploy UI skill */
+:root {
+  color-scheme: light;
+  --ink: #28453b;
+  --muted: #516459;
+  --paper: #fffbf1;
+  --gold: #f9edd7;
+  --coral: #a6433b;
+  --line: #e9dbc3;
+  font-family: "Nunito", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background-color: var(--gold);
+  background-image: radial-gradient(ellipse at 50% 10%, #fff8e8, transparent 70%),
+    repeating-linear-gradient(90deg, #bf72550b 0 1px, transparent 1px 38px);
+}
+.lesson {
+  width: min(58rem, 100%);
+  margin-inline: auto;
+  padding: clamp(1rem, 4vw, 3rem) clamp(.65rem, 3.4vw, 2rem) 2rem;
+}
+header { margin: 0 0 clamp(.8rem, 2.6vw, 1.5rem); }
+h1 {
+  margin: .25rem 0 0;
+  font-size: clamp(1.6rem, 4.2vw, 2.65rem);
+  line-height: 1.2;
+  letter-spacing: -.048em;
+}
+.series { margin: 0; color: var(--coral); font-weight: 800; font-size: .92rem; }
+.series span { margin-inline-end: .25rem; }
+.player {
+  border-radius: clamp(.7rem, 2vw, 1.25rem);
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 36px #69512f25;
+}
+.screen { position: relative; aspect-ratio: 16 / 9; background: #172c27; }
+video { display: block; width: 100%; height: 100%; object-fit: contain; }
+button, summary, input { font: inherit; }
+button {
+  font-weight: 750;
+  border: 0;
+  cursor: pointer;
+  border-radius: .65rem;
+  min-height: 44px;
+}
+button:focus-visible, summary:focus-visible, input:focus-visible {
+  outline: 3px solid #b97335;
+  outline-offset: 3px;
+}
+.start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: .8rem 1.45rem;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 4px 24px #1829246c;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+.start span { color: var(--coral); margin-inline-end: .25rem; }
+progress { display: block; appearance: none; width: 100%; height: 4px; border: 0; background: #e4d2b8; color: var(--coral); }
+progress::-webkit-progress-bar { background: #e4d2b8; }
+progress::-webkit-progress-value { background: var(--coral); }
+progress::-moz-progress-bar { background: var(--coral); }
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .65rem;
+  min-height: 4.2rem;
+  padding: .65rem clamp(.7rem, 3vw, 1.35rem);
+}
+.player.waiting .controls { background: #e9f3e4; }
+#status { margin: 0; font-size: .96rem; line-height: 1.45; color: var(--muted); }
+.waiting #status { font-weight: 700; color: var(--ink); }
+#phrase { margin: .2rem 0 0; font-weight: 850; font-size: clamp(1.02rem, 3.3vw, 1.44rem); line-height: 1.2; }
+.next { padding: .3rem .85rem; background: #225545; color: #fff; white-space: nowrap; font-size: .94rem; }
+.next:hover { background: #163d31; }
+.footer {
+  padding: .2rem clamp(.7rem, 3vw, 1.35rem) .35rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: .15rem .38rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.quiet, summary { background: transparent; color: var(--muted); font-size: .91rem; }
+.quiet { padding: .32rem .55rem; }
+.quiet:hover { background: #f3ead7; color: var(--ink); }
+.quiet[aria-pressed="true"] { color: #134d3b; background: #e8f2e2; }
+details { margin-inline-start: auto; padding-inline: .25rem; }
+summary { line-height: 44px; cursor: pointer; }
+details label { display: block; font-size: .88rem; }
+input[type="range"] { display: block; accent-color: #225545; }
+.scale { display: flex; justify-content: space-between; font-size: .8rem; color: var(--muted); }
+.help { margin: 0; padding: .25rem 1.25rem .85rem; color: var(--muted); font-size: .88rem; }
+@media (max-height: 510px) and (orientation: landscape) {
+  .lesson { width: min(92vh, 100%); padding-top: .5rem; }
+  h1 { font-size: 1.15rem; }
+  header { margin-bottom: .45rem; }
+  .series { display: none; }
+  .controls { min-height: 3rem; }
+}
+.home {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #245648;
+  font-weight: 750;
+  text-decoration: none;
+  padding-inline: .35rem;
+}
+.home:focus-visible { outline: 3px solid #b97335; }
+@media (min-width: 660px) and (orientation: portrait) {
+  .lesson { width: min(100%, 84rem); }
+  .controls { min-height: 5rem; padding-inline: 1.6rem; }
+  #phrase { font-size: clamp(1.35rem, 3.35vw, 2.5rem); }
+  .footer { gap: .4rem; }
+  .quiet, .next { font-size: 1.05rem; }
+}
+@media (orientation: landscape) {
+  body { background: #101729; }
+  .lesson { position: fixed; inset: 0; width: 100%; padding: 0; }
+  .lesson > header { position: absolute; z-index: 4; top: .5rem; left: .65rem; margin: 0; }
+  .lesson > header h1 { display: none; }
+  .lesson > header .home {
+    background: #182338e8; color: #fff3d5; border-radius: .55rem;
+    padding-inline: .8rem;
+  }
+  .player { position: absolute; inset: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+  .screen { position: absolute; inset: 0; width: 100%; height: 100%; aspect-ratio: auto; }
+  video { object-fit: cover; }
+  progress { position: absolute; z-index: 3; inset: auto 0 0; margin: 0; }
+  .controls {
+    position: absolute; z-index: 3; left: 50%; bottom: 3.8rem; transform: translateX(-50%);
+    width: min(94%, 52rem); min-height: 3.35rem; padding: .5rem .82rem;
+    color: #192a28; background: #fffbf1ef; border-radius: .8rem;
+  }
+  .footer {
+    position: absolute; z-index: 3; bottom: .5rem; left: 50%; transform: translateX(-50%);
+    width: max-content; max-width: 96%; border: 0; border-radius: .68rem;
+    background: #fffbf1ed; padding: .12rem .35rem;
+  }
+  .help {
+    position: absolute; z-index: 4; top: .6rem; right: .65rem; max-width: min(68%, 29rem);
+    margin: 0; padding: .5rem .75rem; color: #26332e;
+    background: #fffbf1f5; border-radius: .65rem;
+  }
+  .player.playing .controls { display: none; }
+  body.clean-view .lesson > header,
+  body.clean-view .player.playing .footer,
+  body.clean-view .player.playing .help,
+  body.clean-view .player.playing progress { visibility: hidden; }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 16/9) {
+  video { object-fit: contain; }
+}
+@media (orientation: landscape) {
+  .player.playing .footer {
+    top: .5rem; right: .65rem; bottom: auto; left: auto;
+    transform: none;
+  }
+  .player.playing .help { top: 4rem; }
+}

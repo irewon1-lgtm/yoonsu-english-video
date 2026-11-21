@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+/build/
+/sdk/
+/release/
+/private/
+*.apk
+*.jks
+*.p12
+*.hex
+*.yvideo
+*.bundle
+*.mp4
+*.webm
+*.jpg
+*.log

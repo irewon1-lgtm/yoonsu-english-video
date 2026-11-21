@@ -1,0 +1,178 @@
+/* Generated using AppDeploy UI skill */
+:root {
+  color-scheme: dark;
+  font-family: Nunito, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  color: #fff3d5;
+  background: #111d35;
+  --night: #111d35;
+  --paper: #212e49;
+  --card: #2e3e5e;
+  --edge: #435676;
+  --gold: #ffce77;
+  --muted: #c9d3ec;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1.5px 1.5px at 22% 16%, #91a5ce 95%, transparent 100%) 0 0/147px 189px,
+    radial-gradient(1.5px 1.5px at 76% 74%, #6e83af 95%, transparent 100%) 0 0/213px 201px,
+    radial-gradient(ellipse at 50% 6%, #233855, #111d35 70%);
+}
+.album {
+  width: min(100%, 40rem);
+  margin: 0 auto;
+  padding: clamp(.7rem, 3vw, 1.45rem) clamp(.7rem, 3vw, 1.5rem) .7rem;
+}
+.leaf {
+  background: var(--paper);
+  border: 1px solid var(--edge);
+  border-radius: 1.12rem;
+  overflow: hidden;
+  box-shadow: 0 4px #18223a, 0 5px #495a74, 0 8px #25334a, 0 20px 35px #03081555;
+}
+header {
+  position: relative;
+  margin: .62rem .62rem .12rem;
+  padding: .78rem 1.45rem .88rem;
+  background: #293855;
+  border-radius: .7rem;
+  text-align: center;
+}
+h1 {
+  position: relative;
+  margin: .5rem 0 0;
+  font-weight: 850;
+  font-size: clamp(1.12rem, 5.35vw, 2rem);
+  letter-spacing: -.055em;
+  line-height: 1.18;
+}
+.star { color: var(--gold); position: absolute; font-size: clamp(.65rem, 2.8vw, 1.05rem); }
+.star.a { top: .64rem; left: 1.1rem; }
+.star.b { top: 2.1rem; left: .55rem; font-size: .68rem; }
+.star.c { top: .5rem; right: .85rem; }
+.star.d { top: 2.2rem; right: .5rem; font-size: .6rem; }
+.book { height: .75rem; display: flex; align-items: center; justify-content: center; }
+.book i {
+  display: block;
+  height: .58rem;
+  width: .67rem;
+  border: 1.5px solid var(--gold);
+  transform: skewY(15deg);
+}
+.book i+i { transform: skewY(-15deg); border-inline-start: 0; }
+.sheets {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+}
+.sheets::-webkit-scrollbar { display: none; }
+.sheet {
+  width: 100%;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(.5rem, 2.4vw, .98rem);
+  padding: .72rem .68rem .94rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: .32rem;
+  gap: .12rem;
+  border-radius: .58rem;
+  border: 1px solid #485a7a;
+  background: var(--card);
+  box-shadow: 0 4px 9px #0c152950;
+  color: #fff3d5;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a.card:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+a.card:active { background: #425474; }
+.card img, .empty div {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: .32rem;
+}
+.label {
+  padding: .25rem .1rem .16rem .15rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .25rem;
+  font-size: clamp(.73rem, 3.35vw, 1.02rem);
+  line-height: 1.18;
+  font-weight: 800;
+  word-break: keep-all;
+  min-height: 2.38rem;
+}
+.play-icon {
+  position: relative;
+  border-radius: 100%;
+  width: 1.48rem;
+  height: 1.48rem;
+  background: var(--gold);
+}
+.play-icon::after {
+  content: "";
+  position: absolute;
+  left: 41%;
+  top: 32%;
+  border-block: .27rem solid transparent;
+  border-inline-start: .41rem solid #232d45;
+}
+.empty { background: #263650; border-color: #3c4d6a; min-height: 100%; }
+.empty div {
+  background: #293957;
+  border: 1px solid #3a4c6a;
+}
+.pager {
+  display: grid;
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-rows: minmax(1rem, auto);
+  justify-items: center;
+  align-items: center;
+  margin: .65rem .5rem 0;
+}
+.pager button {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--gold); color: var(--night);
+  border: 1px solid #8c6e45; font-size: 1.6rem;
+  cursor: pointer;
+}
+.pager button:disabled { background: var(--card); color: var(--muted); border-color: var(--edge); cursor: default; }
+#previous { grid-column: 1; grid-row: 1; }
+#next-page { grid-column: 3; grid-row: 1; }
+#counter { grid-column: 2; grid-row: 1; color: var(--muted); margin: .2rem 0; font-size: .93rem; }
+.swipe { grid-column: 2; color: var(--muted); font-size: .8rem; margin: 0; text-align: center; }
+.empty::after {
+  content: "";
+  min-height: 2.38rem;
+}
+/* On a tablet, let the six photos fill the page in either orientation. */
+@media (min-width: 660px) {
+  .album { width: min(100%, 80rem); padding: clamp(.85rem, 2vw, 2rem); }
+  .sheet { padding: 1rem; gap: clamp(.75rem, 1.6vw, 1.5rem); }
+  .card { padding: .55rem; }
+  .label { font-size: clamp(1rem, 2.2vw, 1.46rem); min-height: 3.15rem; }
+  .empty::after { min-height: 3.15rem; }
+  .play-icon { width: 2rem; height: 2rem; }
+  .play-icon::after { border-block-width: .36rem; border-inline-start-width: .56rem; }
+}
+@media (orientation: landscape) and (min-width: 660px) {
+  .sheet { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .album { width: min(100%, 92rem); padding: .6rem clamp(.6rem, 2vw, 1.65rem); }
+  header { padding: .48rem 2rem .65rem; }
+  .card img, .empty div { height: min(20dvh, 14rem); aspect-ratio: auto; }
+  .pager { margin-top: .7rem; }
+}
+#update-note { color: var(--muted); min-height: 1rem; margin: .1rem 0; font-size: .81rem; text-align: center; }
