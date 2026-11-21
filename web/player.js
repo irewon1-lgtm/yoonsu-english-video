@@ -124,6 +124,10 @@ function update() {
       ? "윤수 차례 " + (turn + 1) + "/" + turns.length + " · 아래 문장을 말해 봐요."
       : "윤수 차례 " + (turn + 1) + "/" + turns.length + " · 말하고 ‘계속’을 눌러요."
     : status[state];
+  const hint = waiting && episode.hints?.[turn];
+  if (hint && voiceState !== "heard") {
+    el.status.textContent = "윤수 차례 " + (turn + 1) + "/" + turns.length + " · " + hint;
+  }
   el.mic.disabled = micPending;
   el.mic.textContent = micPending ? "권한 확인 중…" : voice ? "마이크 끄기" : "마이크 켜기";
   el.mic.setAttribute("aria-pressed", String(Boolean(voice)));
