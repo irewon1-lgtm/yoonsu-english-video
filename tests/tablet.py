@@ -1,4 +1,5 @@
 """Browser check of the bundled HTML and the Android bridge boundary."""
+import os
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -84,7 +85,7 @@ def check():
             ''')
             page.goto(base)
             expect(page.locator(".card")).to_have_count(6)
-            expect(page.locator(".empty")).to_have_count(3)
+            expect(page.locator(".empty")).to_have_count(2)
             deck = page.locator(".sheet")
             assert columns(deck) == 3
             assert page.locator(".album").bounding_box()["width"] >= 1210
@@ -96,7 +97,12 @@ def check():
             page.set_viewport_size({"width": 1280, "height": 800})
             print("PASS Galaxy Tab layout at 1280x800 and 800x1280", flush=True)
 
-            for slug, count in (("rainbow", 12), ("bubbles", 12), ("red-ball", 6)):
+            episodes = (("rainbow", 12), ("sandwich", 12), ("bubbles", 12), ("red-ball", 6))
+            test_episode = os.environ.get("ALBUM_TEST_EPISODE")
+            exercise_mic = test_episode or "rainbow"
+            for slug, count in episodes:
+                if test_episode and slug != test_episode:
+                    continue
                 page.locator(f'a[href*="/{slug}/"]').click()
                 page.wait_for_function('film.videoWidth===1920 && film.videoHeight===1080')
                 assert page.locator("video").bounding_box() == {"x": 0, "y": 0, "width": 1280, "height": 800}
@@ -113,7 +119,7 @@ def check():
                         page.screenshot(path=OUT / f"{slug}-landscape.png")
                         page.wait_for_timeout(4200)
                         assert abs(page.evaluate("film.currentTime") - start) < .08
-                    if i == 0 and slug == "rainbow":
+                    if i == 0 and slug == exercise_mic:
                         page.locator("#mic").click()
                         expect(page.locator("#mic-note")).to_contain_text("앱의 마이크 권한")
                         page.locator("#mic").click()

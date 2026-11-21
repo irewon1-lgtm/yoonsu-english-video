@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f9edd7">
+  <title>무지개 샌드위치 · 과일 샐러드 2탄</title>
+  <link rel="stylesheet" href="../../player.css">
+  <script defer src="../../voice.js"></script>
+  <script defer src="data.js"></script>
+  <script defer src="../../player.js"></script>
+</head>
+<body>
+  <main class="lesson">
+    <header>
+      <a class="home" href="../../index.html">‹ 사진첩</a>
+      <h1>무지개 샌드위치</h1>
+    </header>
+
+    <section class="player" aria-label="무지개 샌드위치 영상">
+      <div class="screen">
+        <video id="film" src="film.mp4" poster="cover.jpg" playsinline preload="auto"
+          disablepictureinpicture disableremoteplayback aria-label="윤수와 레브라도 경장"></video>
+        <button type="button" class="start" id="start">
+          <span aria-hidden="true">▶</span> 시작
+        </button>
+        <div class="buffer" id="buffer" hidden>
+          <span id="buffer-text" role="status"></span>
+          <button type="button" id="retry" hidden>다시 연결</button>
+        </div>
+      </div>
+      <progress id="progress" max="180" value="0" aria-label="영상 진행"></progress>
+
+      <div class="controls">
+        <div class="notice">
+          <p id="status" role="status" aria-live="polite">영상에서 “Your turn, Yoonsu!”를 들으면 따라 말해요.</p>
+          <p id="phrase" lang="en" hidden></p>
+        </div>
+        <button id="next" class="next" type="button" hidden>계속</button>
+      </div>
+      <div class="footer">
+        <button type="button" class="quiet" id="play" hidden>일시정지</button>
+        <button type="button" class="quiet" id="mic" aria-pressed="false">마이크 켜기</button>
+        <button type="button" class="quiet" id="restart" hidden>처음부터</button>
+        <details id="settings" hidden>
+          <summary>감도 <span id="level">8</span></summary>
+          <label for="sensitivity">마이크 감도</label>
+          <input type="range" id="sensitivity" min="1" max="10" step="1" value="8">
+          <span class="scale" aria-hidden="true">낮게 <span>높게</span></span>
+        </details>
+      </div>
+      <p class="help" id="mic-note" hidden></p>
+    </section>
+  </main>
+</body>
+</html>

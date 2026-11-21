@@ -2,6 +2,7 @@
 
 const episodes = [
   { id: "rainbow", title: "무지개 과일 샐러드" },
+  { id: "sandwich", title: "무지개 샌드위치" },
   { id: "bubbles", title: "비눗방울 소동" },
   { id: "red-ball", title: "사라진 빨간 공" },
 ];
