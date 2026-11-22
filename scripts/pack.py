@@ -70,7 +70,7 @@ def pack(out, web, media, key, version, previous=None):
         archive.writestr("catalog.json",json.dumps(
             {"schema":1,"version":version,"chunk":CHUNK,"videos":videos},separators=(",",":")))
         for file in sorted(web.rglob("*")):
-            if file.is_file() and file.suffix in {".html",".js",".css"}:
+            if file.is_file() and (file.suffix in {".html", ".js", ".css"} or file == web / "album-banner.jpg"):
                 archive.write(file,file.relative_to(web))
         for slug in episodes:
             local = media/slug/"cover.jpg"
