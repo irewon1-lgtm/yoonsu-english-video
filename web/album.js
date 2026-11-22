@@ -9,6 +9,8 @@ const episodes = [
   { id: "christmas-star", title: "크리스마스 별" },
   { id: "wash-day", title: "뽀득뽀득 씻기 클럽" },
   { id: "small-star", title: "윤수 방의 작은 별" },
+  { id: "morning-daycare", title: "좋은 아침, 어린이집 가자!" },
+  { id: "open-class", title: "어린이집 참관 수업" },
 ];
 
 const slotsPerPage = 6;
