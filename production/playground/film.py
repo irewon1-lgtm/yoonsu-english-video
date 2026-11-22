@@ -3,8 +3,8 @@ from pathlib import Path
 from functools import lru_cache
 from concurrent.futures import ProcessPoolExecutor
 from PIL import Image,ImageDraw
-from stage import plate,titleplate,font,label,bubbleball
-from art import generate
+from stage import plate,titleplate,font,label,bubbleball,prop_image
+from art import generate,drawing_key
 R=Path(__file__).resolve().parent
 FPS=24
 D=json.loads((R/'timeline.json').read_text())
@@ -49,11 +49,6 @@ def state(i,f):
   x,y=STARTS[i-1][r];z=0; act='idle';j=0;m='closed'
   if ev and ev['role']==r:
    m=lip(ev,f)
-   dt=(f-ev['at'])/24
-   phase=ramp(dt,0,min(1.15,(ev['end']-ev['at'])/24))
-   if 0<phase<1:
-    act=('point' if r=='sheriff' else 'wave' if ev['id'].startswith('e') else 'pass')
-    j=round(24*phase)
   elif (f+idx*29)%107 in (0,1):m='blink'
   if i in (20,21) and r=='y':
    act='peek'; j=round(12*(ease(ramp(elapsed,0,1.1)) if i==20 else 1-ease(ramp(elapsed,dur-2,dur-.3))))
@@ -61,7 +56,7 @@ def state(i,f):
    act='pass';j=round(24*clip((t-(idx%3)*.1)*1.36))
   if i in (1,35,36) and 0<t<1 and r in ('y','sheriff','three'):
    act='wave';j=round(24*t)
-  if i==31 and r=='y' and 0<t<1:act='cup';j=round(24*t)
+  
   for moving,xx,yy,how in MOVES[i]:
    if r!=moving:continue
    if how=='slide':
@@ -91,7 +86,8 @@ def state(i,f):
    act='sit';j=round(24*ease(ramp(t,.8,1)))
   if r=='one' and i==29:
    act='sit';j=round(24*(1-ease(ramp(t,.83,1))))
-  actors[r]=(round(x),round(y+z),BASE[r][2],(r,act,j,m),round(y))
+  if i==31 and r=='y' and t>.5:act='cup';j=round(48*(t-.5))
+  actors[r]=(round(x),round(y+z),BASE[r][2],drawing_key(r,act,j,m),round(y))
  return ev,actors,t
 def sprite_key(k):return '|'.join(map(str,k))
 def atlas():
@@ -146,8 +142,12 @@ def subtitle(en,ko,role):
 @lru_cache(12)
 def heading(ch):
  ko,en=titleplate(ch);im=Image.new('RGBA',(482,87));d=ImageDraw.Draw(im)
- d.rounded_rectangle((0,0,478,82),24,fill='#174a46f0',outline='#f4d49a',width=3)
- label(d,(240,43),ko+'  ·  '+en,26,'#fff5d9')
+ d.rounded_rectangle((2,4,425,77),radius=22,fill='#355e54ed',outline='#f9df9d',width=3)
+ d.rounded_rectangle((9,11,418,70),radius=17,outline='#83a98d',width=1)
+ for xx in (25,402):
+  d.ellipse((xx-3,38,xx+3,44),fill='#f3cc76')
+ label(d,(214,27),ko,24,'#fff4cc')
+ label(d,(214,56),en,16,'#e9e6c9')
  return im
 BALL=bubbleball(55)
 # Handoffs preserve the ball position from one shot into the next.
@@ -156,7 +156,7 @@ def prop(i,aa,t):
             31:('three','three'),32:('three','one'),33:('one','one'),34:('one','basket'),35:('basket','basket'),36:('basket','basket')}.get(i,(None,None))
  if not start:return None
  def xy(r):
-  if r=='basket':return (1316,633)
+  if r=='basket':return (1433,633)
   x,y,h,*_=aa[r]
   return (x+(38 if r in ('y','sheriff') else -28),y-32)
  x,y=xy(start);xx,yy=xy(end)
@@ -186,7 +186,7 @@ def frame(i,n):
   assert (keys[cell],xx,yy)==(k,x,y)
   # Ground shadow stays planted while its owner is in flight.
   d.ellipse((x-h*.16,g-6,x+h*.16,g+5),fill='#b78966')
-  sole={'y':461/480,'sheriff':461/480,'one':260/269,'two':384/394,'three':563/572}[r]
+  sole=492/512
   sp=pic(keys[cell],h);im.paste(sp,(x-sp.width//2,y-round(sp.height*sole)),sp)
  if ch=='seek':
   # The physical playhouse masks One only while she is behind its wall.
@@ -195,17 +195,9 @@ def frame(i,n):
  point=prop(i,aa,t)
  if point:
   im.paste(BALL,(point[0]-27,point[1]-27),BALL)
-  if i in (34,35,36) and point[0]>=1278 and point[1]>=622:
-   d.rounded_rectangle((1255,634,1380,698),radius=8,fill='#ae7845',outline='#7b5736',width=3)
-   for yy in (644,664,683):d.line((1258,yy,1376,yy),fill='#e0b27b',width=5)
- if i==31:
-  x,y,h,_,_=aa['y']
-  # A painted bottle lifts with the drinking hand and settles back down.
-  reach=math.sin(math.pi*t)**2
-  bx=round(x+48-27*reach);by=round(y-h*.23-64*reach)
-  d.rounded_rectangle((bx-12,by-43,bx+12,by),radius=7,fill='#83cfd3',outline='#357e89',width=3)
-  d.rounded_rectangle((bx-8,by-51,bx+8,by-42),radius=3,fill='#eccc7e')
-
+  if i in (34,35,36) and point[0]>=1395 and point[1]>=622:
+   basket=prop_image('basket',175,142);front=basket.crop((0,round(basket.height*.41),basket.width,basket.height))
+   im.paste(front,(1433-basket.width//2,697-front.height),front)
  # Cut between locked wide and detail shots. Both cameras sample the same exposure.
  focus={3:865,4:745,7:558,8:679,9:889,10:695,14:500,15:600,16:800,17:664,20:550,21:550,22:390,23:380,27:1010,28:1140,29:1220,31:555,32:760,34:950,35:800}.get(i)
  if focus is not None and (n< s['events'][2]['at'] or n>=s['events'][5]['at']):
