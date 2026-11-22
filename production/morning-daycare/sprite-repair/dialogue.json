@@ -1,0 +1,215 @@
+[
+  {
+    "id": "s01",
+    "role": "S",
+    "line": "Time to wake up, Yoonsu.",
+    "emotion": "속삭이듯 친근하게",
+    "listener": "윤수 눈 뜨고 알람 쪽을 본다.",
+    "start": "방문에서 몸을 숙인다.",
+    "end": "알람 쪽에 작은 고갯짓."
+  },
+  {
+    "id": "s02",
+    "role": "Y",
+    "line": "Good morning!",
+    "emotion": "졸림이 웃음으로 바뀜",
+    "listener": "경장 몸을 펴고 살짝 손짓.",
+    "start": "양발 딛고 상체를 편다.",
+    "end": "경장을 보고 편한 자세."
+  },
+  {
+    "id": "s03",
+    "role": "Y",
+    "line": "I wash my face.",
+    "emotion": "천천히 자신 있게",
+    "listener": "경장 수도와 수건을 본다.",
+    "start": "세면대 앞에서 손을 든다.",
+    "end": "물을 받을 수 있게 손바닥을 위로."
+  },
+  {
+    "id": "s04",
+    "role": "Y",
+    "line": "I'm hungry.",
+    "emotion": "식탁을 보고 기대",
+    "listener": "경장이 의자를 권한다.",
+    "start": "그릇을 보고 몸을 조금 앞으로.",
+    "end": "빈 손을 의자 쪽에 둔다."
+  },
+  {
+    "id": "s05",
+    "role": "Y",
+    "line": "I brush my teeth.",
+    "emotion": "또박또박",
+    "listener": "경장이 도구 놓을 자리를 본다.",
+    "start": "입 앞에 도구가 없는 상태.",
+    "end": "손을 칫솔 쪽으로 뻗을 준비."
+  },
+  {
+    "id": "s06",
+    "role": "Y",
+    "line": "My green shirt!",
+    "emotion": "좋아하는 옷이라 반가움",
+    "listener": "경장이 소매를 가리킨다.",
+    "start": "접힌 셔츠 쪽을 본다.",
+    "end": "양손으로 옷을 펼친 자세로 이어진다."
+  },
+  {
+    "id": "s07",
+    "role": "Y",
+    "line": "My socks!",
+    "emotion": "가볍게 감탄",
+    "listener": "경장이 뒤축을 가리킨다.",
+    "start": "양말을 앞에 두고 손을 편다.",
+    "end": "엄지와 손가락으로 입구를 잡을 준비."
+  },
+  {
+    "id": "s08",
+    "role": "S",
+    "line": "Something's missing.",
+    "emotion": "부드러운 힌트",
+    "listener": "윤수 시선이 빈 어깨로 바뀐다.",
+    "start": "경장 어깨에 끈을 거는 시늉.",
+    "end": "경장이 몸을 의자 방향으로 튼다."
+  },
+  {
+    "id": "s09",
+    "role": "Y",
+    "line": "Where's my bag?",
+    "emotion": "짧게 당황",
+    "listener": "경장 윤수의 시선을 따라 바닥을 본다.",
+    "start": "책상 옆에 서서 주변을 살핀다.",
+    "end": "의자 아래로 시선을 낮춘다."
+  },
+  {
+    "id": "s10",
+    "role": "Y",
+    "line": "Here it is!",
+    "emotion": "이름표를 보고 안도",
+    "listener": "경장이 별 장식 쪽으로 손짓.",
+    "start": "윤수가 별을 알아보고 표정이 밝아진다.",
+    "end": "가방 손잡이에 손을 뻗는다."
+  },
+  {
+    "id": "s11",
+    "role": "Y",
+    "line": "Shoes on!",
+    "emotion": "출발을 기다리며 씩씩하게",
+    "listener": "경장이 벤치를 가리킨다.",
+    "start": "양말 신은 발을 내려다본다.",
+    "end": "벤치에 앉아 신발을 집을 준비."
+  },
+  {
+    "id": "s12",
+    "role": "Y",
+    "line": "Let's go!",
+    "emotion": "마지막 준비를 앞두고 기대",
+    "listener": "경장이 문과 가방을 안내.",
+    "start": "가방 옆에서 경장과 눈을 맞춘다.",
+    "end": "무릎을 굽혀 손잡이를 잡을 준비."
+  },
+  {
+    "id": "s13",
+    "role": "G",
+    "line": "Hold my hand.",
+    "emotion": "안심시키듯 따뜻하게",
+    "listener": "윤수가 위를 보고 손을 들어 잡는다.",
+    "start": "보호자가 손바닥을 돌려 내민다.",
+    "end": "윤수 손 바로 앞, 두 손이 만나 걸을 준비."
+  },
+  {
+    "id": "s14",
+    "role": "T",
+    "line": "Welcome, Yoonsu!",
+    "emotion": "환영하며 활짝",
+    "listener": "윤수가 긴장을 풀고 한 발 전진.",
+    "start": "열린 문 옆에서 허리를 낮춘다.",
+    "end": "손을 가슴 가까이 두고 기다린다."
+  },
+  {
+    "id": "s15",
+    "role": "Y",
+    "line": "Hello, teacher!",
+    "emotion": "짧게 긴장 뒤 밝게 인사",
+    "listener": "선생님 웃고 고개를 끄덕인다.",
+    "start": "입구에서 선생님과 눈을 맞춘다.",
+    "end": "한 손을 보호자 쪽으로 돌려 작별 인사."
+  },
+  {
+    "id": "n01",
+    "role": "S",
+    "line": "Turn it off.",
+    "added": true
+  },
+  {
+    "id": "n08",
+    "role": "S",
+    "line": "Check the chair.",
+    "added": true
+  },
+  {
+    "id": "n14",
+    "role": "T",
+    "line": "Come on in.",
+    "added": true
+  },
+  {
+    "id": "x03",
+    "role": "Y",
+    "line": "The water is warm.",
+    "added": true
+  },
+  {
+    "id": "x04",
+    "role": "S",
+    "line": "Here is your spoon.",
+    "added": true
+  },
+  {
+    "id": "x05",
+    "role": "S",
+    "line": "Use a little toothpaste.",
+    "added": true
+  },
+  {
+    "id": "x06",
+    "role": "S",
+    "line": "Your shirt is ready.",
+    "added": true
+  },
+  {
+    "id": "x07",
+    "role": "S",
+    "line": "Pull it up.",
+    "added": true
+  },
+  {
+    "id": "x09",
+    "role": "S",
+    "line": "Do you see it?",
+    "added": true
+  },
+  {
+    "id": "x10",
+    "role": "Y",
+    "line": "I found my bag!",
+    "added": true
+  },
+  {
+    "id": "x11",
+    "role": "S",
+    "line": "Close the strap.",
+    "added": true
+  },
+  {
+    "id": "x12",
+    "role": "S",
+    "line": "The door is open.",
+    "added": true
+  },
+  {
+    "id": "x15",
+    "role": "Y",
+    "line": "See you later!",
+    "added": true
+  }
+]
