@@ -163,10 +163,11 @@ def encoded_stages(key,turn,scene_count):
     def source(a,b,name,offset=0):
         folder=ROOT/'legacy-actions'/name
         add(a,b,'retime',str(folder),offset=offset)
-    def compound(a,b,original,moves,timing):
+    def compound(a,b,original,moves,timing,order=None):
         candidate='compound-'+original[4:]
         if candidate in read()[1]:
-            act(a,b,candidate,list(enumerate(timing)))
+            cels=range(len(timing)) if order is None else order
+            act(a,b,candidate,list(zip(cels,timing,strict=True)))
         else:
             act(a,b,original,moves)
     def override(a,b):
@@ -217,7 +218,7 @@ def encoded_stages(key,turn,scene_count):
     elif key=='find':
         dg(0,q+3)
         compound(q+3,L,'act-bag-find',[(0,11),(1,8),(2,8),(3,8),(4,7),(5,13)],
-                 [6,2,3,2,3,2,3,4,3,3,4,5])
+                 [6,2,3,2,3,2,3,4,3,4,3,5],order=(0,1,2,3,4,5,6,7,8,10,9,11))
     elif key=='shoes':
         cutoff=q-76
         dg(0,cutoff)

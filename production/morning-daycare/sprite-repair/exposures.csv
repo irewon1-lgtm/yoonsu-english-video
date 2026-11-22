@@ -284,8 +284,8 @@ find,3015,3017,assets/registered/compound-bag-find.png,5,2,atlas
 find,3017,3020,assets/registered/compound-bag-find.png,6,3,atlas
 find,3020,3024,assets/registered/compound-bag-find.png,7,4,atlas
 find,3024,3027,assets/registered/compound-bag-find.png,8,3,atlas
-find,3027,3030,assets/registered/compound-bag-find.png,9,3,atlas
-find,3030,3034,assets/registered/compound-bag-find.png,10,4,atlas
+find,3027,3031,assets/registered/compound-bag-find.png,10,4,atlas
+find,3031,3034,assets/registered/compound-bag-find.png,9,3,atlas
 find,3034,3132,assets/registered/compound-bag-find.png,11,98,atlas
 shoes,3132,3158,overrides/dialogue/dlg-entry-day.png,0,26,speak
 shoes,3158,3164,overrides/dialogue/dlg-entry-day.png,3,6,speak
