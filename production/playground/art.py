@@ -126,7 +126,7 @@ def generate(role,action,j,m):
  # Explicit square dimensions and constant viewBox keep the numeral and feet registered.
  blk.SIZE=(384,600)
  im=blk.draw(n,'closed' if m=='blink' else m,-.24,float(m=='blink'),t,
-             .83*weight if walk else 0,0,0,-.32,(u*.9 if action not in ('idle',) and not walk else 0),performance=action,progress=t)
+             .83*weight if walk else 0,0,0,(-.32+.99*math.sin(pi*t) if action=='turn' else -.32),(u*.9 if action not in ('idle',) and not walk else 0),performance=action,progress=t)
  # Preserve geometry including numeral; use a constant frame per model.
  box={1:(22,308,362,577),2:(22,183,362,577),3:(22,5,362,577)}[n]
  return im.crop(box)

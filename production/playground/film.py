@@ -21,7 +21,7 @@ MOVES={
 1:[('y',460,686,'walk')],2:[('one',235,662,'walk')],3:[],4:[('three',1085,642,'walk'),('y',544,686,'walk')],
 5:[('one',305,662,'walk')],6:[],7:[],8:[],9:[],10:[],11:[('three',1078,642,'walk')],12:[],
 13:[('y',430,680,'walk'),('one',441,630,'walk')],14:[('one',476,643,'walk')],15:[('one',640,644,'hop')],
-16:[('two',817,650,'hop')],17:[('y',690,678,'hop')],18:[('three',963,646,'hop')],
+16:[('two',817,650,'hop')],17:[('y',690,678,'hop')],18:[('three',963,646,'turn')],
 19:[('one',148,443,'walk')],20:[],21:[],22:[('y',479,671,'walk')],23:[('one',380,633,'walk')],24:[],
 25:[('one',960,577,'walk'),('two',813,606,'walk')],26:[('three',665,632,'walk')],27:[('one',1070,520,'walk')],28:[('one',1206,341,'climb')],29:[('one',1444,509,'slide')],30:[('one',1434,615,'walk')],
 31:[('y',530,685,'walk')],32:[],33:[('two',804,650,'walk')],34:[],35:[],36:[]}
@@ -66,13 +66,19 @@ def state(i,f):
    if r!=moving:continue
    if how=='slide':
     x=lerp(x,xx,v);y=lerp(y,yy,ease(v))
+   elif how=='turn':
+    pivot=ease(ramp(elapsed,a+.24,a+1.85))
+    x=lerp(x,xx,pivot);y=lerp(y,yy,pivot)
+    act='turn';j=round(24*pivot)
    elif how=='hop':
+    # School-age playground hops take about a second, including anticipation.
+    motion=ramp(elapsed,a+.26,a+.26+(1.92 if i==17 else .96))
     hops=2 if i==17 else 1
-    hstep=min(hops-1,int(t*hops));phase=t*hops-hstep
+    hstep=min(hops-1,int(motion*hops));phase=motion*hops-hstep
     flight=ramp(phase,.22,.79);z=-4*65*flight*(1-flight)
     zpos=(hstep+ease(flight))/hops
     x=lerp(x,xx,zpos);y=lerp(y,yy,zpos)
-    if 0<t<1:act='hop';j=round(24*phase)
+    if 0<motion<1:act='hop';j=round(24*phase)
    else:
     direction='L' if xx<x else 'R'
     length=math.hypot(xx-x,yy-y)
@@ -229,8 +235,10 @@ def shot(i):
   if proc.wait():raise RuntimeError(i)
  print('shot',i,flush=True)
 def mux():
+ target=R/'delivery/Playground_Pals_1080p.mp4';temp=target.with_name('Playground_Pals_build.mp4')
  files=R/'qa/shots.txt';files.write_text(''.join(f"file '{i:02}.mp4'\n" for i in range(1,37)))
- subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',str(files),'-i',str(R/'mix.wav'),'-c:v','copy','-c:a','aac','-b:a','144k','-movflags','+faststart',str(R/'delivery/Playground_Pals_1080p.mp4')],check=True)
+ subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',str(files),'-i',str(R/'mix.wav'),'-c:v','copy','-c:a','aac','-b:a','144k','-movflags','+faststart',str(temp)],check=True)
+ temp.replace(target)
 if __name__=='__main__':
  if sys.argv[1]=='atlas':atlas()
  else:

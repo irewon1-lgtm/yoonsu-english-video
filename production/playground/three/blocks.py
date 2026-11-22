@@ -135,6 +135,15 @@ def draw(role,mouth,gaze,blink,phase,hop,lean,squash,yaw,gesture,target=None,per
     arm0=capsule((-w+4,arm_height),target if target and target[0]<0 else far_end,(-5,11),-1 if target and target[0]<0 else None)
     arm1=capsule((w-4,arm_height),target if target and target[0]>=0 else close_end,(5,11),1 if target and target[0]>=0 else None)
     head=use(face(role,mouth,gaze,blink,gesture,gesture*.61),lean*role*3.1+bias,fy)
+    if performance=='turn':
+        # Draw two three-quarter views through a profile and back-facing breakdown.
+        side=cos(2*pi*progress)
+        if side<.02:
+            head=''
+        else:
+            offset=32*sin(2*pi*progress)
+            head=group(face(role,mouth,gaze if progress<.5 else -gaze,blink,gesture,gesture*.61),
+                       f'translate({offset} {fy}) scale({.32+.68*side} 1)')
     top=use(crown(sin(phase*2*pi+.65)*gesture*3.5),lean*role*3.2,fy-5) if role==3 else ''
     digit_y=fy-(54 if role==3 else 16)
     label=f'<text x="{lean*role*2.4}" y="{digit_y}" text-anchor="middle" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#211a24" stroke="#fff1cf" stroke-width="0.35">{role}</text>'

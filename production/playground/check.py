@@ -38,6 +38,7 @@ c=Image.new('RGB',(1500,1010),'#f6f0df');d=ImageDraw.Draw(c)
 d.text((24,12),'놀이터 전신 셀 · 실제 노출 프레임',font=font(32),fill='#214941')
 for row,(i,role,title) in enumerate([(4,'y','윤수 · 친구 따라 걷기'),(15,'one','원 · 사방치기'),(16,'two','투 · 두 발 착지'),(29,'one','원 · 미끄럼틀'),(36,'sheriff','경장 · 작별 인사'),(35,'three','쓰리 · 손 흔들기')]):
  s=film.SC[i-1];a=s['events'][4]['end']+2;b=s['end']-6
+ if i in (15,16):a+=4;b=a+24
  d.text((18,66+row*157),title,font=font(19),fill='#2b5148')
  for j in range(10):
   n=round(a+(b-a)*j/9);rr=shots[i-1][n-s['at']][film.CAST.index(role)]
