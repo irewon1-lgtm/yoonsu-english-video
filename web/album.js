@@ -8,6 +8,7 @@ const episodes = [
   { id: "number-friends", title: "안녕, 넘버랜드!" },
   { id: "christmas-star", title: "크리스마스 별" },
   { id: "wash-day", title: "뽀득뽀득 씻기 클럽" },
+  { id: "small-star", title: "윤수 방의 작은 별" },
 ];
 
 const slotsPerPage = 6;

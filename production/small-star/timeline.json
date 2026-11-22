@@ -1,0 +1,1906 @@
+{
+  "fps": 24,
+  "frames": 3456,
+  "opening": 78,
+  "ending": 76,
+  "scenes": [
+    {
+      "i": 0,
+      "start": 78,
+      "end": 220,
+      "role": "S",
+      "line": "We're at Yoonsu's house.",
+      "action": "enter"
+    },
+    {
+      "i": 1,
+      "start": 220,
+      "end": 455,
+      "role": "Y",
+      "line": "My room!",
+      "action": "room",
+      "target": true
+    },
+    {
+      "i": 2,
+      "start": 455,
+      "end": 697,
+      "role": "S",
+      "line": "Look over here.",
+      "action": "room",
+      "target": true
+    },
+    {
+      "i": 3,
+      "start": 697,
+      "end": 942,
+      "role": "1",
+      "line": "A big window.",
+      "action": "window",
+      "target": true
+    },
+    {
+      "i": 4,
+      "start": 942,
+      "end": 1189,
+      "role": "Y",
+      "line": "I see lights.",
+      "action": "outside",
+      "target": true
+    },
+    {
+      "i": 5,
+      "start": 1189,
+      "end": 1431,
+      "role": "2",
+      "line": "A soft bed.",
+      "action": "bed",
+      "target": true
+    },
+    {
+      "i": 6,
+      "start": 1431,
+      "end": 1676,
+      "role": "Y",
+      "line": "My blanket.",
+      "action": "blanket",
+      "target": true
+    },
+    {
+      "i": 7,
+      "start": 1676,
+      "end": 1759,
+      "role": "S",
+      "line": "Where's the star?",
+      "action": "search"
+    },
+    {
+      "i": 8,
+      "start": 1759,
+      "end": 1992,
+      "role": "1",
+      "line": "Look up!",
+      "action": "look",
+      "target": true
+    },
+    {
+      "i": 9,
+      "start": 1992,
+      "end": 2242,
+      "role": "Y",
+      "line": "A cloud lamp.",
+      "action": "cloud",
+      "target": true
+    },
+    {
+      "i": 10,
+      "start": 2242,
+      "end": 2477,
+      "role": "2",
+      "line": "I see it!",
+      "action": "found",
+      "target": true
+    },
+    {
+      "i": 11,
+      "start": 2477,
+      "end": 2565,
+      "role": "S",
+      "line": "Nice work, friends.",
+      "action": "found"
+    },
+    {
+      "i": 12,
+      "start": 2565,
+      "end": 2808,
+      "role": "Y",
+      "line": "I'm sleepy.",
+      "action": "sleepy",
+      "target": true
+    },
+    {
+      "i": 13,
+      "start": 2808,
+      "end": 3044,
+      "role": "1",
+      "line": "Good night!",
+      "action": "bye",
+      "target": true
+    },
+    {
+      "i": 14,
+      "start": 3044,
+      "end": 3287,
+      "role": "Y",
+      "line": "See you soon!",
+      "action": "exit",
+      "target": true
+    },
+    {
+      "i": 15,
+      "start": 3287,
+      "end": 3380,
+      "role": "S",
+      "line": "Sweet dreams, Yoonsu.",
+      "action": "end"
+    }
+  ],
+  "dialogue": [
+    {
+      "wav": "00",
+      "role": "S",
+      "line": "We're at Yoonsu's house.",
+      "kind": "lead",
+      "start": 148,
+      "end": 184,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.06,
+          "value": "X"
+        },
+        {
+          "start": 0.06,
+          "end": 0.12,
+          "value": "F"
+        },
+        {
+          "start": 0.12,
+          "end": 0.18,
+          "value": "E"
+        },
+        {
+          "start": 0.18,
+          "end": 0.25,
+          "value": "B"
+        },
+        {
+          "start": 0.25,
+          "end": 0.86,
+          "value": "F"
+        },
+        {
+          "start": 0.86,
+          "end": 0.91,
+          "value": "E"
+        },
+        {
+          "start": 0.91,
+          "end": 1.09,
+          "value": "C"
+        },
+        {
+          "start": 1.09,
+          "end": 1.23,
+          "value": "E"
+        },
+        {
+          "start": 1.23,
+          "end": 1.37,
+          "value": "B"
+        },
+        {
+          "start": 1.37,
+          "end": 1.46,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "01",
+      "role": "Y",
+      "line": "My room!",
+      "kind": "lead",
+      "start": 249,
+      "end": 269,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.33,
+          "value": "B"
+        },
+        {
+          "start": 0.33,
+          "end": 0.54,
+          "value": "F"
+        },
+        {
+          "start": 0.54,
+          "end": 0.63,
+          "value": "A"
+        },
+        {
+          "start": 0.63,
+          "end": 0.8,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 281,
+      "end": 311,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "01",
+      "role": "Y",
+      "line": "My room!",
+      "kind": "repeat",
+      "start": 323,
+      "end": 343,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.33,
+          "value": "B"
+        },
+        {
+          "start": 0.33,
+          "end": 0.54,
+          "value": "F"
+        },
+        {
+          "start": 0.54,
+          "end": 0.63,
+          "value": "A"
+        },
+        {
+          "start": 0.63,
+          "end": 0.8,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "02",
+      "role": "S",
+      "line": "Look over here.",
+      "kind": "lead",
+      "start": 485,
+      "end": 508,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.16,
+          "value": "F"
+        },
+        {
+          "start": 0.16,
+          "end": 0.3,
+          "value": "E"
+        },
+        {
+          "start": 0.3,
+          "end": 0.37,
+          "value": "G"
+        },
+        {
+          "start": 0.37,
+          "end": 0.79,
+          "value": "B"
+        },
+        {
+          "start": 0.79,
+          "end": 0.95,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 520,
+      "end": 550,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "02",
+      "role": "S",
+      "line": "Look over here.",
+      "kind": "repeat",
+      "start": 562,
+      "end": 585,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.16,
+          "value": "F"
+        },
+        {
+          "start": 0.16,
+          "end": 0.3,
+          "value": "E"
+        },
+        {
+          "start": 0.3,
+          "end": 0.37,
+          "value": "G"
+        },
+        {
+          "start": 0.37,
+          "end": 0.79,
+          "value": "B"
+        },
+        {
+          "start": 0.79,
+          "end": 0.95,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "03",
+      "role": "1",
+      "line": "A big window.",
+      "kind": "lead",
+      "start": 726,
+      "end": 751,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.01,
+          "value": "X"
+        },
+        {
+          "start": 0.01,
+          "end": 0.07,
+          "value": "C"
+        },
+        {
+          "start": 0.07,
+          "end": 0.12,
+          "value": "A"
+        },
+        {
+          "start": 0.12,
+          "end": 0.61,
+          "value": "B"
+        },
+        {
+          "start": 0.61,
+          "end": 0.82,
+          "value": "E"
+        },
+        {
+          "start": 0.82,
+          "end": 0.89,
+          "value": "F"
+        },
+        {
+          "start": 0.89,
+          "end": 1.03,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 763,
+      "end": 793,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "03",
+      "role": "1",
+      "line": "A big window.",
+      "kind": "repeat",
+      "start": 805,
+      "end": 830,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.01,
+          "value": "X"
+        },
+        {
+          "start": 0.01,
+          "end": 0.07,
+          "value": "C"
+        },
+        {
+          "start": 0.07,
+          "end": 0.12,
+          "value": "A"
+        },
+        {
+          "start": 0.12,
+          "end": 0.61,
+          "value": "B"
+        },
+        {
+          "start": 0.61,
+          "end": 0.82,
+          "value": "E"
+        },
+        {
+          "start": 0.82,
+          "end": 0.89,
+          "value": "F"
+        },
+        {
+          "start": 0.89,
+          "end": 1.03,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "04",
+      "role": "Y",
+      "line": "I see lights.",
+      "kind": "lead",
+      "start": 971,
+      "end": 997,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.06,
+          "value": "X"
+        },
+        {
+          "start": 0.06,
+          "end": 0.18,
+          "value": "D"
+        },
+        {
+          "start": 0.18,
+          "end": 0.46,
+          "value": "B"
+        },
+        {
+          "start": 0.46,
+          "end": 0.53,
+          "value": "H"
+        },
+        {
+          "start": 0.53,
+          "end": 0.6,
+          "value": "D"
+        },
+        {
+          "start": 0.6,
+          "end": 0.95,
+          "value": "B"
+        },
+        {
+          "start": 0.95,
+          "end": 1.05,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 1009,
+      "end": 1039,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "04",
+      "role": "Y",
+      "line": "I see lights.",
+      "kind": "repeat",
+      "start": 1051,
+      "end": 1077,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.06,
+          "value": "X"
+        },
+        {
+          "start": 0.06,
+          "end": 0.18,
+          "value": "D"
+        },
+        {
+          "start": 0.18,
+          "end": 0.46,
+          "value": "B"
+        },
+        {
+          "start": 0.46,
+          "end": 0.53,
+          "value": "H"
+        },
+        {
+          "start": 0.53,
+          "end": 0.6,
+          "value": "D"
+        },
+        {
+          "start": 0.6,
+          "end": 0.95,
+          "value": "B"
+        },
+        {
+          "start": 0.95,
+          "end": 1.05,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "05",
+      "role": "2",
+      "line": "A soft bed.",
+      "kind": "lead",
+      "start": 1219,
+      "end": 1242,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.19,
+          "value": "B"
+        },
+        {
+          "start": 0.19,
+          "end": 0.33,
+          "value": "E"
+        },
+        {
+          "start": 0.33,
+          "end": 0.41,
+          "value": "A"
+        },
+        {
+          "start": 0.41,
+          "end": 0.57,
+          "value": "C"
+        },
+        {
+          "start": 0.57,
+          "end": 0.78,
+          "value": "B"
+        },
+        {
+          "start": 0.78,
+          "end": 0.95,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 1254,
+      "end": 1284,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "05",
+      "role": "2",
+      "line": "A soft bed.",
+      "kind": "repeat",
+      "start": 1296,
+      "end": 1319,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.19,
+          "value": "B"
+        },
+        {
+          "start": 0.19,
+          "end": 0.33,
+          "value": "E"
+        },
+        {
+          "start": 0.33,
+          "end": 0.41,
+          "value": "A"
+        },
+        {
+          "start": 0.41,
+          "end": 0.57,
+          "value": "C"
+        },
+        {
+          "start": 0.57,
+          "end": 0.78,
+          "value": "B"
+        },
+        {
+          "start": 0.78,
+          "end": 0.95,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "06",
+      "role": "Y",
+      "line": "My blanket.",
+      "kind": "lead",
+      "start": 1460,
+      "end": 1485,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.04,
+          "value": "X"
+        },
+        {
+          "start": 0.04,
+          "end": 0.14,
+          "value": "A"
+        },
+        {
+          "start": 0.14,
+          "end": 0.22,
+          "value": "C"
+        },
+        {
+          "start": 0.22,
+          "end": 0.3,
+          "value": "A"
+        },
+        {
+          "start": 0.3,
+          "end": 0.44,
+          "value": "H"
+        },
+        {
+          "start": 0.44,
+          "end": 0.51,
+          "value": "C"
+        },
+        {
+          "start": 0.51,
+          "end": 0.93,
+          "value": "B"
+        },
+        {
+          "start": 0.93,
+          "end": 1.03,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 1497,
+      "end": 1527,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "06",
+      "role": "Y",
+      "line": "My blanket.",
+      "kind": "repeat",
+      "start": 1539,
+      "end": 1564,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.04,
+          "value": "X"
+        },
+        {
+          "start": 0.04,
+          "end": 0.14,
+          "value": "A"
+        },
+        {
+          "start": 0.14,
+          "end": 0.22,
+          "value": "C"
+        },
+        {
+          "start": 0.22,
+          "end": 0.3,
+          "value": "A"
+        },
+        {
+          "start": 0.3,
+          "end": 0.44,
+          "value": "H"
+        },
+        {
+          "start": 0.44,
+          "end": 0.51,
+          "value": "C"
+        },
+        {
+          "start": 0.51,
+          "end": 0.93,
+          "value": "B"
+        },
+        {
+          "start": 0.93,
+          "end": 1.03,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "07",
+      "role": "S",
+      "line": "Where's the star?",
+      "kind": "lead",
+      "start": 1703,
+      "end": 1728,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.06,
+          "value": "X"
+        },
+        {
+          "start": 0.06,
+          "end": 0.1,
+          "value": "F"
+        },
+        {
+          "start": 0.1,
+          "end": 0.21,
+          "value": "C"
+        },
+        {
+          "start": 0.21,
+          "end": 0.49,
+          "value": "B"
+        },
+        {
+          "start": 0.49,
+          "end": 0.77,
+          "value": "D"
+        },
+        {
+          "start": 0.77,
+          "end": 0.91,
+          "value": "B"
+        },
+        {
+          "start": 0.91,
+          "end": 1.02,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "08",
+      "role": "1",
+      "line": "Look up!",
+      "kind": "lead",
+      "start": 1788,
+      "end": 1807,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.15,
+          "value": "F"
+        },
+        {
+          "start": 0.15,
+          "end": 0.29,
+          "value": "D"
+        },
+        {
+          "start": 0.29,
+          "end": 0.36,
+          "value": "C"
+        },
+        {
+          "start": 0.36,
+          "end": 0.57,
+          "value": "A"
+        },
+        {
+          "start": 0.57,
+          "end": 0.78,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 1819,
+      "end": 1849,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "08",
+      "role": "1",
+      "line": "Look up!",
+      "kind": "repeat",
+      "start": 1861,
+      "end": 1880,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.15,
+          "value": "F"
+        },
+        {
+          "start": 0.15,
+          "end": 0.29,
+          "value": "D"
+        },
+        {
+          "start": 0.29,
+          "end": 0.36,
+          "value": "C"
+        },
+        {
+          "start": 0.36,
+          "end": 0.57,
+          "value": "A"
+        },
+        {
+          "start": 0.57,
+          "end": 0.78,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "09",
+      "role": "Y",
+      "line": "A cloud lamp.",
+      "kind": "lead",
+      "start": 2030,
+      "end": 2057,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.36,
+          "value": "C"
+        },
+        {
+          "start": 0.36,
+          "end": 0.78,
+          "value": "B"
+        },
+        {
+          "start": 0.78,
+          "end": 0.89,
+          "value": "A"
+        },
+        {
+          "start": 0.89,
+          "end": 1.01,
+          "value": "B"
+        },
+        {
+          "start": 1.01,
+          "end": 1.09,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 2069,
+      "end": 2099,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "09",
+      "role": "Y",
+      "line": "A cloud lamp.",
+      "kind": "repeat",
+      "start": 2111,
+      "end": 2138,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.36,
+          "value": "C"
+        },
+        {
+          "start": 0.36,
+          "end": 0.78,
+          "value": "B"
+        },
+        {
+          "start": 0.78,
+          "end": 0.89,
+          "value": "A"
+        },
+        {
+          "start": 0.89,
+          "end": 1.01,
+          "value": "B"
+        },
+        {
+          "start": 1.01,
+          "end": 1.09,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "10",
+      "role": "2",
+      "line": "I see it!",
+      "kind": "lead",
+      "start": 2271,
+      "end": 2291,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.12,
+          "value": "C"
+        },
+        {
+          "start": 0.12,
+          "end": 0.68,
+          "value": "B"
+        },
+        {
+          "start": 0.68,
+          "end": 0.83,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 2303,
+      "end": 2333,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "10",
+      "role": "2",
+      "line": "I see it!",
+      "kind": "repeat",
+      "start": 2345,
+      "end": 2365,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.12,
+          "value": "C"
+        },
+        {
+          "start": 0.12,
+          "end": 0.68,
+          "value": "B"
+        },
+        {
+          "start": 0.68,
+          "end": 0.83,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "11",
+      "role": "S",
+      "line": "Nice work, friends.",
+      "kind": "lead",
+      "start": 2504,
+      "end": 2534,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.2,
+          "value": "C"
+        },
+        {
+          "start": 0.2,
+          "end": 0.34,
+          "value": "B"
+        },
+        {
+          "start": 0.34,
+          "end": 0.41,
+          "value": "F"
+        },
+        {
+          "start": 0.41,
+          "end": 0.55,
+          "value": "E"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "C"
+        },
+        {
+          "start": 0.62,
+          "end": 0.69,
+          "value": "G"
+        },
+        {
+          "start": 0.69,
+          "end": 0.76,
+          "value": "B"
+        },
+        {
+          "start": 0.76,
+          "end": 0.9,
+          "value": "C"
+        },
+        {
+          "start": 0.9,
+          "end": 1.11,
+          "value": "B"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "12",
+      "role": "Y",
+      "line": "I'm sleepy.",
+      "kind": "lead",
+      "start": 2594,
+      "end": 2618,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.04,
+          "value": "X"
+        },
+        {
+          "start": 0.04,
+          "end": 0.15,
+          "value": "C"
+        },
+        {
+          "start": 0.15,
+          "end": 0.22,
+          "value": "B"
+        },
+        {
+          "start": 0.22,
+          "end": 0.3,
+          "value": "A"
+        },
+        {
+          "start": 0.3,
+          "end": 0.51,
+          "value": "B"
+        },
+        {
+          "start": 0.51,
+          "end": 0.59,
+          "value": "A"
+        },
+        {
+          "start": 0.59,
+          "end": 0.88,
+          "value": "B"
+        },
+        {
+          "start": 0.88,
+          "end": 0.98,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 2630,
+      "end": 2660,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "12",
+      "role": "Y",
+      "line": "I'm sleepy.",
+      "kind": "repeat",
+      "start": 2672,
+      "end": 2696,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.04,
+          "value": "X"
+        },
+        {
+          "start": 0.04,
+          "end": 0.15,
+          "value": "C"
+        },
+        {
+          "start": 0.15,
+          "end": 0.22,
+          "value": "B"
+        },
+        {
+          "start": 0.22,
+          "end": 0.3,
+          "value": "A"
+        },
+        {
+          "start": 0.3,
+          "end": 0.51,
+          "value": "B"
+        },
+        {
+          "start": 0.51,
+          "end": 0.59,
+          "value": "A"
+        },
+        {
+          "start": 0.59,
+          "end": 0.88,
+          "value": "B"
+        },
+        {
+          "start": 0.88,
+          "end": 0.98,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "13",
+      "role": "1",
+      "line": "Good night!",
+      "kind": "lead",
+      "start": 2838,
+      "end": 2858,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.01,
+          "value": "X"
+        },
+        {
+          "start": 0.01,
+          "end": 0.12,
+          "value": "F"
+        },
+        {
+          "start": 0.12,
+          "end": 0.19,
+          "value": "B"
+        },
+        {
+          "start": 0.19,
+          "end": 0.4,
+          "value": "C"
+        },
+        {
+          "start": 0.4,
+          "end": 0.75,
+          "value": "B"
+        },
+        {
+          "start": 0.75,
+          "end": 0.83,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 2870,
+      "end": 2900,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "13",
+      "role": "1",
+      "line": "Good night!",
+      "kind": "repeat",
+      "start": 2912,
+      "end": 2932,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.01,
+          "value": "X"
+        },
+        {
+          "start": 0.01,
+          "end": 0.12,
+          "value": "F"
+        },
+        {
+          "start": 0.12,
+          "end": 0.19,
+          "value": "B"
+        },
+        {
+          "start": 0.19,
+          "end": 0.4,
+          "value": "C"
+        },
+        {
+          "start": 0.4,
+          "end": 0.75,
+          "value": "B"
+        },
+        {
+          "start": 0.75,
+          "end": 0.83,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "14",
+      "role": "Y",
+      "line": "See you soon!",
+      "kind": "lead",
+      "start": 3073,
+      "end": 3097,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.04,
+          "value": "X"
+        },
+        {
+          "start": 0.04,
+          "end": 0.26,
+          "value": "B"
+        },
+        {
+          "start": 0.26,
+          "end": 0.89,
+          "value": "F"
+        },
+        {
+          "start": 0.89,
+          "end": 0.99,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "cue",
+      "role": "S",
+      "line": "Yoonsu, your turn!",
+      "kind": "cue",
+      "start": 3109,
+      "end": 3139,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.55,
+          "value": "F"
+        },
+        {
+          "start": 0.55,
+          "end": 0.62,
+          "value": "B"
+        },
+        {
+          "start": 0.62,
+          "end": 0.97,
+          "value": "E"
+        },
+        {
+          "start": 0.97,
+          "end": 1.11,
+          "value": "C"
+        },
+        {
+          "start": 1.11,
+          "end": 1.21,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "14",
+      "role": "Y",
+      "line": "See you soon!",
+      "kind": "repeat",
+      "start": 3151,
+      "end": 3175,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.04,
+          "value": "X"
+        },
+        {
+          "start": 0.04,
+          "end": 0.26,
+          "value": "B"
+        },
+        {
+          "start": 0.26,
+          "end": 0.89,
+          "value": "F"
+        },
+        {
+          "start": 0.89,
+          "end": 0.99,
+          "value": "X"
+        }
+      ]
+    },
+    {
+      "wav": "15",
+      "role": "S",
+      "line": "Sweet dreams, Yoonsu.",
+      "kind": "lead",
+      "start": 3314,
+      "end": 3349,
+      "shapes": [
+        {
+          "start": 0.0,
+          "end": 0.05,
+          "value": "X"
+        },
+        {
+          "start": 0.05,
+          "end": 0.13,
+          "value": "B"
+        },
+        {
+          "start": 0.13,
+          "end": 0.2,
+          "value": "F"
+        },
+        {
+          "start": 0.2,
+          "end": 0.55,
+          "value": "B"
+        },
+        {
+          "start": 0.55,
+          "end": 0.64,
+          "value": "A"
+        },
+        {
+          "start": 0.64,
+          "end": 1.33,
+          "value": "F"
+        },
+        {
+          "start": 1.33,
+          "end": 1.44,
+          "value": "X"
+        }
+      ]
+    }
+  ],
+  "episode": {
+    "id": "small-star",
+    "title": "윤수 방의 작은 별",
+    "turns": [
+      [
+        14.583333,
+        17.583333,
+        "My room!"
+      ],
+      [
+        24.666667,
+        27.666667,
+        "Look over here."
+      ],
+      [
+        34.875,
+        37.875,
+        "A big window."
+      ],
+      [
+        45.166667,
+        48.166667,
+        "I see lights."
+      ],
+      [
+        55.25,
+        58.25,
+        "A soft bed."
+      ],
+      [
+        65.458333,
+        68.458333,
+        "My blanket."
+      ],
+      [
+        78.625,
+        81.625,
+        "Look up!"
+      ],
+      [
+        89.375,
+        92.375,
+        "A cloud lamp."
+      ],
+      [
+        98.833333,
+        101.833333,
+        "I see it!"
+      ],
+      [
+        112.625,
+        115.625,
+        "I'm sleepy."
+      ],
+      [
+        122.458333,
+        125.458333,
+        "Good night!"
+      ],
+      [
+        132.583333,
+        135.583333,
+        "See you soon!"
+      ]
+    ],
+    "repeatStarts": [
+      13.458333,
+      23.416667,
+      33.541667,
+      43.791667,
+      54.0,
+      64.125,
+      77.541667,
+      87.958333,
+      97.708333,
+      111.333333,
+      121.333333,
+      131.291667
+    ],
+    "hints": {}
+  }
+}

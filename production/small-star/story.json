@@ -1,0 +1,18 @@
+[
+  {"role":"S","line":"We're at Yoonsu's house.","action":"enter"},
+  {"role":"Y","line":"My room!","action":"room","target":true},
+  {"role":"S","line":"Look over here.","action":"room","target":true},
+  {"role":"1","line":"A big window.","action":"window","target":true},
+  {"role":"Y","line":"I see lights.","action":"outside","target":true},
+  {"role":"2","line":"A soft bed.","action":"bed","target":true},
+  {"role":"Y","line":"My blanket.","action":"blanket","target":true},
+  {"role":"S","line":"Where's the star?","action":"search"},
+  {"role":"1","line":"Look up!","action":"look","target":true},
+  {"role":"Y","line":"A cloud lamp.","action":"cloud","target":true},
+  {"role":"2","line":"I see it!","action":"found","target":true},
+  {"role":"S","line":"Nice work, friends.","action":"found"},
+  {"role":"Y","line":"I'm sleepy.","action":"sleepy","target":true},
+  {"role":"1","line":"Good night!","action":"bye","target":true},
+  {"role":"Y","line":"See you soon!","action":"exit","target":true},
+  {"role":"S","line":"Sweet dreams, Yoonsu.","action":"end"}
+]
