@@ -1,0 +1,1555 @@
+{
+  "title": "윤수의 놀이터 대작전",
+  "en": "Playground Pals",
+  "fps": 24,
+  "scenes": [
+    {
+      "id": "s01",
+      "chapter": "gate",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q1",
+          "role": "sheriff",
+          "en": "Who wants to play at the park?",
+          "ko": "놀이터에서 같이 놀 사람?"
+        },
+        {
+          "id": "m1",
+          "role": "three",
+          "en": "Let's play together!",
+          "ko": "우리 함께 놀자!"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m1",
+          "role": "three",
+          "en": "Let's play together!",
+          "ko": "우리 함께 놀자!"
+        },
+        {
+          "id": "p1",
+          "role": "pause",
+          "en": "Let's play together!",
+          "ko": "우리 함께 놀자!"
+        },
+        {
+          "id": "e1",
+          "role": "three",
+          "en": "All five of us are here!",
+          "ko": "우리 다섯이 다 모였어!"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "chapter": "gate",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q2",
+          "role": "one",
+          "en": "Where shall I wait for you?",
+          "ko": "어디에서 기다릴까?"
+        },
+        {
+          "id": "m2",
+          "role": "sheriff",
+          "en": "Wait right here.",
+          "ko": "바로 여기서 기다려."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m2",
+          "role": "sheriff",
+          "en": "Wait right here.",
+          "ko": "바로 여기서 기다려."
+        },
+        {
+          "id": "p2",
+          "role": "pause",
+          "en": "Wait right here.",
+          "ko": "바로 여기서 기다려."
+        },
+        {
+          "id": "e2",
+          "role": "one",
+          "en": "Right by the gate. Got it!",
+          "ko": "입구 옆이구나. 알겠어!"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "chapter": "gate",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q3",
+          "role": "two",
+          "en": "I can see the slide. Can you find it?",
+          "ko": "미끄럼틀이 보여. 너도 찾았니?"
+        },
+        {
+          "id": "m3",
+          "role": "y",
+          "en": "There's the slide!",
+          "ko": "저기 미끄럼틀이다!"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m3",
+          "role": "y",
+          "en": "There's the slide!",
+          "ko": "저기 미끄럼틀이다!"
+        },
+        {
+          "id": "p3",
+          "role": "pause",
+          "en": "There's the slide!",
+          "ko": "저기 미끄럼틀이다!"
+        },
+        {
+          "id": "e3",
+          "role": "two",
+          "en": "That blue slide is tall!",
+          "ko": "파란 미끄럼틀이 높다!"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "chapter": "gate",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q4",
+          "role": "three",
+          "en": "Walk with me to the chalk path.",
+          "ko": "나랑 분필 길까지 걸어가자."
+        },
+        {
+          "id": "m4",
+          "role": "sheriff",
+          "en": "Follow my steps.",
+          "ko": "내 발걸음을 따라와."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m4",
+          "role": "sheriff",
+          "en": "Follow my steps.",
+          "ko": "내 발걸음을 따라와."
+        },
+        {
+          "id": "p4",
+          "role": "pause",
+          "en": "Follow my steps.",
+          "ko": "내 발걸음을 따라와."
+        },
+        {
+          "id": "e4",
+          "role": "three",
+          "en": "Small steps to start.",
+          "ko": "처음엔 작은 발걸음으로."
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "chapter": "gate",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q5",
+          "role": "sheriff",
+          "en": "One is still by the gate. What can we say?",
+          "ko": "원이 아직 입구에 있어. 뭐라고 부를까?"
+        },
+        {
+          "id": "m5",
+          "role": "three",
+          "en": "Come with us.",
+          "ko": "우리랑 같이 가자."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m5",
+          "role": "three",
+          "en": "Come with us.",
+          "ko": "우리랑 같이 가자."
+        },
+        {
+          "id": "p5",
+          "role": "pause",
+          "en": "Come with us.",
+          "ko": "우리랑 같이 가자."
+        },
+        {
+          "id": "e5",
+          "role": "one",
+          "en": "Here I come!",
+          "ko": "지금 갈게!"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "chapter": "gate",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q6",
+          "role": "y",
+          "en": "Three brought something round. What color is it?",
+          "ko": "쓰리가 동그란 걸 가져왔어. 무슨 색이지?"
+        },
+        {
+          "id": "m6",
+          "role": "y",
+          "en": "It's bright red.",
+          "ko": "선명한 빨간색이야."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m6",
+          "role": "y",
+          "en": "It's bright red.",
+          "ko": "선명한 빨간색이야."
+        },
+        {
+          "id": "p6",
+          "role": "pause",
+          "en": "It's bright red.",
+          "ko": "선명한 빨간색이야."
+        },
+        {
+          "id": "e6",
+          "role": "three",
+          "en": "It's our playground ball!",
+          "ko": "우리 놀이터 공이야!"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "chapter": "ball",
+      "seconds": 17,
+      "lines": [
+        {
+          "id": "q7",
+          "role": "one",
+          "en": "Who wants the first pass?",
+          "ko": "누가 먼저 공을 받을래?"
+        },
+        {
+          "id": "m7",
+          "role": "sheriff",
+          "en": "Pass it here.",
+          "ko": "이쪽으로 전달해 줘."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m7",
+          "role": "sheriff",
+          "en": "Pass it here.",
+          "ko": "이쪽으로 전달해 줘."
+        },
+        {
+          "id": "p7",
+          "role": "pause",
+          "en": "Pass it here.",
+          "ko": "이쪽으로 전달해 줘."
+        },
+        {
+          "id": "e7",
+          "role": "one",
+          "en": "Watch it roll toward you.",
+          "ko": "공이 네 쪽으로 굴러가."
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "chapter": "ball",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q8",
+          "role": "sheriff",
+          "en": "How can we send the ball along the ground?",
+          "ko": "공을 땅 위로 어떻게 보낼까?"
+        },
+        {
+          "id": "m8",
+          "role": "three",
+          "en": "Roll it gently.",
+          "ko": "살살 굴려 줘."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m8",
+          "role": "three",
+          "en": "Roll it gently.",
+          "ko": "살살 굴려 줘."
+        },
+        {
+          "id": "p8",
+          "role": "pause",
+          "en": "Roll it gently.",
+          "ko": "살살 굴려 줘."
+        },
+        {
+          "id": "e8",
+          "role": "two",
+          "en": "A gentle roll reaches me.",
+          "ko": "살살 굴리니 내게 닿네."
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "chapter": "ball",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q9",
+          "role": "two",
+          "en": "My hands are ready. Give me a signal.",
+          "ko": "두 손 준비됐어. 신호를 줘."
+        },
+        {
+          "id": "m9",
+          "role": "three",
+          "en": "Here it comes!",
+          "ko": "자, 공이 간다!"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m9",
+          "role": "three",
+          "en": "Here it comes!",
+          "ko": "자, 공이 간다!"
+        },
+        {
+          "id": "p9",
+          "role": "pause",
+          "en": "Here it comes!",
+          "ko": "자, 공이 간다!"
+        },
+        {
+          "id": "e9",
+          "role": "two",
+          "en": "I caught it with both hands.",
+          "ko": "두 손으로 받았어."
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "chapter": "ball",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q10",
+          "role": "three",
+          "en": "Can the ball bounce before One catches it?",
+          "ko": "원이 받기 전에 공을 튀겨 볼까?"
+        },
+        {
+          "id": "m10",
+          "role": "sheriff",
+          "en": "Bounce it once.",
+          "ko": "한 번 튀겨."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m10",
+          "role": "sheriff",
+          "en": "Bounce it once.",
+          "ko": "한 번 튀겨."
+        },
+        {
+          "id": "p10",
+          "role": "pause",
+          "en": "Bounce it once.",
+          "ko": "한 번 튀겨."
+        },
+        {
+          "id": "e10",
+          "role": "one",
+          "en": "One bounce, then a catch!",
+          "ko": "한 번 튀고 잡기!"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "chapter": "ball",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q11",
+          "role": "one",
+          "en": "The ball is getting away. Which way did it go?",
+          "ko": "공이 멀어졌어. 어디로 갔지?"
+        },
+        {
+          "id": "m11",
+          "role": "sheriff",
+          "en": "Look behind you.",
+          "ko": "네 뒤를 봐."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m11",
+          "role": "sheriff",
+          "en": "Look behind you.",
+          "ko": "네 뒤를 봐."
+        },
+        {
+          "id": "p11",
+          "role": "pause",
+          "en": "Look behind you.",
+          "ko": "네 뒤를 봐."
+        },
+        {
+          "id": "e11",
+          "role": "three",
+          "en": "There it is, beside the bench.",
+          "ko": "저기 벤치 옆에 있어."
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "chapter": "ball",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q12",
+          "role": "y",
+          "en": "We found the ball. Where should it go now?",
+          "ko": "공을 찾았어. 이제 어디로 보낼까?"
+        },
+        {
+          "id": "m12",
+          "role": "sheriff",
+          "en": "Roll it back.",
+          "ko": "다시 굴려 줘."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m12",
+          "role": "sheriff",
+          "en": "Roll it back.",
+          "ko": "다시 굴려 줘."
+        },
+        {
+          "id": "p12",
+          "role": "pause",
+          "en": "Roll it back.",
+          "ko": "다시 굴려 줘."
+        },
+        {
+          "id": "e12",
+          "role": "sheriff",
+          "en": "Back in our circle!",
+          "ko": "우리 놀이 자리로 돌아왔네!"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "chapter": "chalk",
+      "seconds": 20,
+      "lines": [
+        {
+          "id": "q13",
+          "role": "three",
+          "en": "I've drawn a game on the ground. What is it?",
+          "ko": "바닥에 놀이판을 그렸어. 뭘까?"
+        },
+        {
+          "id": "m13",
+          "role": "sheriff",
+          "en": "Let's play hopscotch.",
+          "ko": "사방치기 놀이하자."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m13",
+          "role": "sheriff",
+          "en": "Let's play hopscotch.",
+          "ko": "사방치기 놀이하자."
+        },
+        {
+          "id": "p13",
+          "role": "pause",
+          "en": "Let's play hopscotch.",
+          "ko": "사방치기 놀이하자."
+        },
+        {
+          "id": "e13",
+          "role": "three",
+          "en": "I drew three big squares.",
+          "ko": "큰 칸을 세 개 그렸어."
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "chapter": "chalk",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q14",
+          "role": "two",
+          "en": "Where does the first player stand?",
+          "ko": "첫 번째 친구는 어디에 설까?"
+        },
+        {
+          "id": "m14",
+          "role": "sheriff",
+          "en": "Start behind One.",
+          "ko": "원 뒤에서 시작해."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m14",
+          "role": "sheriff",
+          "en": "Start behind One.",
+          "ko": "원 뒤에서 시작해."
+        },
+        {
+          "id": "p14",
+          "role": "pause",
+          "en": "Start behind One.",
+          "ko": "원 뒤에서 시작해."
+        },
+        {
+          "id": "e14",
+          "role": "one",
+          "en": "My square is the first one.",
+          "ko": "내 칸이 첫 번째야."
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "chapter": "chalk",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q15",
+          "role": "one",
+          "en": "Can you hop on one foot?",
+          "ko": "한 발로 뛸 수 있어?"
+        },
+        {
+          "id": "m15",
+          "role": "three",
+          "en": "Hop like me.",
+          "ko": "나처럼 한 발로 뛰어."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m15",
+          "role": "three",
+          "en": "Hop like me.",
+          "ko": "나처럼 한 발로 뛰어."
+        },
+        {
+          "id": "p15",
+          "role": "pause",
+          "en": "Hop like me.",
+          "ko": "나처럼 한 발로 뛰어."
+        },
+        {
+          "id": "e15",
+          "role": "one",
+          "en": "I'll show you a little hop.",
+          "ko": "작게 뛰어 볼게."
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "chapter": "chalk",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q16",
+          "role": "sheriff",
+          "en": "The next space has room for both feet.",
+          "ko": "다음 칸에는 두 발을 놓을 수 있어."
+        },
+        {
+          "id": "m16",
+          "role": "three",
+          "en": "Land on two.",
+          "ko": "두 발로 착지해."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m16",
+          "role": "three",
+          "en": "Land on two.",
+          "ko": "두 발로 착지해."
+        },
+        {
+          "id": "p16",
+          "role": "pause",
+          "en": "Land on two.",
+          "ko": "두 발로 착지해."
+        },
+        {
+          "id": "e16",
+          "role": "two",
+          "en": "Both feet are on the chalk marks.",
+          "ko": "두 발이 분필 자국 위에 있어."
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "chapter": "chalk",
+      "seconds": 20,
+      "lines": [
+        {
+          "id": "q17",
+          "role": "three",
+          "en": "Listen to our chalk steps. Count with me!",
+          "ko": "분필 칸을 밟으며 같이 세어 보자!"
+        },
+        {
+          "id": "m17",
+          "role": "sheriff",
+          "en": "One, two, three!",
+          "ko": "하나, 둘, 셋!"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m17",
+          "role": "sheriff",
+          "en": "One, two, three!",
+          "ko": "하나, 둘, 셋!"
+        },
+        {
+          "id": "p17",
+          "role": "pause",
+          "en": "One, two, three!",
+          "ko": "하나, 둘, 셋!"
+        },
+        {
+          "id": "e17",
+          "role": "y",
+          "en": "Three squares, all in a row.",
+          "ko": "세 칸이 쭉 이어졌네."
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "chapter": "chalk",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q18",
+          "role": "two",
+          "en": "At the last square, how do we face home?",
+          "ko": "마지막 칸에서 어떻게 돌아갈까?"
+        },
+        {
+          "id": "m18",
+          "role": "y",
+          "en": "Turn around slowly.",
+          "ko": "천천히 돌아서."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m18",
+          "role": "y",
+          "en": "Turn around slowly.",
+          "ko": "천천히 돌아서."
+        },
+        {
+          "id": "p18",
+          "role": "pause",
+          "en": "Turn around slowly.",
+          "ko": "천천히 돌아서."
+        },
+        {
+          "id": "e18",
+          "role": "sheriff",
+          "en": "Now we can see our starting line.",
+          "ko": "이제 출발선이 보여."
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "chapter": "seek",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q19",
+          "role": "three",
+          "en": "Shall we try a hiding game?",
+          "ko": "숨는 놀이를 해 볼까?"
+        },
+        {
+          "id": "m19",
+          "role": "sheriff",
+          "en": "Let's hide now.",
+          "ko": "이제 숨자."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m19",
+          "role": "sheriff",
+          "en": "Let's hide now.",
+          "ko": "이제 숨자."
+        },
+        {
+          "id": "p19",
+          "role": "pause",
+          "en": "Let's hide now.",
+          "ko": "이제 숨자."
+        },
+        {
+          "id": "e19",
+          "role": "one",
+          "en": "You count, and I'll hide!",
+          "ko": "네가 세면 내가 숨을게!"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "chapter": "seek",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q20",
+          "role": "one",
+          "en": "How do you count without peeking?",
+          "ko": "엿보지 않고 어떻게 셀까?"
+        },
+        {
+          "id": "m20",
+          "role": "sheriff",
+          "en": "Close your eyes.",
+          "ko": "눈을 감아."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m20",
+          "role": "sheriff",
+          "en": "Close your eyes.",
+          "ko": "눈을 감아."
+        },
+        {
+          "id": "p20",
+          "role": "pause",
+          "en": "Close your eyes.",
+          "ko": "눈을 감아."
+        },
+        {
+          "id": "e20",
+          "role": "sheriff",
+          "en": "I'll stand beside the counter.",
+          "ko": "내가 술래 옆에 있을게."
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "chapter": "seek",
+      "seconds": 20,
+      "lines": [
+        {
+          "id": "q21",
+          "role": "two",
+          "en": "Who will count to ten with me?",
+          "ko": "누가 나랑 열까지 셀래?"
+        },
+        {
+          "id": "m21",
+          "role": "three",
+          "en": "Let’s count together.",
+          "ko": "같이 수를 세자."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m21",
+          "role": "three",
+          "en": "Let’s count together.",
+          "ko": "같이 수를 세자."
+        },
+        {
+          "id": "p21",
+          "role": "pause",
+          "en": "Let’s count together.",
+          "ko": "같이 수를 세자."
+        },
+        {
+          "id": "e21",
+          "role": "y",
+          "en": "One, two, three, four, five, six, seven, eight, nine, ten!",
+          "ko": "하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열!"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "chapter": "seek",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q22",
+          "role": "y",
+          "en": "I'm ready to look. Where is One?",
+          "ko": "이제 찾을 거야. 원은 어디 있지?"
+        },
+        {
+          "id": "m22",
+          "role": "sheriff",
+          "en": "Peek around here.",
+          "ko": "이쪽을 살펴봐."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m22",
+          "role": "sheriff",
+          "en": "Peek around here.",
+          "ko": "이쪽을 살펴봐."
+        },
+        {
+          "id": "p22",
+          "role": "pause",
+          "en": "Peek around here.",
+          "ko": "이쪽을 살펴봐."
+        },
+        {
+          "id": "e22",
+          "role": "two",
+          "en": "Look past the playhouse.",
+          "ko": "놀이집 너머를 봐."
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "chapter": "seek",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q23",
+          "role": "three",
+          "en": "Did you see a red corner by the playhouse?",
+          "ko": "놀이집 옆에 빨간 모서리가 보였어?"
+        },
+        {
+          "id": "m23",
+          "role": "sheriff",
+          "en": "I found One!",
+          "ko": "원을 찾았어!"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m23",
+          "role": "sheriff",
+          "en": "I found One!",
+          "ko": "원을 찾았어!"
+        },
+        {
+          "id": "p23",
+          "role": "pause",
+          "en": "I found One!",
+          "ko": "원을 찾았어!"
+        },
+        {
+          "id": "e23",
+          "role": "one",
+          "en": "You spotted my corner!",
+          "ko": "내 모서리를 알아봤네!"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "chapter": "seek",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q24",
+          "role": "one",
+          "en": "Everyone found me. Can I be the seeker?",
+          "ko": "모두 나를 찾았네. 이번에는 내가 술래 할까?"
+        },
+        {
+          "id": "m24",
+          "role": "y",
+          "en": "It's your turn.",
+          "ko": "이제 네 차례야."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m24",
+          "role": "y",
+          "en": "It's your turn.",
+          "ko": "이제 네 차례야."
+        },
+        {
+          "id": "p24",
+          "role": "pause",
+          "en": "It's your turn.",
+          "ko": "이제 네 차례야."
+        },
+        {
+          "id": "e24",
+          "role": "one",
+          "en": "I'll count while you hide.",
+          "ko": "너희가 숨는 동안 내가 셀게."
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "chapter": "slide",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q25",
+          "role": "sheriff",
+          "en": "Who wants to try the slide together?",
+          "ko": "누가 함께 미끄럼틀을 탈래?"
+        },
+        {
+          "id": "m25",
+          "role": "three",
+          "en": "Let's take turns.",
+          "ko": "차례를 지키자."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m25",
+          "role": "three",
+          "en": "Let's take turns.",
+          "ko": "차례를 지키자."
+        },
+        {
+          "id": "p25",
+          "role": "pause",
+          "en": "Let's take turns.",
+          "ko": "차례를 지키자."
+        },
+        {
+          "id": "e25",
+          "role": "two",
+          "en": "I'll wait behind Three.",
+          "ko": "쓰리 뒤에서 기다릴게."
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "chapter": "slide",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q26",
+          "role": "three",
+          "en": "Where does the line begin?",
+          "ko": "줄은 어디서 시작할까?"
+        },
+        {
+          "id": "m26",
+          "role": "sheriff",
+          "en": "Line up here.",
+          "ko": "여기 줄을 서."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m26",
+          "role": "sheriff",
+          "en": "Line up here.",
+          "ko": "여기 줄을 서."
+        },
+        {
+          "id": "p26",
+          "role": "pause",
+          "en": "Line up here.",
+          "ko": "여기 줄을 서."
+        },
+        {
+          "id": "e26",
+          "role": "one",
+          "en": "One, Two, Three, all in line!",
+          "ko": "원, 투, 쓰리, 모두 줄을 섰네!"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "chapter": "slide",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q27",
+          "role": "two",
+          "en": "One is first. What can we tell her?",
+          "ko": "원이 맨 앞이야. 뭐라고 해 줄까?"
+        },
+        {
+          "id": "m27",
+          "role": "three",
+          "en": "You go first.",
+          "ko": "네가 먼저 가."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m27",
+          "role": "three",
+          "en": "You go first.",
+          "ko": "네가 먼저 가."
+        },
+        {
+          "id": "p27",
+          "role": "pause",
+          "en": "You go first.",
+          "ko": "네가 먼저 가."
+        },
+        {
+          "id": "e27",
+          "role": "one",
+          "en": "Thank you! Here I go.",
+          "ko": "고마워! 나 먼저 갈게."
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "chapter": "slide",
+      "seconds": 17,
+      "lines": [
+        {
+          "id": "q28",
+          "role": "sheriff",
+          "en": "How should One sit at the top?",
+          "ko": "원은 꼭대기에 어떻게 앉을까?"
+        },
+        {
+          "id": "m28",
+          "role": "three",
+          "en": "Feet in front.",
+          "ko": "발을 앞으로 놓아."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m28",
+          "role": "three",
+          "en": "Feet in front.",
+          "ko": "발을 앞으로 놓아."
+        },
+        {
+          "id": "p28",
+          "role": "pause",
+          "en": "Feet in front.",
+          "ko": "발을 앞으로 놓아."
+        },
+        {
+          "id": "e28",
+          "role": "one",
+          "en": "I can see the bottom.",
+          "ko": "아래가 보여."
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "chapter": "slide",
+      "seconds": 17,
+      "lines": [
+        {
+          "id": "q29",
+          "role": "three",
+          "en": "Is the bottom clear now?",
+          "ko": "이제 아래에 아무도 없니?"
+        },
+        {
+          "id": "m29",
+          "role": "sheriff",
+          "en": "Down you go!",
+          "ko": "이제 내려가!"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m29",
+          "role": "sheriff",
+          "en": "Down you go!",
+          "ko": "이제 내려가!"
+        },
+        {
+          "id": "p29",
+          "role": "pause",
+          "en": "Down you go!",
+          "ko": "이제 내려가!"
+        },
+        {
+          "id": "e29",
+          "role": "one",
+          "en": "Whee! I'm at the bottom.",
+          "ko": "야호! 아래에 도착했어."
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "chapter": "slide",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q30",
+          "role": "one",
+          "en": "Where shall I go after sliding?",
+          "ko": "미끄럼틀을 탄 다음엔 어디로 갈까?"
+        },
+        {
+          "id": "m30",
+          "role": "sheriff",
+          "en": "Step this way.",
+          "ko": "이쪽으로 걸어와."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m30",
+          "role": "sheriff",
+          "en": "Step this way.",
+          "ko": "이쪽으로 걸어와."
+        },
+        {
+          "id": "p30",
+          "role": "pause",
+          "en": "Step this way.",
+          "ko": "이쪽으로 걸어와."
+        },
+        {
+          "id": "e30",
+          "role": "sheriff",
+          "en": "There's room for the next friend.",
+          "ko": "다음 친구가 내려올 자리가 생겼어."
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "chapter": "finish",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q31",
+          "role": "y",
+          "en": "We played so much. What do we need?",
+          "ko": "많이 놀았지. 이제 뭐가 필요할까?"
+        },
+        {
+          "id": "m31",
+          "role": "sheriff",
+          "en": "Let's drink water.",
+          "ko": "물을 마시자."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m31",
+          "role": "sheriff",
+          "en": "Let's drink water.",
+          "ko": "물을 마시자."
+        },
+        {
+          "id": "p31",
+          "role": "pause",
+          "en": "Let's drink water.",
+          "ko": "물을 마시자."
+        },
+        {
+          "id": "e31",
+          "role": "two",
+          "en": "My water bottle is here.",
+          "ko": "내 물병 여기 있어."
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "chapter": "finish",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q32",
+          "role": "three",
+          "en": "Which game would you like one more time?",
+          "ko": "어느 놀이를 한 번 더 해 볼까?"
+        },
+        {
+          "id": "m32",
+          "role": "sheriff",
+          "en": "Roll once more.",
+          "ko": "한 번 더 굴려."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m32",
+          "role": "sheriff",
+          "en": "Roll once more.",
+          "ko": "한 번 더 굴려."
+        },
+        {
+          "id": "p32",
+          "role": "pause",
+          "en": "Roll once more.",
+          "ko": "한 번 더 굴려."
+        },
+        {
+          "id": "e32",
+          "role": "one",
+          "en": "The red ball is ready.",
+          "ko": "빨간 공 준비됐어."
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "chapter": "finish",
+      "seconds": 17,
+      "lines": [
+        {
+          "id": "q33",
+          "role": "two",
+          "en": "Can I join the last round?",
+          "ko": "마지막 놀이에 나도 껴도 될까?"
+        },
+        {
+          "id": "m33",
+          "role": "y",
+          "en": "There's room here.",
+          "ko": "여기 자리가 있어."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m33",
+          "role": "y",
+          "en": "There's room here.",
+          "ko": "여기 자리가 있어."
+        },
+        {
+          "id": "p33",
+          "role": "pause",
+          "en": "There's room here.",
+          "ko": "여기 자리가 있어."
+        },
+        {
+          "id": "e33",
+          "role": "two",
+          "en": "Thank you for making space.",
+          "ko": "자리를 만들어 줘서 고마워."
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "chapter": "finish",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q34",
+          "role": "sheriff",
+          "en": "The ball belongs in our basket now.",
+          "ko": "이제 공을 바구니에 담아 두자."
+        },
+        {
+          "id": "m34",
+          "role": "three",
+          "en": "Put it inside.",
+          "ko": "그 안에 넣어."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m34",
+          "role": "three",
+          "en": "Put it inside.",
+          "ko": "그 안에 넣어."
+        },
+        {
+          "id": "p34",
+          "role": "pause",
+          "en": "Put it inside.",
+          "ko": "그 안에 넣어."
+        },
+        {
+          "id": "e34",
+          "role": "three",
+          "en": "The ball is safe for next time.",
+          "ko": "다음에도 공을 쓸 수 있겠다."
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "chapter": "finish",
+      "seconds": 18,
+      "lines": [
+        {
+          "id": "q35",
+          "role": "one",
+          "en": "What can we say to our playmates?",
+          "ko": "함께 논 친구들에게 뭐라고 할까?"
+        },
+        {
+          "id": "m35",
+          "role": "sheriff",
+          "en": "Thanks for playing.",
+          "ko": "같이 놀아줘서 고마워."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m35",
+          "role": "sheriff",
+          "en": "Thanks for playing.",
+          "ko": "같이 놀아줘서 고마워."
+        },
+        {
+          "id": "p35",
+          "role": "pause",
+          "en": "Thanks for playing.",
+          "ko": "같이 놀아줘서 고마워."
+        },
+        {
+          "id": "e35",
+          "role": "sheriff",
+          "en": "I loved playing with all of you.",
+          "ko": "모두와 같이 놀아서 즐거웠어."
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "chapter": "finish",
+      "seconds": 19,
+      "lines": [
+        {
+          "id": "q36",
+          "role": "three",
+          "en": "Will we meet at the park again?",
+          "ko": "놀이터에서 다시 만날까?"
+        },
+        {
+          "id": "m36",
+          "role": "sheriff",
+          "en": "See you tomorrow!",
+          "ko": "내일 또 만나!"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "m36",
+          "role": "sheriff",
+          "en": "See you tomorrow!",
+          "ko": "내일 또 만나!"
+        },
+        {
+          "id": "p36",
+          "role": "pause",
+          "en": "See you tomorrow!",
+          "ko": "내일 또 만나!"
+        },
+        {
+          "id": "e36",
+          "role": "y",
+          "en": "Same playground, same friends!",
+          "ko": "같은 놀이터에서 친구들과 또 만나자!"
+        }
+      ]
+    }
+  ]
+}
