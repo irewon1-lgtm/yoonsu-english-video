@@ -106,7 +106,7 @@ def check():
                 episodes += (("wash-day", 12),)
             if (root / "episodes/small-star/data.js").is_file():
                 episodes += (("small-star", 12),)
-            episodes += (("morning-daycare", 15), ("open-class", 4))
+            episodes += (("morning-daycare", 15), ("open-class", 12))
             test_episode = os.environ.get("ALBUM_TEST_EPISODE")
             exercise_mic = test_episode or "rainbow"
             for slug, count in episodes:

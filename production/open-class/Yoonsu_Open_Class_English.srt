@@ -11,229 +11,357 @@ It’s our English class!
 Welcome, families! Come on in.
 
 4
-00:00:12,917 --> 00:00:15,750
-Children up front. Grown-ups behind.
+00:00:12,792 --> 00:00:14,875
+Good morning, everyone!
 
 5
-00:00:16,833 --> 00:00:18,750
-Sit with us, Yoonsu!
+00:00:15,208 --> 00:00:16,750
+Yoonsu, your turn.
 
 6
-00:00:19,833 --> 00:00:21,625
-I’ll watch from here.
+00:00:17,125 --> 00:00:19,208
+Good morning, everyone!
 
 7
-00:00:24,792 --> 00:00:26,375
-Look at this picture.
-
-8
-00:00:27,458 --> 00:00:29,417
-What do you see?
-
-9
-00:00:30,500 --> 00:00:31,750
-It’s a sun!
-
-10
-00:00:32,833 --> 00:00:34,958
-Yes! A bright yellow sun.
-
-11
-00:00:36,792 --> 00:00:38,500
-I know that word.
-
-12
-00:00:39,583 --> 00:00:41,458
-But I feel shy.
-
-13
-00:00:42,542 --> 00:00:45,917
-That’s okay. I feel shy sometimes, too.
-
-14
-00:00:48,792 --> 00:00:50,917
-Let’s take one slow breath.
-
-15
-00:00:51,500 --> 00:00:54,167
-You can start with one sentence.
-
-16
-00:00:54,750 --> 00:00:56,167
-Can I try?
-
-17
-00:00:56,750 --> 00:00:59,958
-Yes. You can ask just like that.
-
-18
-00:01:01,708 --> 00:01:03,208
-Can I try?
-
-19
-00:01:03,375 --> 00:01:04,917
-Yoonsu, your turn.
-
-20
-00:01:05,083 --> 00:01:06,583
-Can I try?
-
-21
-00:01:10,917 --> 00:01:13,583
-You did it. I heard you.
-
-22
-00:01:14,792 --> 00:01:16,875
-Here comes the next picture.
-
-23
-00:01:17,792 --> 00:01:19,542
-What shape is this?
-
-24
-00:01:20,458 --> 00:01:22,333
-I know this one.
-
-25
-00:01:23,250 --> 00:01:25,000
-Ready? Raise your hand.
-
-26
-00:01:28,250 --> 00:01:29,667
-Can I try?
-
-27
-00:01:30,458 --> 00:01:32,542
-Yes, Yoonsu. Take your time.
-
-28
-00:01:33,417 --> 00:01:34,667
-It’s a star.
-
-29
-00:01:35,458 --> 00:01:37,958
-That’s right! Thank you for sharing.
-
-30
-00:01:39,708 --> 00:01:41,208
-It’s a star.
-
-31
-00:01:41,500 --> 00:01:43,042
-Yoonsu, your turn.
-
-32
-00:01:43,208 --> 00:01:44,708
-It’s a star.
-
-33
-00:01:49,042 --> 00:01:52,042
-You raised your hand and tried. Well done!
-
-34
-00:01:53,792 --> 00:01:55,958
-I heard you, Yoonsu!
-
-35
-00:01:56,125 --> 00:01:59,833
-You took your time. I loved hearing you.
-
-36
-00:02:00,000 --> 00:02:02,333
-I want to try again.
-
-37
-00:02:03,792 --> 00:02:06,208
-What fruit do you like?
-
-38
-00:02:07,042 --> 00:02:08,917
-I like bananas.
-
-39
-00:02:09,750 --> 00:02:11,042
-I like apples.
-
-40
-00:02:11,875 --> 00:02:14,000
-Thank you, both of you!
-
-41
-00:02:15,708 --> 00:02:17,125
-I like apples.
-
-42
-00:02:17,458 --> 00:02:19,000
-Yoonsu, your turn.
-
-43
-00:02:19,375 --> 00:02:20,792
-I like apples.
-
-44
-00:02:25,417 --> 00:02:26,750
+00:00:23,708 --> 00:00:25,042
 Nice and clear!
 
+8
+00:00:26,917 --> 00:00:29,750
+Children up front. Grown-ups behind.
+
+9
+00:00:30,833 --> 00:00:32,750
+Sit with us, Yoonsu!
+
+10
+00:00:33,833 --> 00:00:35,625
+I’ll watch from here.
+
+11
+00:00:38,792 --> 00:00:40,583
+Let’s sit together.
+
+12
+00:00:40,917 --> 00:00:42,458
+Yoonsu, your turn.
+
+13
+00:00:42,833 --> 00:00:44,625
+Let’s sit together.
+
+14
+00:00:49,250 --> 00:00:51,917
+You did it. I heard you.
+
+15
+00:00:53,792 --> 00:00:55,375
+Look at this picture.
+
+16
+00:00:56,458 --> 00:00:58,417
+What do you see?
+
+17
+00:00:59,500 --> 00:01:00,750
+It’s a sun!
+
+18
+00:01:01,833 --> 00:01:03,958
+Yes! A bright yellow sun.
+
+19
+00:01:05,792 --> 00:01:07,125
+It’s a sun.
+
+20
+00:01:07,458 --> 00:01:09,000
+Yoonsu, your turn.
+
+21
+00:01:09,375 --> 00:01:10,708
+It’s a sun.
+
+22
+00:01:15,333 --> 00:01:16,667
+Nice and clear!
+
+23
+00:01:18,792 --> 00:01:20,500
+I know that word.
+
+24
+00:01:21,583 --> 00:01:23,458
+But I feel shy.
+
+25
+00:01:24,542 --> 00:01:27,917
+That’s okay. I feel shy sometimes, too.
+
+26
+00:01:30,792 --> 00:01:32,292
+I feel shy.
+
+27
+00:01:32,625 --> 00:01:34,167
+Yoonsu, your turn.
+
+28
+00:01:34,542 --> 00:01:36,042
+I feel shy.
+
+29
+00:01:40,667 --> 00:01:44,042
+That’s okay. I feel shy sometimes, too.
+
+30
+00:01:45,792 --> 00:01:47,917
+Let’s take one slow breath.
+
+31
+00:01:48,500 --> 00:01:51,167
+You can start with one sentence.
+
+32
+00:01:51,750 --> 00:01:53,167
+Can I try?
+
+33
+00:01:53,750 --> 00:01:56,958
+Yes. You can ask just like that.
+
+34
+00:01:58,792 --> 00:02:00,167
+I can try.
+
+35
+00:02:00,500 --> 00:02:02,042
+Yoonsu, your turn.
+
+36
+00:02:02,417 --> 00:02:03,792
+I can try.
+
+37
+00:02:08,417 --> 00:02:09,750
+Nice and clear!
+
+38
+00:02:11,708 --> 00:02:13,208
+Can I try?
+
+39
+00:02:13,375 --> 00:02:14,917
+Yoonsu, your turn.
+
+40
+00:02:15,083 --> 00:02:16,583
+Can I try?
+
+41
+00:02:20,917 --> 00:02:23,583
+You did it. I heard you.
+
+42
+00:02:24,792 --> 00:02:26,875
+Here comes the next picture.
+
+43
+00:02:27,792 --> 00:02:29,542
+What shape is this?
+
+44
+00:02:30,458 --> 00:02:32,333
+I know this one.
+
 45
-00:02:28,833 --> 00:02:32,708
-Who would like to come up and say hello?
+00:02:33,250 --> 00:02:35,000
+Ready? Raise your hand.
 
 46
-00:02:32,875 --> 00:02:34,583
-I can do it.
+00:02:38,250 --> 00:02:39,667
+Can I try?
 
 47
-00:02:34,750 --> 00:02:36,875
-Whenever you’re ready, Yoonsu.
+00:02:40,458 --> 00:02:42,542
+Yes, Yoonsu. Take your time.
 
 48
-00:02:37,042 --> 00:02:39,167
-Hello! My name’s Yoonsu.
+00:02:43,417 --> 00:02:44,667
+It’s a star.
 
 49
-00:02:39,333 --> 00:02:41,417
-I like apples. Thank you!
+00:02:45,458 --> 00:02:47,958
+That’s right! Thank you for sharing.
 
 50
-00:02:42,708 --> 00:02:44,458
-My name’s Yoonsu.
+00:02:49,708 --> 00:02:51,208
+It’s a star.
 
 51
-00:02:44,708 --> 00:02:46,250
+00:02:51,500 --> 00:02:53,042
 Yoonsu, your turn.
 
 52
-00:02:46,417 --> 00:02:48,167
-My name’s Yoonsu.
+00:02:53,208 --> 00:02:54,708
+It’s a star.
 
 53
-00:02:52,500 --> 00:02:55,042
-That was your own brave voice.
+00:02:59,042 --> 00:03:02,042
+You raised your hand and tried. Well done!
 
 54
-00:02:56,792 --> 00:02:59,375
-Let’s give Yoonsu a little clap.
+00:03:03,792 --> 00:03:05,958
+I heard you, Yoonsu!
 
 55
-00:03:01,167 --> 00:03:03,125
-Great job, Yoonsu!
+00:03:06,125 --> 00:03:09,833
+You took your time. I loved hearing you.
 
 56
-00:03:03,292 --> 00:03:05,708
-I’m proud of you for trying.
+00:03:10,000 --> 00:03:12,333
+I want to try again.
 
 57
-00:03:05,875 --> 00:03:10,125
-You took a breath, raised your hand, and spoke.
+00:03:13,792 --> 00:03:15,583
+Thanks for listening.
 
 58
-00:03:11,792 --> 00:03:13,958
-I was shy. Then I tried.
+00:03:15,917 --> 00:03:17,458
+Yoonsu, your turn.
 
 59
-00:03:14,500 --> 00:03:16,958
-I’ll be there, cheering for you.
+00:03:17,833 --> 00:03:19,625
+Thanks for listening.
 
 60
-00:03:17,500 --> 00:03:20,667
+00:03:24,250 --> 00:03:26,917
+You did it. I heard you.
+
+61
+00:03:28,792 --> 00:03:31,208
+What fruit do you like?
+
+62
+00:03:32,042 --> 00:03:33,917
+I like bananas.
+
+63
+00:03:34,750 --> 00:03:36,042
+I like apples.
+
+64
+00:03:36,875 --> 00:03:39,000
+Thank you, both of you!
+
+65
+00:03:40,792 --> 00:03:42,542
+I like bananas.
+
+66
+00:03:42,875 --> 00:03:44,417
+Yoonsu, your turn.
+
+67
+00:03:44,792 --> 00:03:46,542
+I like bananas.
+
+68
+00:03:51,167 --> 00:03:52,500
+Nice and clear!
+
+69
+00:03:54,708 --> 00:03:56,125
+I like apples.
+
+70
+00:03:56,458 --> 00:03:58,000
+Yoonsu, your turn.
+
+71
+00:03:58,375 --> 00:03:59,792
+I like apples.
+
+72
+00:04:04,417 --> 00:04:05,750
+Nice and clear!
+
+73
+00:04:07,833 --> 00:04:11,708
+Who would like to come up and say hello?
+
+74
+00:04:11,875 --> 00:04:13,583
+I can do it.
+
+75
+00:04:13,750 --> 00:04:15,875
+Whenever you’re ready, Yoonsu.
+
+76
+00:04:16,042 --> 00:04:18,167
+Hello! My name’s Yoonsu.
+
+77
+00:04:18,333 --> 00:04:20,417
+I like apples. Thank you!
+
+78
+00:04:21,708 --> 00:04:23,458
+My name’s Yoonsu.
+
+79
+00:04:23,708 --> 00:04:25,250
+Yoonsu, your turn.
+
+80
+00:04:25,417 --> 00:04:27,167
+My name’s Yoonsu.
+
+81
+00:04:31,500 --> 00:04:34,042
+That was your own brave voice.
+
+82
+00:04:35,792 --> 00:04:38,375
+Let’s give Yoonsu a little clap.
+
+83
+00:04:40,167 --> 00:04:42,125
+Great job, Yoonsu!
+
+84
+00:04:42,292 --> 00:04:44,708
+I’m proud of you for trying.
+
+85
+00:04:44,875 --> 00:04:49,125
+You took a breath, raised your hand, and spoke.
+
+86
+00:04:50,792 --> 00:04:52,000
+I did it!
+
+87
+00:04:52,333 --> 00:04:53,875
+Yoonsu, your turn.
+
+88
+00:04:54,250 --> 00:04:55,458
+I did it!
+
+89
+00:05:00,083 --> 00:05:01,417
+Nice and clear!
+
+90
+00:05:03,792 --> 00:05:05,958
+I was shy. Then I tried.
+
+91
+00:05:06,500 --> 00:05:08,958
+I’ll be there, cheering for you.
+
+92
+00:05:09,500 --> 00:05:12,667
 One breath. One hand. One sentence.

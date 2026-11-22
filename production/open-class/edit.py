@@ -116,7 +116,7 @@ def build():
     assert np.max(np.abs(mix))<.98
     for scene in sections:
         print(scene['id'],scene['end']-scene['at'],[(e['id'],e['at']-scene['at'],e['end']-scene['at']) for e in scene['events']],scene['claps'])
-    print(frames,len(fired_at),'speech cues, 4 four-second response windows, peak',round(float(np.max(np.abs(mix))),3))
+    print(frames,len(fired_at),'speech cues, four-second response windows, peak',round(float(np.max(np.abs(mix))),3))
 
 if __name__=='__main__':
     build()
