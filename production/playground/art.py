@@ -1,5 +1,6 @@
 from pathlib import Path
 from PIL import Image,ImageOps
+from clean_cels import cue_matte,left_number
 R=Path(__file__).resolve().parent
 def drawing_key(r,a,j,m):
  family='talk'
@@ -27,4 +28,6 @@ def generate(r,f,n,_):
  p=R/'cast'/r/f'{f.removesuffix("L")}-{n:02}.webp'
  with Image.open(p) as im:
   cel=im.convert('RGBA')
+ if r=='sheriff' and f=='cue':cel=cue_matte(cel)
+ if r in ('one','two','three') and f.endswith('L'):return left_number(cel)
  return ImageOps.mirror(cel) if f.endswith('L') else cel

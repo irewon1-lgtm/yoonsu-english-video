@@ -1,0 +1,18 @@
+from pathlib import Path
+import json,base64,io,zlib
+from PIL import Image
+import film
+R=Path(__file__).resolve().parent
+ex,keys=film.exposure();imgs=[]
+for k in keys:
+ im=film.generate(*k);im.thumbnail((180,180),Image.Resampling.LANCZOS);buf=io.BytesIO();im.save(buf,format='WEBP',lossless=True,method=1);imgs.append('data:image/webp;base64,'+base64.b64encode(buf.getvalue()).decode())
+data=json.dumps([keys,imgs,ex,[s['at'] for s in film.SC]],separators=(',',':'))
+html="""<!doctype html><html lang=ko><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>놀이터 전신 동작 검수</title>
+<style>*{box-sizing:border-box}body{margin:0 auto;max-width:1150px;background:#172c32;color:#fff4db;font:16px system-ui;padding:16px}h1{font-size:clamp(19px,3vw,33px)}main{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:14px}button,select{font:inherit;padding:.55em;color:#183734;border:0;background:#ffdea7;border-radius:9px}input{width:100%}canvas{display:block;width:100%;height:auto;border-radius:14px;background:#334452}p{overflow-wrap:anywhere}</style>
+<h1>놀이터 · 전신 셀 프레임 검수</h1>
+<main><select id="shot" aria-label="장면"></select><select id="who" aria-label="캐릭터"><option value="-1">다섯 친구</option><option value="0">원</option><option value="1">윤수</option><option value="2">투</option><option value="3">쓰리</option><option value="4">경장</option></select><select id="back" aria-label="배경"><option value="#263648">어두운 바탕</option><option value="#f7ecd4">밝은 바탕</option><option value="#9a48aa">보라 바탕</option></select><button id="prev">−1 프레임</button><button id="go">재생</button><button id="next">+1 프레임</button></main><canvas width=960 height=420 id="cv"></canvas><input id="seek" type=range aria-label="프레임"><p id="info"></p>
+<script>const [keys,images,shots,starts]=DATA;const heights=[152,387,247,315,365],names=['원','윤수','투','쓰리','경장'];const q=id=>document.getElementById(id);let scene=0,frame=0,play=false,base=0;const pics=images.map(src=>{let im=new Image;im.src=src;return im});const ctx=q('cv').getContext('2d');
+shots.forEach((_,i)=>q('shot').add(new Option((i+1)+'번 장면',i)));
+function draw(){const rec=shots[scene][frame],who=+q('who').value;ctx.fillStyle=q('back').value;ctx.fillRect(0,0,960,420);const sorted=rec.map(([key,x,y],r)=>({key,x,y,r})).sort((a,b)=>a.y-b.y);let labels=[];for(const {key,x,y,r} of sorted){if(who!==-1&&r!==who)continue;let h=who<0?heights[r]*.63:385;let px=who<0?x*.625:480,py=who<0?y*.63-40:395;ctx.drawImage(pics[key],px-h/2,py-h*492/512,h,h);labels.push(names[r]+' '+keys[key][1]+' '+keys[key][2])}q('seek').value=frame;q('info').textContent='본편 '+(starts[scene]+frame)+' / 15863 프레임　·　'+labels.join('　|　')}
+function stop(){play=false;q('go').textContent='재생'}function setScene(){stop();scene=+q('shot').value;frame=0;q('seek').max=shots[scene].length-1;draw()}q('shot').onchange=setScene;q('who').onchange=q('back').onchange=draw;q('seek').oninput=()=>{stop();frame=+q('seek').value;draw()};function step(d){stop();frame=Math.min(shots[scene].length-1,Math.max(0,frame+d));draw()}q('prev').onclick=()=>step(-1);q('next').onclick=()=>step(1);q('go').onclick=()=>{if(play){stop();return}if(frame>=shots[scene].length-1)frame=0;play=true;base=performance.now()-frame*1000/24;q('go').textContent='정지';requestAnimationFrame(tick)};function tick(t){if(!play)return;frame=Math.min(shots[scene].length-1,Math.floor((t-base)*24/1000));draw();if(frame>=shots[scene].length-1)stop();else requestAnimationFrame(tick)}Promise.all(pics.map(p=>p.decode())).then(setScene);</script></html>"""
+(R/'delivery/Playground_Frame_Review.html').write_text(html.replace('=DATA','= '+data,1))
