@@ -1,0 +1,1116 @@
+{
+  "title": "윤수야, 손 들어도 괜찮아!",
+  "en": "Yoonsu Raises His Hand",
+  "fps": 24,
+  "frames": 4848,
+  "scenes": [
+    {
+      "id": "arrival",
+      "seconds": 12,
+      "view": "wide",
+      "ko": "교실 문을 열어요",
+      "lines": [
+        {
+          "id": "m1",
+          "role": "mom",
+          "en": "I’m right here with you.",
+          "ko": "엄마 바로 여기 있어."
+        },
+        {
+          "id": "y1",
+          "role": "y",
+          "en": "It’s our English class!",
+          "ko": "우리 영어 수업이다!"
+        },
+        {
+          "id": "t1",
+          "role": "teacher",
+          "en": "Welcome, families! Come on in.",
+          "ko": "가족 여러분, 어서 들어오세요!"
+        }
+      ],
+      "at": 0,
+      "end": 288,
+      "events": [
+        {
+          "id": "m1",
+          "role": "mom",
+          "en": "I’m right here with you.",
+          "ko": "엄마 바로 여기 있어.",
+          "at": 32,
+          "end": 82
+        },
+        {
+          "id": "y1",
+          "role": "y",
+          "en": "It’s our English class!",
+          "ko": "우리 영어 수업이다!",
+          "at": 108,
+          "end": 153
+        },
+        {
+          "id": "t1",
+          "role": "teacher",
+          "en": "Welcome, families! Come on in.",
+          "ko": "가족 여러분, 어서 들어오세요!",
+          "at": 179,
+          "end": 233
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "families",
+      "seconds": 12,
+      "view": "audience",
+      "ko": "가족들이 자리에 앉아요",
+      "lines": [
+        {
+          "id": "t2",
+          "role": "teacher",
+          "en": "Children up front. Grown-ups behind.",
+          "ko": "친구들은 앞에, 가족들은 뒤에 앉아요."
+        },
+        {
+          "id": "f1",
+          "role": "friend",
+          "en": "Sit with us, Yoonsu!",
+          "ko": "윤수야, 우리랑 같이 앉자!"
+        },
+        {
+          "id": "m2",
+          "role": "mom",
+          "en": "I’ll watch from here.",
+          "ko": "엄마는 여기서 볼게."
+        }
+      ],
+      "at": 288,
+      "end": 576,
+      "events": [
+        {
+          "id": "t2",
+          "role": "teacher",
+          "en": "Children up front. Grown-ups behind.",
+          "ko": "친구들은 앞에, 가족들은 뒤에 앉아요.",
+          "at": 310,
+          "end": 378
+        },
+        {
+          "id": "f1",
+          "role": "friend",
+          "en": "Sit with us, Yoonsu!",
+          "ko": "윤수야, 우리랑 같이 앉자!",
+          "at": 404,
+          "end": 450
+        },
+        {
+          "id": "m2",
+          "role": "mom",
+          "en": "I’ll watch from here.",
+          "ko": "엄마는 여기서 볼게.",
+          "at": 476,
+          "end": 519
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "question_one",
+      "seconds": 12,
+      "view": "teacher",
+      "ko": "선생님의 첫 질문",
+      "lines": [
+        {
+          "id": "t3",
+          "role": "teacher",
+          "en": "Look at this picture.",
+          "ko": "이 그림을 보세요."
+        },
+        {
+          "id": "t4",
+          "role": "teacher",
+          "en": "What do you see?",
+          "ko": "뭐가 보이나요?"
+        },
+        {
+          "id": "f2",
+          "role": "friend",
+          "en": "It’s a sun!",
+          "ko": "해가 보여요!"
+        },
+        {
+          "id": "t5",
+          "role": "teacher",
+          "en": "Yes! A bright yellow sun.",
+          "ko": "맞아요! 밝은 노란 해예요."
+        }
+      ],
+      "at": 576,
+      "end": 864,
+      "events": [
+        {
+          "id": "t3",
+          "role": "teacher",
+          "en": "Look at this picture.",
+          "ko": "이 그림을 보세요.",
+          "at": 595,
+          "end": 633
+        },
+        {
+          "id": "t4",
+          "role": "teacher",
+          "en": "What do you see?",
+          "ko": "뭐가 보이나요?",
+          "at": 659,
+          "end": 706
+        },
+        {
+          "id": "f2",
+          "role": "friend",
+          "en": "It’s a sun!",
+          "ko": "해가 보여요!",
+          "at": 732,
+          "end": 762
+        },
+        {
+          "id": "t5",
+          "role": "teacher",
+          "en": "Yes! A bright yellow sun.",
+          "ko": "맞아요! 밝은 노란 해예요.",
+          "at": 788,
+          "end": 839
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "shy",
+      "seconds": 12,
+      "view": "pair",
+      "ko": "알지만 조금 부끄러워요",
+      "lines": [
+        {
+          "id": "y2",
+          "role": "y",
+          "en": "I know that word.",
+          "ko": "나도 저 단어 알아."
+        },
+        {
+          "id": "y3",
+          "role": "y",
+          "en": "But I feel shy.",
+          "ko": "그런데 조금 부끄러워."
+        },
+        {
+          "id": "s1",
+          "role": "sheriff",
+          "en": "That’s okay. I feel shy sometimes, too.",
+          "ko": "괜찮아. 나도 가끔 부끄러워."
+        }
+      ],
+      "at": 864,
+      "end": 1152,
+      "events": [
+        {
+          "id": "y2",
+          "role": "y",
+          "en": "I know that word.",
+          "ko": "나도 저 단어 알아.",
+          "at": 883,
+          "end": 924
+        },
+        {
+          "id": "y3",
+          "role": "y",
+          "en": "But I feel shy.",
+          "ko": "그런데 조금 부끄러워.",
+          "at": 950,
+          "end": 995
+        },
+        {
+          "id": "s1",
+          "role": "sheriff",
+          "en": "That’s okay. I feel shy sometimes, too.",
+          "ko": "괜찮아. 나도 가끔 부끄러워.",
+          "at": 1021,
+          "end": 1102
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "try_smaller",
+      "seconds": 13,
+      "view": "pair",
+      "ko": "작게 먼저 연습해요",
+      "lines": [
+        {
+          "id": "s2",
+          "role": "sheriff",
+          "en": "Let’s take one slow breath.",
+          "ko": "천천히 숨을 한 번 쉬자."
+        },
+        {
+          "id": "s3",
+          "role": "sheriff",
+          "en": "You can start with one sentence.",
+          "ko": "한 문장으로 시작하면 돼."
+        },
+        {
+          "id": "y4",
+          "role": "y",
+          "en": "Can I try?",
+          "ko": "제가 해 봐도 돼요?"
+        },
+        {
+          "id": "s4",
+          "role": "sheriff",
+          "en": "Yes. You can ask just like that.",
+          "ko": "응. 방금처럼 물어보면 돼."
+        }
+      ],
+      "at": 1152,
+      "end": 1464,
+      "events": [
+        {
+          "id": "s2",
+          "role": "sheriff",
+          "en": "Let’s take one slow breath.",
+          "ko": "천천히 숨을 한 번 쉬자.",
+          "at": 1171,
+          "end": 1222
+        },
+        {
+          "id": "s3",
+          "role": "sheriff",
+          "en": "You can start with one sentence.",
+          "ko": "한 문장으로 시작하면 돼.",
+          "at": 1236,
+          "end": 1300
+        },
+        {
+          "id": "y4",
+          "role": "y",
+          "en": "Can I try?",
+          "ko": "제가 해 봐도 돼요?",
+          "at": 1314,
+          "end": 1348
+        },
+        {
+          "id": "s4",
+          "role": "sheriff",
+          "en": "Yes. You can ask just like that.",
+          "ko": "응. 방금처럼 물어보면 돼.",
+          "at": 1362,
+          "end": 1439
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "practice_one",
+      "seconds": 13,
+      "view": "practice",
+      "ko": "한 문장 연습",
+      "lines": [
+        {
+          "id": "s5",
+          "role": "sheriff",
+          "en": "Can I try?",
+          "ko": "제가 해 봐도 돼요?"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "s5",
+          "role": "sheriff",
+          "en": "Can I try?",
+          "ko": "제가 해 봐도 돼요?"
+        },
+        {
+          "id": "p1",
+          "role": "pause",
+          "en": "Can I try?",
+          "ko": "이제 윤수가 말해 봐요."
+        },
+        {
+          "id": "s6",
+          "role": "sheriff",
+          "en": "You did it. I heard you.",
+          "ko": "해냈네. 잘 들렸어."
+        }
+      ],
+      "at": 1464,
+      "end": 1776,
+      "events": [
+        {
+          "id": "s5",
+          "role": "sheriff",
+          "en": "Can I try?",
+          "ko": "제가 해 봐도 돼요?",
+          "at": 1481,
+          "end": 1517
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 1521,
+          "end": 1558
+        },
+        {
+          "id": "s5",
+          "role": "sheriff",
+          "en": "Can I try?",
+          "ko": "제가 해 봐도 돼요?",
+          "at": 1562,
+          "end": 1598
+        },
+        {
+          "id": "p1",
+          "role": "pause",
+          "en": "Can I try?",
+          "ko": "이제 윤수가 말해 봐요.",
+          "at": 1602,
+          "end": 1698
+        },
+        {
+          "id": "s6",
+          "role": "sheriff",
+          "en": "You did it. I heard you.",
+          "ko": "해냈네. 잘 들렸어.",
+          "at": 1702,
+          "end": 1766
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "teacher_star",
+      "seconds": 12,
+      "view": "teacher",
+      "ko": "이번에는 별이에요",
+      "lines": [
+        {
+          "id": "t6",
+          "role": "teacher",
+          "en": "Here comes the next picture.",
+          "ko": "다음 그림이 나와요."
+        },
+        {
+          "id": "t7",
+          "role": "teacher",
+          "en": "What shape is this?",
+          "ko": "이건 무슨 모양일까요?"
+        },
+        {
+          "id": "y5",
+          "role": "y",
+          "en": "I know this one.",
+          "ko": "이건 내가 알아."
+        },
+        {
+          "id": "s7",
+          "role": "sheriff",
+          "en": "Ready? Raise your hand.",
+          "ko": "준비됐어? 손을 들어 봐."
+        }
+      ],
+      "at": 1776,
+      "end": 2064,
+      "events": [
+        {
+          "id": "t6",
+          "role": "teacher",
+          "en": "Here comes the next picture.",
+          "ko": "다음 그림이 나와요.",
+          "at": 1795,
+          "end": 1845
+        },
+        {
+          "id": "t7",
+          "role": "teacher",
+          "en": "What shape is this?",
+          "ko": "이건 무슨 모양일까요?",
+          "at": 1867,
+          "end": 1909
+        },
+        {
+          "id": "y5",
+          "role": "y",
+          "en": "I know this one.",
+          "ko": "이건 내가 알아.",
+          "at": 1931,
+          "end": 1976
+        },
+        {
+          "id": "s7",
+          "role": "sheriff",
+          "en": "Ready? Raise your hand.",
+          "ko": "준비됐어? 손을 들어 봐.",
+          "at": 1998,
+          "end": 2040
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "hands_up",
+      "seconds": 13,
+      "view": "raise",
+      "ko": "윤수가 손을 들어요",
+      "lines": [
+        {
+          "id": "y6",
+          "role": "y",
+          "en": "Can I try?",
+          "ko": "제가 해 봐도 돼요?"
+        },
+        {
+          "id": "t8",
+          "role": "teacher",
+          "en": "Yes, Yoonsu. Take your time.",
+          "ko": "그래, 윤수야. 천천히 해."
+        },
+        {
+          "id": "y7",
+          "role": "y",
+          "en": "It’s a star.",
+          "ko": "별이에요."
+        },
+        {
+          "id": "t9",
+          "role": "teacher",
+          "en": "That’s right! Thank you for sharing.",
+          "ko": "맞아요! 말해 줘서 고마워요."
+        }
+      ],
+      "at": 2064,
+      "end": 2376,
+      "events": [
+        {
+          "id": "y6",
+          "role": "y",
+          "en": "Can I try?",
+          "ko": "제가 해 봐도 돼요?",
+          "at": 2118,
+          "end": 2152
+        },
+        {
+          "id": "t8",
+          "role": "teacher",
+          "en": "Yes, Yoonsu. Take your time.",
+          "ko": "그래, 윤수야. 천천히 해.",
+          "at": 2171,
+          "end": 2221
+        },
+        {
+          "id": "y7",
+          "role": "y",
+          "en": "It’s a star.",
+          "ko": "별이에요.",
+          "at": 2242,
+          "end": 2272
+        },
+        {
+          "id": "t9",
+          "role": "teacher",
+          "en": "That’s right! Thank you for sharing.",
+          "ko": "맞아요! 말해 줘서 고마워요.",
+          "at": 2291,
+          "end": 2351
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "practice_two",
+      "seconds": 14,
+      "view": "practice",
+      "ko": "별이라고 말해요",
+      "lines": [
+        {
+          "id": "s8",
+          "role": "sheriff",
+          "en": "It’s a star.",
+          "ko": "별이에요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "s8",
+          "role": "sheriff",
+          "en": "It’s a star.",
+          "ko": "별이에요."
+        },
+        {
+          "id": "p2",
+          "role": "pause",
+          "en": "It’s a star.",
+          "ko": "이제 윤수가 말해 봐요."
+        },
+        {
+          "id": "s9",
+          "role": "sheriff",
+          "en": "You raised your hand and tried. Well done!",
+          "ko": "손을 들고 해 봤구나. 잘했어!"
+        }
+      ],
+      "at": 2376,
+      "end": 2712,
+      "events": [
+        {
+          "id": "s8",
+          "role": "sheriff",
+          "en": "It’s a star.",
+          "ko": "별이에요.",
+          "at": 2393,
+          "end": 2429
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 2436,
+          "end": 2473
+        },
+        {
+          "id": "s8",
+          "role": "sheriff",
+          "en": "It’s a star.",
+          "ko": "별이에요.",
+          "at": 2477,
+          "end": 2513
+        },
+        {
+          "id": "p2",
+          "role": "pause",
+          "en": "It’s a star.",
+          "ko": "이제 윤수가 말해 봐요.",
+          "at": 2517,
+          "end": 2613
+        },
+        {
+          "id": "s9",
+          "role": "sheriff",
+          "en": "You raised your hand and tried. Well done!",
+          "ko": "손을 들고 해 봤구나. 잘했어!",
+          "at": 2617,
+          "end": 2689
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "mom_smile",
+      "seconds": 10,
+      "view": "audience",
+      "ko": "엄마가 미소 지어요",
+      "lines": [
+        {
+          "id": "f3",
+          "role": "friend",
+          "en": "I heard you, Yoonsu!",
+          "ko": "윤수야, 네 말 잘 들렸어!"
+        },
+        {
+          "id": "m3",
+          "role": "mom",
+          "en": "You took your time. I loved hearing you.",
+          "ko": "천천히 잘 말했네. 네 목소리가 들려서 좋았어."
+        },
+        {
+          "id": "y8",
+          "role": "y",
+          "en": "I want to try again.",
+          "ko": "한 번 더 해 보고 싶어."
+        }
+      ],
+      "at": 2712,
+      "end": 2952,
+      "events": [
+        {
+          "id": "f3",
+          "role": "friend",
+          "en": "I heard you, Yoonsu!",
+          "ko": "윤수야, 네 말 잘 들렸어!",
+          "at": 2731,
+          "end": 2783
+        },
+        {
+          "id": "m3",
+          "role": "mom",
+          "en": "You took your time. I loved hearing you.",
+          "ko": "천천히 잘 말했네. 네 목소리가 들려서 좋았어.",
+          "at": 2787,
+          "end": 2876
+        },
+        {
+          "id": "y8",
+          "role": "y",
+          "en": "I want to try again.",
+          "ko": "한 번 더 해 보고 싶어.",
+          "at": 2880,
+          "end": 2936
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "apple",
+      "seconds": 12,
+      "view": "teacher",
+      "ko": "좋아하는 걸 말해요",
+      "lines": [
+        {
+          "id": "t10",
+          "role": "teacher",
+          "en": "What fruit do you like?",
+          "ko": "어떤 과일을 좋아하나요?"
+        },
+        {
+          "id": "f4",
+          "role": "friend",
+          "en": "I like bananas.",
+          "ko": "저는 바나나를 좋아해요."
+        },
+        {
+          "id": "y9",
+          "role": "y",
+          "en": "I like apples.",
+          "ko": "저는 사과를 좋아해요."
+        },
+        {
+          "id": "t11",
+          "role": "teacher",
+          "en": "Thank you, both of you!",
+          "ko": "둘 다 말해 줘서 고마워요!"
+        }
+      ],
+      "at": 2952,
+      "end": 3240,
+      "events": [
+        {
+          "id": "t10",
+          "role": "teacher",
+          "en": "What fruit do you like?",
+          "ko": "어떤 과일을 좋아하나요?",
+          "at": 2971,
+          "end": 3029
+        },
+        {
+          "id": "f4",
+          "role": "friend",
+          "en": "I like bananas.",
+          "ko": "저는 바나나를 좋아해요.",
+          "at": 3049,
+          "end": 3094
+        },
+        {
+          "id": "y9",
+          "role": "y",
+          "en": "I like apples.",
+          "ko": "저는 사과를 좋아해요.",
+          "at": 3114,
+          "end": 3145
+        },
+        {
+          "id": "t11",
+          "role": "teacher",
+          "en": "Thank you, both of you!",
+          "ko": "둘 다 말해 줘서 고마워요!",
+          "at": 3165,
+          "end": 3216
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "practice_three",
+      "seconds": 13,
+      "view": "practice",
+      "ko": "좋아하는 과일 연습",
+      "lines": [
+        {
+          "id": "s10",
+          "role": "sheriff",
+          "en": "I like apples.",
+          "ko": "저는 사과를 좋아해요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "s10",
+          "role": "sheriff",
+          "en": "I like apples.",
+          "ko": "저는 사과를 좋아해요."
+        },
+        {
+          "id": "p3",
+          "role": "pause",
+          "en": "I like apples.",
+          "ko": "이제 윤수가 말해 봐요."
+        },
+        {
+          "id": "s11",
+          "role": "sheriff",
+          "en": "Nice and clear!",
+          "ko": "또박또박 잘했어!"
+        }
+      ],
+      "at": 3240,
+      "end": 3552,
+      "events": [
+        {
+          "id": "s10",
+          "role": "sheriff",
+          "en": "I like apples.",
+          "ko": "저는 사과를 좋아해요.",
+          "at": 3257,
+          "end": 3291
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 3299,
+          "end": 3336
+        },
+        {
+          "id": "s10",
+          "role": "sheriff",
+          "en": "I like apples.",
+          "ko": "저는 사과를 좋아해요.",
+          "at": 3345,
+          "end": 3379
+        },
+        {
+          "id": "p3",
+          "role": "pause",
+          "en": "I like apples.",
+          "ko": "이제 윤수가 말해 봐요.",
+          "at": 3384,
+          "end": 3480
+        },
+        {
+          "id": "s11",
+          "role": "sheriff",
+          "en": "Nice and clear!",
+          "ko": "또박또박 잘했어!",
+          "at": 3490,
+          "end": 3522
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "introduce",
+      "seconds": 14,
+      "view": "present",
+      "ko": "앞에 나가 자기소개를 해요",
+      "lines": [
+        {
+          "id": "t12",
+          "role": "teacher",
+          "en": "Who would like to come up and say hello?",
+          "ko": "앞에 나와 인사해 볼 친구 있나요?"
+        },
+        {
+          "id": "y10",
+          "role": "y",
+          "en": "I can do it.",
+          "ko": "제가 할 수 있어요."
+        },
+        {
+          "id": "t13",
+          "role": "teacher",
+          "en": "Whenever you’re ready, Yoonsu.",
+          "ko": "준비되면 말해 봐, 윤수야."
+        },
+        {
+          "id": "y11",
+          "role": "y",
+          "en": "Hello! My name’s Yoonsu.",
+          "ko": "안녕하세요! 제 이름은 윤수예요."
+        },
+        {
+          "id": "y12",
+          "role": "y",
+          "en": "I like apples. Thank you!",
+          "ko": "사과를 좋아해요. 고맙습니다!"
+        }
+      ],
+      "at": 3552,
+      "end": 3888,
+      "events": [
+        {
+          "id": "t12",
+          "role": "teacher",
+          "en": "Who would like to come up and say hello?",
+          "ko": "앞에 나와 인사해 볼 친구 있나요?",
+          "at": 3572,
+          "end": 3665
+        },
+        {
+          "id": "y10",
+          "role": "y",
+          "en": "I can do it.",
+          "ko": "제가 할 수 있어요.",
+          "at": 3669,
+          "end": 3710
+        },
+        {
+          "id": "t13",
+          "role": "teacher",
+          "en": "Whenever you’re ready, Yoonsu.",
+          "ko": "준비되면 말해 봐, 윤수야.",
+          "at": 3714,
+          "end": 3765
+        },
+        {
+          "id": "y11",
+          "role": "y",
+          "en": "Hello! My name’s Yoonsu.",
+          "ko": "안녕하세요! 제 이름은 윤수예요.",
+          "at": 3769,
+          "end": 3820
+        },
+        {
+          "id": "y12",
+          "role": "y",
+          "en": "I like apples. Thank you!",
+          "ko": "사과를 좋아해요. 고맙습니다!",
+          "at": 3824,
+          "end": 3874
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "practice_four",
+      "seconds": 14,
+      "view": "practice",
+      "ko": "내 이름으로 인사해요",
+      "lines": [
+        {
+          "id": "s12",
+          "role": "sheriff",
+          "en": "My name’s Yoonsu.",
+          "ko": "제 이름은 윤수예요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "s12",
+          "role": "sheriff",
+          "en": "My name’s Yoonsu.",
+          "ko": "제 이름은 윤수예요."
+        },
+        {
+          "id": "p4",
+          "role": "pause",
+          "en": "My name’s Yoonsu.",
+          "ko": "이제 윤수가 말해 봐요."
+        },
+        {
+          "id": "s13",
+          "role": "sheriff",
+          "en": "That was your own brave voice.",
+          "ko": "윤수가 용기 내서 낸 목소리야."
+        }
+      ],
+      "at": 3888,
+      "end": 4224,
+      "events": [
+        {
+          "id": "s12",
+          "role": "sheriff",
+          "en": "My name’s Yoonsu.",
+          "ko": "제 이름은 윤수예요.",
+          "at": 3905,
+          "end": 3947
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 3953,
+          "end": 3990
+        },
+        {
+          "id": "s12",
+          "role": "sheriff",
+          "en": "My name’s Yoonsu.",
+          "ko": "제 이름은 윤수예요.",
+          "at": 3994,
+          "end": 4036
+        },
+        {
+          "id": "p4",
+          "role": "pause",
+          "en": "My name’s Yoonsu.",
+          "ko": "이제 윤수가 말해 봐요.",
+          "at": 4040,
+          "end": 4136
+        },
+        {
+          "id": "s13",
+          "role": "sheriff",
+          "en": "That was your own brave voice.",
+          "ko": "윤수가 용기 내서 낸 목소리야.",
+          "at": 4140,
+          "end": 4201
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "clap",
+      "seconds": 15,
+      "view": "audience",
+      "ko": "친구들과 가족들이 박수쳐요",
+      "lines": [
+        {
+          "id": "t14",
+          "role": "teacher",
+          "en": "Let’s give Yoonsu a little clap.",
+          "ko": "윤수에게 박수를 보내 줘요."
+        },
+        {
+          "id": "f5",
+          "role": "friend",
+          "en": "Great job, Yoonsu!",
+          "ko": "잘했어, 윤수야!"
+        },
+        {
+          "id": "m4",
+          "role": "mom",
+          "en": "I’m proud of you for trying.",
+          "ko": "용기 내서 해 본 윤수가 자랑스러워."
+        },
+        {
+          "id": "s14",
+          "role": "sheriff",
+          "en": "You took a breath, raised your hand, and spoke.",
+          "ko": "숨을 고르고, 손을 들고, 말했네."
+        }
+      ],
+      "at": 4224,
+      "end": 4584,
+      "events": [
+        {
+          "id": "t14",
+          "role": "teacher",
+          "en": "Let’s give Yoonsu a little clap.",
+          "ko": "윤수에게 박수를 보내 줘요.",
+          "at": 4243,
+          "end": 4305
+        },
+        {
+          "id": "f5",
+          "role": "friend",
+          "en": "Great job, Yoonsu!",
+          "ko": "잘했어, 윤수야!",
+          "at": 4348,
+          "end": 4395
+        },
+        {
+          "id": "m4",
+          "role": "mom",
+          "en": "I’m proud of you for trying.",
+          "ko": "용기 내서 해 본 윤수가 자랑스러워.",
+          "at": 4399,
+          "end": 4457
+        },
+        {
+          "id": "s14",
+          "role": "sheriff",
+          "en": "You took a breath, raised your hand, and spoke.",
+          "ko": "숨을 고르고, 손을 들고, 말했네.",
+          "at": 4461,
+          "end": 4563
+        }
+      ],
+      "claps": [
+        4316,
+        4328,
+        4340
+      ]
+    },
+    {
+      "id": "goodbye",
+      "seconds": 11,
+      "view": "final",
+      "ko": "내일도 윤수의 속도로",
+      "lines": [
+        {
+          "id": "y13",
+          "role": "y",
+          "en": "I was shy. Then I tried.",
+          "ko": "부끄러웠지만, 해 봤어."
+        },
+        {
+          "id": "m5",
+          "role": "mom",
+          "en": "I’ll be there, cheering for you.",
+          "ko": "엄마도 거기서 윤수를 응원할게."
+        },
+        {
+          "id": "s15",
+          "role": "sheriff",
+          "en": "One breath. One hand. One sentence.",
+          "ko": "숨 한 번. 손 들기. 한 문장."
+        }
+      ],
+      "at": 4584,
+      "end": 4848,
+      "events": [
+        {
+          "id": "y13",
+          "role": "y",
+          "en": "I was shy. Then I tried.",
+          "ko": "부끄러웠지만, 해 봤어.",
+          "at": 4603,
+          "end": 4655
+        },
+        {
+          "id": "m5",
+          "role": "mom",
+          "en": "I’ll be there, cheering for you.",
+          "ko": "엄마도 거기서 윤수를 응원할게.",
+          "at": 4668,
+          "end": 4727
+        },
+        {
+          "id": "s15",
+          "role": "sheriff",
+          "en": "One breath. One hand. One sentence.",
+          "ko": "숨 한 번. 손 들기. 한 문장.",
+          "at": 4740,
+          "end": 4816
+        }
+      ],
+      "claps": []
+    }
+  ]
+}
