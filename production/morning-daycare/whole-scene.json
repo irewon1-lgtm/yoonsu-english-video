@@ -1,0 +1,1428 @@
+{
+  "fps": 24,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "method": "one opaque authored sprite-sheet rectangle per displayed frame",
+  "sheets": {
+    "dlg-bedroom-pj": {
+      "file": "dlg-bedroom-pj.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-bath-pj": {
+      "file": "dlg-bath-pj.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-kitchen-pj": {
+      "file": "dlg-kitchen-pj.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-bedroom-dress": {
+      "file": "dlg-bedroom-dress.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-bedroom-socks": {
+      "file": "dlg-bedroom-socks.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-bedroom-day-bag": {
+      "file": "dlg-bedroom-day-bag.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-entry-day": {
+      "file": "dlg-entry-day.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-entry-pack": {
+      "file": "dlg-entry-pack.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-school-day": {
+      "file": "dlg-school-day.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-mirror": {
+      "file": "dlg-mirror.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-search": {
+      "file": "dlg-search.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "Y": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-alarm-speech": {
+      "file": "dlg-alarm-speech.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-street-speech": {
+      "file": "dlg-street-speech.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "G": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        },
+        "S": {
+          "B": 4,
+          "G": 4,
+          "C": 4,
+          "D": 5,
+          "H": 4,
+          "E": 4,
+          "F": 5
+        }
+      }
+    },
+    "dlg-arrive-speech": {
+      "file": "dlg-arrive-speech.png",
+      "grid": [
+        2,
+        3
+      ],
+      "cast": {
+        "T": {
+          "B": 0,
+          "G": 1,
+          "C": 1,
+          "D": 2,
+          "H": 1,
+          "E": 3,
+          "F": 3
+        }
+      }
+    },
+    "act-alarm": {
+      "file": "act-alarm.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-wake-a": {
+      "file": "act-wake-a.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-wake-b": {
+      "file": "act-wake-b.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-wash": {
+      "file": "act-wash.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-breakfast-sit": {
+      "file": "act-breakfast-sit.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-breakfast-eat": {
+      "file": "act-breakfast-eat.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-brush": {
+      "file": "act-brush.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-bag-find": {
+      "file": "act-bag-find.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-shoes-ready": {
+      "file": "act-shoes-ready.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-shoes-fit": {
+      "file": "act-shoes-fit.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-door-bag": {
+      "file": "act-door-bag.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-street-reach": {
+      "file": "act-street-reach.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-hello": {
+      "file": "act-hello.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-strap-left": {
+      "file": "act-strap-left.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-strap-right": {
+      "file": "act-strap-right.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-alarm-press": {
+      "file": "act-alarm-press.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-mirror": {
+      "file": "act-mirror.png",
+      "grid": [
+        2,
+        2
+      ]
+    },
+    "act-search-walk": {
+      "file": "act-search-walk.png",
+      "grid": [
+        2,
+        2
+      ]
+    },
+    "act-search-crouch": {
+      "file": "act-search-crouch.png",
+      "grid": [
+        2,
+        2
+      ]
+    },
+    "act-dress": {
+      "file": "act-dress.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-arrive": {
+      "file": "act-arrive.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-wake-stretch": {
+      "file": "act-wake-stretch.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-door-cross": {
+      "file": "act-door-cross.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-street-walk": {
+      "file": "act-street-walk.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-socks": {
+      "file": "act-socks.png",
+      "grid": [
+        2,
+        3
+      ]
+    },
+    "act-door-lever": {
+      "file": "act-door-lever.png",
+      "grid": [
+        2,
+        3
+      ]
+    }
+  },
+  "timeline": {
+    "alarm": [
+      [
+        125,
+        "act-alarm",
+        "motion",
+        [
+          [
+            0,
+            60
+          ],
+          [
+            1,
+            19
+          ],
+          [
+            2,
+            18
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            8
+          ]
+        ]
+      ],
+      [
+        149,
+        "act-alarm-press",
+        "motion",
+        [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ]
+      ],
+      [
+        288,
+        "dlg-alarm-speech",
+        "speech"
+      ]
+    ],
+    "wake": [
+      [
+        94,
+        "act-wake-a",
+        "motion",
+        [
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            14
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            26
+          ]
+        ]
+      ],
+      [
+        164,
+        "act-wake-b",
+        "motion",
+        [
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            13
+          ],
+          [
+            5,
+            13
+          ]
+        ]
+      ],
+      [
+        204,
+        "act-wake-stretch",
+        "motion",
+        [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      ],
+      [
+        408,
+        "dlg-bedroom-pj",
+        "speech"
+      ]
+    ],
+    "wash": [
+      [
+        239,
+        "dlg-bath-pj",
+        "speech"
+      ],
+      [
+        384,
+        "act-wash",
+        "motion",
+        [
+          [
+            0,
+            16
+          ],
+          [
+            1,
+            19
+          ],
+          [
+            2,
+            19
+          ],
+          [
+            3,
+            25
+          ],
+          [
+            4,
+            25
+          ],
+          [
+            5,
+            41
+          ]
+        ]
+      ]
+    ],
+    "breakfast": [
+      [
+        62,
+        "act-breakfast-sit",
+        "motion",
+        [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            5,
+            15
+          ]
+        ]
+      ],
+      [
+        256,
+        "dlg-kitchen-pj",
+        "speech"
+      ],
+      [
+        384,
+        "act-breakfast-eat",
+        "motion",
+        [
+          [
+            0,
+            15
+          ],
+          [
+            1,
+            17
+          ],
+          [
+            2,
+            18
+          ],
+          [
+            3,
+            22
+          ],
+          [
+            4,
+            18
+          ],
+          [
+            5,
+            38
+          ]
+        ]
+      ]
+    ],
+    "brush": [
+      [
+        234,
+        "dlg-bath-pj",
+        "speech"
+      ],
+      [
+        384,
+        "act-brush",
+        "motion",
+        [
+          [
+            0,
+            14
+          ],
+          [
+            1,
+            20
+          ],
+          [
+            2,
+            26
+          ],
+          [
+            3,
+            23
+          ],
+          [
+            4,
+            21
+          ],
+          [
+            5,
+            46
+          ]
+        ]
+      ]
+    ],
+    "dress": [
+      [
+        238,
+        "dlg-bedroom-dress",
+        "speech"
+      ],
+      [
+        408,
+        "act-dress",
+        "motion",
+        [
+          [
+            0,
+            22
+          ],
+          [
+            1,
+            20
+          ],
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            27
+          ],
+          [
+            4,
+            29
+          ],
+          [
+            5,
+            48
+          ]
+        ]
+      ]
+    ],
+    "socks": [
+      [
+        220,
+        "dlg-bedroom-socks",
+        "speech"
+      ],
+      [
+        408,
+        "act-socks",
+        "motion",
+        [
+          [
+            0,
+            21
+          ],
+          [
+            1,
+            25
+          ],
+          [
+            2,
+            26
+          ],
+          [
+            3,
+            31
+          ],
+          [
+            4,
+            28
+          ],
+          [
+            5,
+            57
+          ]
+        ]
+      ]
+    ],
+    "mirror": [
+      [
+        102,
+        "act-mirror",
+        "motion",
+        [
+          [
+            0,
+            23
+          ],
+          [
+            1,
+            21
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            37
+          ]
+        ]
+      ],
+      [
+        192,
+        "dlg-mirror",
+        "speech"
+      ]
+    ],
+    "search": [
+      [
+        71,
+        "act-search-walk",
+        "motion",
+        [
+          [
+            0,
+            13
+          ],
+          [
+            1,
+            17
+          ],
+          [
+            2,
+            19
+          ],
+          [
+            3,
+            22
+          ]
+        ]
+      ],
+      [
+        271,
+        "dlg-search",
+        "speech"
+      ],
+      [
+        384,
+        "act-search-crouch",
+        "motion",
+        [
+          [
+            1,
+            29
+          ],
+          [
+            2,
+            38
+          ],
+          [
+            3,
+            46
+          ]
+        ]
+      ]
+    ],
+    "find": [
+      [
+        262,
+        "dlg-bedroom-day-bag",
+        "speech"
+      ],
+      [
+        408,
+        "act-bag-find",
+        "motion",
+        [
+          [
+            0,
+            15
+          ],
+          [
+            1,
+            20
+          ],
+          [
+            2,
+            20
+          ],
+          [
+            3,
+            26
+          ],
+          [
+            4,
+            22
+          ],
+          [
+            5,
+            43
+          ]
+        ]
+      ]
+    ],
+    "shoes": [
+      [
+        42,
+        "act-shoes-ready",
+        "motion",
+        [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            8
+          ]
+        ]
+      ],
+      [
+        233,
+        "dlg-entry-day",
+        "speech"
+      ],
+      [
+        432,
+        "act-shoes-fit",
+        "motion",
+        [
+          [
+            0,
+            24
+          ],
+          [
+            1,
+            28
+          ],
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            35
+          ],
+          [
+            4,
+            33
+          ],
+          [
+            5,
+            47
+          ]
+        ]
+      ]
+    ],
+    "depart": [
+      [
+        204,
+        "dlg-entry-pack",
+        "speech"
+      ],
+      [
+        272,
+        "act-door-bag",
+        "motion",
+        [
+          [
+            0,
+            14
+          ],
+          [
+            1,
+            18
+          ],
+          [
+            2,
+            16
+          ],
+          [
+            3,
+            20
+          ]
+        ]
+      ],
+      [
+        316,
+        "act-strap-left",
+        "motion",
+        [
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            8
+          ]
+        ]
+      ],
+      [
+        360,
+        "act-strap-right",
+        "motion",
+        [
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            8
+          ]
+        ]
+      ],
+      [
+        405,
+        "act-door-lever",
+        "motion",
+        [
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            4,
+            14
+          ]
+        ]
+      ],
+      [
+        552,
+        "act-door-cross",
+        "motion",
+        [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            29
+          ],
+          [
+            4,
+            42
+          ],
+          [
+            5,
+            53
+          ]
+        ]
+      ]
+    ],
+    "street": [
+      [
+        56,
+        "act-street-reach",
+        "motion",
+        [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            5,
+            11
+          ]
+        ]
+      ],
+      [
+        262,
+        "dlg-street-speech",
+        "speech"
+      ],
+      [
+        384,
+        "act-street-walk",
+        "motion",
+        [
+          [
+            0,
+            18
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            4,
+            18
+          ],
+          [
+            5,
+            41
+          ]
+        ]
+      ]
+    ],
+    "arrive": [
+      [
+        82,
+        "act-arrive",
+        "motion",
+        [
+          [
+            0,
+            16
+          ],
+          [
+            1,
+            19
+          ],
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            25
+          ]
+        ]
+      ],
+      [
+        128,
+        "dlg-arrive-speech",
+        "speech"
+      ],
+      [
+        192,
+        "act-arrive",
+        "motion",
+        [
+          [
+            3,
+            18
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            5,
+            26
+          ]
+        ]
+      ]
+    ],
+    "hello": [
+      [
+        264,
+        "dlg-school-day",
+        "speech"
+      ],
+      [
+        384,
+        "act-hello",
+        "motion",
+        [
+          [
+            0,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            16
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            4,
+            19
+          ],
+          [
+            5,
+            46
+          ]
+        ]
+      ]
+    ]
+  }
+}
