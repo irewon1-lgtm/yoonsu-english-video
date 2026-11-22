@@ -1,0 +1,1697 @@
+{
+  "title": "쓰리와 윤수의 동물원 꿈 공연",
+  "en": "The Zoo Dream Show",
+  "fps": 24,
+  "frames": 7536,
+  "scenes": [
+    {
+      "id": "arrival",
+      "view": "wide",
+      "lines": [
+        {
+          "id": "z001",
+          "role": "teacher",
+          "en": "Today our classroom is a zoo stage!",
+          "ko": "오늘 우리 교실은 동물원 무대예요!"
+        },
+        {
+          "id": "z002",
+          "role": "y",
+          "en": "Mom, watch our show!",
+          "ko": "엄마, 우리 공연 보세요!"
+        },
+        {
+          "id": "z003",
+          "role": "mom",
+          "en": "I’ll be watching from the back row.",
+          "ko": "엄마는 뒷줄에서 보고 있을게!"
+        }
+      ],
+      "icon": null,
+      "seconds": 11,
+      "at": 0,
+      "end": 264,
+      "events": [
+        {
+          "id": "z001",
+          "role": "teacher",
+          "en": "Today our classroom is a zoo stage!",
+          "ko": "오늘 우리 교실은 동물원 무대예요!",
+          "at": 32,
+          "end": 96
+        },
+        {
+          "id": "z002",
+          "role": "y",
+          "en": "Mom, watch our show!",
+          "ko": "엄마, 우리 공연 보세요!",
+          "at": 115,
+          "end": 158
+        },
+        {
+          "id": "z003",
+          "role": "mom",
+          "en": "I’ll be watching from the back row.",
+          "ko": "엄마는 뒷줄에서 보고 있을게!",
+          "at": 177,
+          "end": 240
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "families",
+      "view": "audience",
+      "lines": [
+        {
+          "id": "z004",
+          "role": "mom",
+          "en": "There are ten children on stage today.",
+          "ko": "오늘 무대에는 어린이가 열 명이구나."
+        },
+        {
+          "id": "z005",
+          "role": "y",
+          "en": "Look! Three brought a microphone!",
+          "ko": "보세요! 쓰리가 마이크를 가져왔어요!"
+        }
+      ],
+      "icon": null,
+      "seconds": 10,
+      "at": 264,
+      "end": 504,
+      "events": [
+        {
+          "id": "z004",
+          "role": "mom",
+          "en": "There are ten children on stage today.",
+          "ko": "오늘 무대에는 어린이가 열 명이구나.",
+          "at": 286,
+          "end": 370
+        },
+        {
+          "id": "z005",
+          "role": "y",
+          "en": "Look! Three brought a microphone!",
+          "ko": "보세요! 쓰리가 마이크를 가져왔어요!",
+          "at": 396,
+          "end": 451
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "zoo_gate",
+      "view": "zoo",
+      "lines": [
+        {
+          "id": "z006",
+          "role": "three",
+          "en": "One, two, three! Welcome to the zoo show!",
+          "ko": "하나, 둘, 셋! 동물원 공연에 오신 걸 환영해요!"
+        },
+        {
+          "id": "z007",
+          "role": "sheriff",
+          "en": "Three, check the sky before we start.",
+          "ko": "쓰리야, 시작하기 전에 하늘을 봐."
+        },
+        {
+          "id": "z008",
+          "role": "three",
+          "en": "Blue sky! No clouds today.",
+          "ko": "파란 하늘이야! 오늘은 구름이 없어."
+        }
+      ],
+      "icon": "sun",
+      "seconds": 13,
+      "at": 504,
+      "end": 816,
+      "events": [
+        {
+          "id": "z006",
+          "role": "three",
+          "en": "One, two, three! Welcome to the zoo show!",
+          "ko": "하나, 둘, 셋! 동물원 공연에 오신 걸 환영해요!",
+          "at": 523,
+          "end": 608
+        },
+        {
+          "id": "z007",
+          "role": "sheriff",
+          "en": "Three, check the sky before we start.",
+          "ko": "쓰리야, 시작하기 전에 하늘을 봐.",
+          "at": 634,
+          "end": 698
+        },
+        {
+          "id": "z008",
+          "role": "three",
+          "en": "Blue sky! No clouds today.",
+          "ko": "파란 하늘이야! 오늘은 구름이 없어.",
+          "at": 724,
+          "end": 785
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_1",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z010",
+          "role": "teacher",
+          "en": "How’s the weather?",
+          "ko": "날씨가 어때요?"
+        },
+        {
+          "id": "z009",
+          "role": "three",
+          "en": "It’s sunny today.",
+          "ko": "오늘은 맑아요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z009",
+          "role": "three",
+          "en": "It’s sunny today.",
+          "ko": "오늘은 맑아요."
+        },
+        {
+          "id": "pause1",
+          "role": "pause",
+          "en": "It’s sunny today.",
+          "ko": "오늘은 맑아요."
+        }
+      ],
+      "icon": "sun",
+      "seconds": 14,
+      "at": 816,
+      "end": 1152,
+      "events": [
+        {
+          "id": "z010",
+          "role": "teacher",
+          "en": "How’s the weather?",
+          "ko": "날씨가 어때요?",
+          "at": 835,
+          "end": 866
+        },
+        {
+          "id": "z009",
+          "role": "three",
+          "en": "It’s sunny today.",
+          "ko": "오늘은 맑아요.",
+          "at": 878,
+          "end": 914
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 922,
+          "end": 959
+        },
+        {
+          "id": "z009",
+          "role": "three",
+          "en": "It’s sunny today.",
+          "ko": "오늘은 맑아요.",
+          "at": 968,
+          "end": 1004
+        },
+        {
+          "id": "pause1",
+          "role": "pause",
+          "en": "It’s sunny today.",
+          "ko": "오늘은 맑아요.",
+          "at": 1010,
+          "end": 1106
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_2",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z012",
+          "role": "teacher",
+          "en": "What is your name?",
+          "ko": "이름이 뭐예요?"
+        },
+        {
+          "id": "z011",
+          "role": "sheriff",
+          "en": "I am Yoonsu.",
+          "ko": "저는 윤수예요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z011",
+          "role": "sheriff",
+          "en": "I am Yoonsu.",
+          "ko": "저는 윤수예요."
+        },
+        {
+          "id": "pause2",
+          "role": "pause",
+          "en": "I am Yoonsu.",
+          "ko": "저는 윤수예요."
+        }
+      ],
+      "icon": "mic",
+      "seconds": 14,
+      "at": 1152,
+      "end": 1488,
+      "events": [
+        {
+          "id": "z012",
+          "role": "teacher",
+          "en": "What is your name?",
+          "ko": "이름이 뭐예요?",
+          "at": 1171,
+          "end": 1201
+        },
+        {
+          "id": "z011",
+          "role": "sheriff",
+          "en": "I am Yoonsu.",
+          "ko": "저는 윤수예요.",
+          "at": 1213,
+          "end": 1247
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 1255,
+          "end": 1292
+        },
+        {
+          "id": "z011",
+          "role": "sheriff",
+          "en": "I am Yoonsu.",
+          "ko": "저는 윤수예요.",
+          "at": 1301,
+          "end": 1335
+        },
+        {
+          "id": "pause2",
+          "role": "pause",
+          "en": "I am Yoonsu.",
+          "ko": "저는 윤수예요.",
+          "at": 1341,
+          "end": 1437
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "age",
+      "view": "zoo",
+      "lines": [
+        {
+          "id": "z013",
+          "role": "three",
+          "en": "Count my blocks. One, two, three!",
+          "ko": "내 블록을 세어 봐. 하나, 둘, 셋!"
+        },
+        {
+          "id": "z014",
+          "role": "three",
+          "en": "For our zoo play, I’m three years old.",
+          "ko": "오늘 동물원 놀이에서 나는 세 살이야."
+        },
+        {
+          "id": "z015",
+          "role": "sheriff",
+          "en": "Try Three’s answer. Later, use your own age.",
+          "ko": "쓰리의 대답을 연습해 봐. 나중엔 네 나이로 말해 봐."
+        }
+      ],
+      "icon": "three",
+      "seconds": 14,
+      "at": 1488,
+      "end": 1824,
+      "events": [
+        {
+          "id": "z013",
+          "role": "three",
+          "en": "Count my blocks. One, two, three!",
+          "ko": "내 블록을 세어 봐. 하나, 둘, 셋!",
+          "at": 1507,
+          "end": 1578
+        },
+        {
+          "id": "z014",
+          "role": "three",
+          "en": "For our zoo play, I’m three years old.",
+          "ko": "오늘 동물원 놀이에서 나는 세 살이야.",
+          "at": 1604,
+          "end": 1672
+        },
+        {
+          "id": "z015",
+          "role": "sheriff",
+          "en": "Try Three’s answer. Later, use your own age.",
+          "ko": "쓰리의 대답을 연습해 봐. 나중엔 네 나이로 말해 봐.",
+          "at": 1698,
+          "end": 1788
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_3",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z017",
+          "role": "teacher",
+          "en": "How old are you?",
+          "ko": "몇 살이에요?"
+        },
+        {
+          "id": "z016",
+          "role": "three",
+          "en": "I am three.",
+          "ko": "저는 세 살이에요. (쓰리 역할)"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z016",
+          "role": "three",
+          "en": "I am three.",
+          "ko": "저는 세 살이에요. (쓰리 역할)"
+        },
+        {
+          "id": "pause3",
+          "role": "pause",
+          "en": "I am three.",
+          "ko": "저는 세 살이에요. (쓰리 역할)"
+        }
+      ],
+      "icon": "three",
+      "seconds": 13,
+      "at": 1824,
+      "end": 2136,
+      "events": [
+        {
+          "id": "z017",
+          "role": "teacher",
+          "en": "How old are you?",
+          "ko": "몇 살이에요?",
+          "at": 1843,
+          "end": 1875
+        },
+        {
+          "id": "z016",
+          "role": "three",
+          "en": "I am three.",
+          "ko": "저는 세 살이에요. (쓰리 역할)",
+          "at": 1887,
+          "end": 1917
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 1925,
+          "end": 1962
+        },
+        {
+          "id": "z016",
+          "role": "three",
+          "en": "I am three.",
+          "ko": "저는 세 살이에요. (쓰리 역할)",
+          "at": 1971,
+          "end": 2001
+        },
+        {
+          "id": "pause3",
+          "role": "pause",
+          "en": "I am three.",
+          "ko": "저는 세 살이에요. (쓰리 역할)",
+          "at": 2007,
+          "end": 2103
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_4",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z019",
+          "role": "teacher",
+          "en": "Where do you go?",
+          "ko": "어디에 가요?"
+        },
+        {
+          "id": "z018",
+          "role": "three",
+          "en": "To the zoo!",
+          "ko": "동물원에 가요!"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z018",
+          "role": "three",
+          "en": "To the zoo!",
+          "ko": "동물원에 가요!"
+        },
+        {
+          "id": "pause4",
+          "role": "pause",
+          "en": "To the zoo!",
+          "ko": "동물원에 가요!"
+        }
+      ],
+      "icon": "zoo",
+      "seconds": 13,
+      "at": 2136,
+      "end": 2448,
+      "events": [
+        {
+          "id": "z019",
+          "role": "teacher",
+          "en": "Where do you go?",
+          "ko": "어디에 가요?",
+          "at": 2155,
+          "end": 2183
+        },
+        {
+          "id": "z018",
+          "role": "three",
+          "en": "To the zoo!",
+          "ko": "동물원에 가요!",
+          "at": 2195,
+          "end": 2221
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 2229,
+          "end": 2266
+        },
+        {
+          "id": "z018",
+          "role": "three",
+          "en": "To the zoo!",
+          "ko": "동물원에 가요!",
+          "at": 2275,
+          "end": 2301
+        },
+        {
+          "id": "pause4",
+          "role": "pause",
+          "en": "To the zoo!",
+          "ko": "동물원에 가요!",
+          "at": 2307,
+          "end": 2403
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "animals",
+      "view": "zoo",
+      "lines": [
+        {
+          "id": "z020",
+          "role": "y",
+          "en": "I go to the zoo. Who’s on stage?",
+          "ko": "저는 동물원에 가요. 무대에는 누가 있죠?"
+        },
+        {
+          "id": "z021",
+          "role": "three",
+          "en": "A chicken and a duck! Listen to their sounds.",
+          "ko": "닭과 오리야! 소리를 들어 봐."
+        },
+        {
+          "id": "z022",
+          "role": "three",
+          "en": "Cluck, cluck! Quack, quack!",
+          "ko": "꼬꼬댁! 꽥꽥!"
+        }
+      ],
+      "icon": "chicken",
+      "seconds": 13,
+      "at": 2448,
+      "end": 2760,
+      "events": [
+        {
+          "id": "z020",
+          "role": "y",
+          "en": "I go to the zoo. Who’s on stage?",
+          "ko": "저는 동물원에 가요. 무대에는 누가 있죠?",
+          "at": 2467,
+          "end": 2532
+        },
+        {
+          "id": "z021",
+          "role": "three",
+          "en": "A chicken and a duck! Listen to their sounds.",
+          "ko": "닭과 오리야! 소리를 들어 봐.",
+          "at": 2558,
+          "end": 2647
+        },
+        {
+          "id": "z022",
+          "role": "three",
+          "en": "Cluck, cluck! Quack, quack!",
+          "ko": "꼬꼬댁! 꽥꽥!",
+          "at": 2673,
+          "end": 2723
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_5",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z024",
+          "role": "teacher",
+          "en": "Who says cluck, cluck?",
+          "ko": "누가 꼬꼬댁 울어요?"
+        },
+        {
+          "id": "z023",
+          "role": "three",
+          "en": "It’s a chicken.",
+          "ko": "닭이에요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z023",
+          "role": "three",
+          "en": "It’s a chicken.",
+          "ko": "닭이에요."
+        },
+        {
+          "id": "pause5",
+          "role": "pause",
+          "en": "It’s a chicken.",
+          "ko": "닭이에요."
+        }
+      ],
+      "icon": "chicken",
+      "seconds": 14,
+      "at": 2760,
+      "end": 3096,
+      "events": [
+        {
+          "id": "z024",
+          "role": "teacher",
+          "en": "Who says cluck, cluck?",
+          "ko": "누가 꼬꼬댁 울어요?",
+          "at": 2779,
+          "end": 2820
+        },
+        {
+          "id": "z023",
+          "role": "three",
+          "en": "It’s a chicken.",
+          "ko": "닭이에요.",
+          "at": 2832,
+          "end": 2864
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 2872,
+          "end": 2909
+        },
+        {
+          "id": "z023",
+          "role": "three",
+          "en": "It’s a chicken.",
+          "ko": "닭이에요.",
+          "at": 2918,
+          "end": 2950
+        },
+        {
+          "id": "pause5",
+          "role": "pause",
+          "en": "It’s a chicken.",
+          "ko": "닭이에요.",
+          "at": 2956,
+          "end": 3052
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_6",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z026",
+          "role": "teacher",
+          "en": "Who says quack, quack?",
+          "ko": "누가 꽥꽥 울어요?"
+        },
+        {
+          "id": "z025",
+          "role": "three",
+          "en": "It’s a duck.",
+          "ko": "오리예요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z025",
+          "role": "three",
+          "en": "It’s a duck.",
+          "ko": "오리예요."
+        },
+        {
+          "id": "pause6",
+          "role": "pause",
+          "en": "It’s a duck.",
+          "ko": "오리예요."
+        }
+      ],
+      "icon": "duck",
+      "seconds": 14,
+      "at": 3096,
+      "end": 3432,
+      "events": [
+        {
+          "id": "z026",
+          "role": "teacher",
+          "en": "Who says quack, quack?",
+          "ko": "누가 꽥꽥 울어요?",
+          "at": 3115,
+          "end": 3157
+        },
+        {
+          "id": "z025",
+          "role": "three",
+          "en": "It’s a duck.",
+          "ko": "오리예요.",
+          "at": 3169,
+          "end": 3196
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 3204,
+          "end": 3241
+        },
+        {
+          "id": "z025",
+          "role": "three",
+          "en": "It’s a duck.",
+          "ko": "오리예요.",
+          "at": 3250,
+          "end": 3277
+        },
+        {
+          "id": "pause6",
+          "role": "pause",
+          "en": "It’s a duck.",
+          "ko": "오리예요.",
+          "at": 3283,
+          "end": 3379
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "music",
+      "view": "zoo",
+      "lines": [
+        {
+          "id": "z027",
+          "role": "three",
+          "en": "Time for our dream song. I’ll count us in!",
+          "ko": "우리의 꿈 노래 시간이야. 내가 박자를 셀게!"
+        },
+        {
+          "id": "z028",
+          "role": "three",
+          "en": "One, two, three!",
+          "ko": "하나, 둘, 셋!"
+        },
+        {
+          "id": "z029",
+          "role": "y",
+          "en": "I have a dream.",
+          "ko": "저에게는 꿈이 있어요."
+        },
+        {
+          "id": "z030",
+          "role": "y",
+          "en": "I like to sing a song.",
+          "ko": "저는 노래 부르는 걸 좋아해요."
+        },
+        {
+          "id": "z031",
+          "role": "y",
+          "en": "So I want to be a singer.",
+          "ko": "그래서 가수가 되고 싶어요."
+        }
+      ],
+      "icon": "mic",
+      "seconds": 14,
+      "at": 3432,
+      "end": 3768,
+      "events": [
+        {
+          "id": "z027",
+          "role": "three",
+          "en": "Time for our dream song. I’ll count us in!",
+          "ko": "우리의 꿈 노래 시간이야. 내가 박자를 셀게!",
+          "at": 3451,
+          "end": 3536
+        },
+        {
+          "id": "z028",
+          "role": "three",
+          "en": "One, two, three!",
+          "ko": "하나, 둘, 셋!",
+          "at": 3551,
+          "end": 3586
+        },
+        {
+          "id": "z029",
+          "role": "y",
+          "en": "I have a dream.",
+          "ko": "저에게는 꿈이 있어요.",
+          "at": 3601,
+          "end": 3633
+        },
+        {
+          "id": "z030",
+          "role": "y",
+          "en": "I like to sing a song.",
+          "ko": "저는 노래 부르는 걸 좋아해요.",
+          "at": 3648,
+          "end": 3687
+        },
+        {
+          "id": "z031",
+          "role": "y",
+          "en": "So I want to be a singer.",
+          "ko": "그래서 가수가 되고 싶어요.",
+          "at": 3702,
+          "end": 3745
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_7",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z033",
+          "role": "teacher",
+          "en": "What do you like to do on stage?",
+          "ko": "무대에서 무엇을 좋아해요?"
+        },
+        {
+          "id": "z032",
+          "role": "three",
+          "en": "I like singing.",
+          "ko": "노래 부르기를 좋아해요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z032",
+          "role": "three",
+          "en": "I like singing.",
+          "ko": "노래 부르기를 좋아해요."
+        },
+        {
+          "id": "pause7",
+          "role": "pause",
+          "en": "I like singing.",
+          "ko": "노래 부르기를 좋아해요."
+        }
+      ],
+      "icon": "mic",
+      "seconds": 14,
+      "at": 3768,
+      "end": 4104,
+      "events": [
+        {
+          "id": "z033",
+          "role": "teacher",
+          "en": "What do you like to do on stage?",
+          "ko": "무대에서 무엇을 좋아해요?",
+          "at": 3787,
+          "end": 3839
+        },
+        {
+          "id": "z032",
+          "role": "three",
+          "en": "I like singing.",
+          "ko": "노래 부르기를 좋아해요.",
+          "at": 3851,
+          "end": 3882
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 3890,
+          "end": 3927
+        },
+        {
+          "id": "z032",
+          "role": "three",
+          "en": "I like singing.",
+          "ko": "노래 부르기를 좋아해요.",
+          "at": 3936,
+          "end": 3967
+        },
+        {
+          "id": "pause7",
+          "role": "pause",
+          "en": "I like singing.",
+          "ko": "노래 부르기를 좋아해요.",
+          "at": 3973,
+          "end": 4069
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_8",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z035",
+          "role": "teacher",
+          "en": "What do you want to be?",
+          "ko": "무엇이 되고 싶어요?"
+        },
+        {
+          "id": "z034",
+          "role": "three",
+          "en": "A singer, too!",
+          "ko": "저도 가수요!"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z034",
+          "role": "three",
+          "en": "A singer, too!",
+          "ko": "저도 가수요!"
+        },
+        {
+          "id": "pause8",
+          "role": "pause",
+          "en": "A singer, too!",
+          "ko": "저도 가수요!"
+        }
+      ],
+      "icon": "mic",
+      "seconds": 14,
+      "at": 4104,
+      "end": 4440,
+      "events": [
+        {
+          "id": "z035",
+          "role": "teacher",
+          "en": "What do you want to be?",
+          "ko": "무엇이 되고 싶어요?",
+          "at": 4123,
+          "end": 4157
+        },
+        {
+          "id": "z034",
+          "role": "three",
+          "en": "A singer, too!",
+          "ko": "저도 가수요!",
+          "at": 4169,
+          "end": 4202
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 4210,
+          "end": 4247
+        },
+        {
+          "id": "z034",
+          "role": "three",
+          "en": "A singer, too!",
+          "ko": "저도 가수요!",
+          "at": 4256,
+          "end": 4289
+        },
+        {
+          "id": "pause8",
+          "role": "pause",
+          "en": "A singer, too!",
+          "ko": "저도 가수요!",
+          "at": 4295,
+          "end": 4391
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "kitchen",
+      "view": "zoo",
+      "lines": [
+        {
+          "id": "z036",
+          "role": "three",
+          "en": "The singers are hungry. Who has a second dream?",
+          "ko": "노래한 친구들이 배고프대. 두 번째 꿈이 있는 사람?"
+        },
+        {
+          "id": "z037",
+          "role": "y",
+          "en": "I also want to be a cook.",
+          "ko": "저는 요리사도 되고 싶어요."
+        },
+        {
+          "id": "z038",
+          "role": "three",
+          "en": "Here’s a pot. Let’s make soup for the show!",
+          "ko": "여기 냄비가 있어. 공연 친구들에게 수프를 만들어 주자!"
+        }
+      ],
+      "icon": "pot",
+      "seconds": 13,
+      "at": 4440,
+      "end": 4752,
+      "events": [
+        {
+          "id": "z036",
+          "role": "three",
+          "en": "The singers are hungry. Who has a second dream?",
+          "ko": "노래한 친구들이 배고프대. 두 번째 꿈이 있는 사람?",
+          "at": 4459,
+          "end": 4548
+        },
+        {
+          "id": "z037",
+          "role": "y",
+          "en": "I also want to be a cook.",
+          "ko": "저는 요리사도 되고 싶어요.",
+          "at": 4574,
+          "end": 4619
+        },
+        {
+          "id": "z038",
+          "role": "three",
+          "en": "Here’s a pot. Let’s make soup for the show!",
+          "ko": "여기 냄비가 있어. 공연 친구들에게 수프를 만들어 주자!",
+          "at": 4645,
+          "end": 4722
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_9",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z040",
+          "role": "teacher",
+          "en": "What else do you want to be?",
+          "ko": "또 무엇이 되고 싶어요?"
+        },
+        {
+          "id": "z039",
+          "role": "three",
+          "en": "A cook, too!",
+          "ko": "요리사도요!"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z039",
+          "role": "three",
+          "en": "A cook, too!",
+          "ko": "요리사도요!"
+        },
+        {
+          "id": "pause9",
+          "role": "pause",
+          "en": "A cook, too!",
+          "ko": "요리사도요!"
+        }
+      ],
+      "icon": "pot",
+      "seconds": 14,
+      "at": 4752,
+      "end": 5088,
+      "events": [
+        {
+          "id": "z040",
+          "role": "teacher",
+          "en": "What else do you want to be?",
+          "ko": "또 무엇이 되고 싶어요?",
+          "at": 4771,
+          "end": 4813
+        },
+        {
+          "id": "z039",
+          "role": "three",
+          "en": "A cook, too!",
+          "ko": "요리사도요!",
+          "at": 4825,
+          "end": 4856
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 4864,
+          "end": 4901
+        },
+        {
+          "id": "z039",
+          "role": "three",
+          "en": "A cook, too!",
+          "ko": "요리사도요!",
+          "at": 4910,
+          "end": 4941
+        },
+        {
+          "id": "pause9",
+          "role": "pause",
+          "en": "A cook, too!",
+          "ko": "요리사도요!",
+          "at": 4947,
+          "end": 5043
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_10",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z042",
+          "role": "teacher",
+          "en": "What shall we make together?",
+          "ko": "함께 무엇을 만들까요?"
+        },
+        {
+          "id": "z041",
+          "role": "three",
+          "en": "Let’s make soup.",
+          "ko": "수프를 만들어요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z041",
+          "role": "three",
+          "en": "Let’s make soup.",
+          "ko": "수프를 만들어요."
+        },
+        {
+          "id": "pause10",
+          "role": "pause",
+          "en": "Let’s make soup.",
+          "ko": "수프를 만들어요."
+        }
+      ],
+      "icon": "pot",
+      "seconds": 14,
+      "at": 5088,
+      "end": 5424,
+      "events": [
+        {
+          "id": "z042",
+          "role": "teacher",
+          "en": "What shall we make together?",
+          "ko": "함께 무엇을 만들까요?",
+          "at": 5107,
+          "end": 5153
+        },
+        {
+          "id": "z041",
+          "role": "three",
+          "en": "Let’s make soup.",
+          "ko": "수프를 만들어요.",
+          "at": 5165,
+          "end": 5202
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 5210,
+          "end": 5247
+        },
+        {
+          "id": "z041",
+          "role": "three",
+          "en": "Let’s make soup.",
+          "ko": "수프를 만들어요.",
+          "at": 5256,
+          "end": 5293
+        },
+        {
+          "id": "pause10",
+          "role": "pause",
+          "en": "Let’s make soup.",
+          "ko": "수프를 만들어요.",
+          "at": 5299,
+          "end": 5395
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "hands_up",
+      "view": "child",
+      "lines": [
+        {
+          "id": "z043",
+          "role": "teacher",
+          "en": "Who wants to ask a friend about their dream?",
+          "ko": "친구에게 꿈을 물어보고 싶은 사람?"
+        },
+        {
+          "id": "z044",
+          "role": "y",
+          "en": "My hand is up!",
+          "ko": "저 손 들었어요!"
+        },
+        {
+          "id": "z045",
+          "role": "teacher",
+          "en": "Go ahead, Yoonsu. Pass the question to Three.",
+          "ko": "좋아요, 윤수. 쓰리에게 질문해 봐요."
+        },
+        {
+          "id": "z046",
+          "role": "y",
+          "en": "How about you?",
+          "ko": "너는 어때?"
+        }
+      ],
+      "icon": "mic",
+      "seconds": 16,
+      "at": 5424,
+      "end": 5808,
+      "events": [
+        {
+          "id": "z043",
+          "role": "teacher",
+          "en": "Who wants to ask a friend about their dream?",
+          "ko": "친구에게 꿈을 물어보고 싶은 사람?",
+          "at": 5478,
+          "end": 5547
+        },
+        {
+          "id": "z044",
+          "role": "y",
+          "en": "My hand is up!",
+          "ko": "저 손 들었어요!",
+          "at": 5574,
+          "end": 5609
+        },
+        {
+          "id": "z045",
+          "role": "teacher",
+          "en": "Go ahead, Yoonsu. Pass the question to Three.",
+          "ko": "좋아요, 윤수. 쓰리에게 질문해 봐요.",
+          "at": 5638,
+          "end": 5723
+        },
+        {
+          "id": "z046",
+          "role": "y",
+          "en": "How about you?",
+          "ko": "너는 어때?",
+          "at": 5750,
+          "end": 5783
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_11",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z048",
+          "role": "teacher",
+          "en": "Ask Three about her dream.",
+          "ko": "쓰리의 꿈을 물어봐요."
+        },
+        {
+          "id": "z047",
+          "role": "sheriff",
+          "en": "How about you?",
+          "ko": "너는 어때?"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z047",
+          "role": "sheriff",
+          "en": "How about you?",
+          "ko": "너는 어때?"
+        },
+        {
+          "id": "pause11",
+          "role": "pause",
+          "en": "How about you?",
+          "ko": "너는 어때?"
+        }
+      ],
+      "icon": "mic",
+      "seconds": 14,
+      "at": 5808,
+      "end": 6144,
+      "events": [
+        {
+          "id": "z048",
+          "role": "teacher",
+          "en": "Ask Three about her dream.",
+          "ko": "쓰리의 꿈을 물어봐요.",
+          "at": 5827,
+          "end": 5872
+        },
+        {
+          "id": "z047",
+          "role": "sheriff",
+          "en": "How about you?",
+          "ko": "너는 어때?",
+          "at": 5884,
+          "end": 5917
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 5925,
+          "end": 5962
+        },
+        {
+          "id": "z047",
+          "role": "sheriff",
+          "en": "How about you?",
+          "ko": "너는 어때?",
+          "at": 5971,
+          "end": 6004
+        },
+        {
+          "id": "pause11",
+          "role": "pause",
+          "en": "How about you?",
+          "ko": "너는 어때?",
+          "at": 6010,
+          "end": 6106
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "encore",
+      "view": "zoo",
+      "lines": [
+        {
+          "id": "z049",
+          "role": "three",
+          "en": "Me? I want to sing with you!",
+          "ko": "나? 너와 같이 노래하고 싶어!"
+        },
+        {
+          "id": "z050",
+          "role": "three",
+          "en": "I have a dream.",
+          "ko": "저에게는 꿈이 있어요."
+        },
+        {
+          "id": "z051",
+          "role": "three",
+          "en": "I like to sing a song.",
+          "ko": "노래 부르기를 좋아해요."
+        },
+        {
+          "id": "z052",
+          "role": "y",
+          "en": "So I want to be a singer.",
+          "ko": "그래서 가수가 되고 싶어요."
+        },
+        {
+          "id": "z053",
+          "role": "three",
+          "en": "I also want to be a cook.",
+          "ko": "저는 요리사도 되고 싶어요."
+        },
+        {
+          "id": "z054",
+          "role": "sheriff",
+          "en": "How about you?",
+          "ko": "너는 어때?"
+        }
+      ],
+      "icon": "mic",
+      "seconds": 15,
+      "at": 6144,
+      "end": 6504,
+      "events": [
+        {
+          "id": "z049",
+          "role": "three",
+          "en": "Me? I want to sing with you!",
+          "ko": "나? 너와 같이 노래하고 싶어!",
+          "at": 6163,
+          "end": 6214
+        },
+        {
+          "id": "z050",
+          "role": "three",
+          "en": "I have a dream.",
+          "ko": "저에게는 꿈이 있어요.",
+          "at": 6227,
+          "end": 6260
+        },
+        {
+          "id": "z051",
+          "role": "three",
+          "en": "I like to sing a song.",
+          "ko": "노래 부르기를 좋아해요.",
+          "at": 6273,
+          "end": 6314
+        },
+        {
+          "id": "z052",
+          "role": "y",
+          "en": "So I want to be a singer.",
+          "ko": "그래서 가수가 되고 싶어요.",
+          "at": 6327,
+          "end": 6370
+        },
+        {
+          "id": "z053",
+          "role": "three",
+          "en": "I also want to be a cook.",
+          "ko": "저는 요리사도 되고 싶어요.",
+          "at": 6383,
+          "end": 6431
+        },
+        {
+          "id": "z054",
+          "role": "sheriff",
+          "en": "How about you?",
+          "ko": "너는 어때?",
+          "at": 6444,
+          "end": 6477
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "drawing",
+      "view": "zoo",
+      "lines": [
+        {
+          "id": "z055",
+          "role": "y",
+          "en": "Hi! This is my zoo picture.",
+          "ko": "안녕! 이건 내 동물원 그림이야."
+        },
+        {
+          "id": "z056",
+          "role": "y",
+          "en": "I am happy. I love my mom.",
+          "ko": "저는 행복해요. 우리 엄마를 사랑해요."
+        },
+        {
+          "id": "z057",
+          "role": "three",
+          "en": "Look at Mom smiling behind the children.",
+          "ko": "어린이들 뒤에서 엄마가 미소 짓고 있어."
+        }
+      ],
+      "icon": "heart",
+      "seconds": 13,
+      "at": 6504,
+      "end": 6816,
+      "events": [
+        {
+          "id": "z055",
+          "role": "y",
+          "en": "Hi! This is my zoo picture.",
+          "ko": "안녕! 이건 내 동물원 그림이야.",
+          "at": 6523,
+          "end": 6579
+        },
+        {
+          "id": "z056",
+          "role": "y",
+          "en": "I am happy. I love my mom.",
+          "ko": "저는 행복해요. 우리 엄마를 사랑해요.",
+          "at": 6605,
+          "end": 6668
+        },
+        {
+          "id": "z057",
+          "role": "three",
+          "en": "Look at Mom smiling behind the children.",
+          "ko": "어린이들 뒤에서 엄마가 미소 짓고 있어.",
+          "at": 6694,
+          "end": 6767
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_12",
+      "view": "practice",
+      "lines": [
+        {
+          "id": "z059",
+          "role": "teacher",
+          "en": "How do you feel after your show?",
+          "ko": "공연이 끝나니 기분이 어때요?"
+        },
+        {
+          "id": "z058",
+          "role": "three",
+          "en": "I am happy.",
+          "ko": "저는 행복해요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "z058",
+          "role": "three",
+          "en": "I am happy.",
+          "ko": "저는 행복해요."
+        },
+        {
+          "id": "pause12",
+          "role": "pause",
+          "en": "I am happy.",
+          "ko": "저는 행복해요."
+        }
+      ],
+      "icon": "heart",
+      "seconds": 14,
+      "at": 6816,
+      "end": 7152,
+      "events": [
+        {
+          "id": "z059",
+          "role": "teacher",
+          "en": "How do you feel after your show?",
+          "ko": "공연이 끝나니 기분이 어때요?",
+          "at": 6835,
+          "end": 6887
+        },
+        {
+          "id": "z058",
+          "role": "three",
+          "en": "I am happy.",
+          "ko": "저는 행복해요.",
+          "at": 6899,
+          "end": 6930
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 6938,
+          "end": 6975
+        },
+        {
+          "id": "z058",
+          "role": "three",
+          "en": "I am happy.",
+          "ko": "저는 행복해요.",
+          "at": 6984,
+          "end": 7015
+        },
+        {
+          "id": "pause12",
+          "role": "pause",
+          "en": "I am happy.",
+          "ko": "저는 행복해요.",
+          "at": 7021,
+          "end": 7117
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "clap",
+      "view": "audience",
+      "lines": [
+        {
+          "id": "z060",
+          "role": "teacher",
+          "en": "A big hand for our dream show!",
+          "ko": "우리의 꿈 공연에 큰 박수를 보내요!"
+        },
+        {
+          "id": "z061",
+          "role": "mom",
+          "en": "I heard you sing, and I heard your question.",
+          "ko": "윤수 노래도 듣고 친구에게 묻는 말도 들었어."
+        },
+        {
+          "id": "z062",
+          "role": "y",
+          "en": "The duck sang along!",
+          "ko": "오리도 따라 불렀어요!"
+        },
+        {
+          "id": "z063",
+          "role": "mom",
+          "en": "Quack, quack! I love you, too.",
+          "ko": "꽥꽥! 엄마도 사랑해."
+        }
+      ],
+      "icon": null,
+      "seconds": 16,
+      "at": 7152,
+      "end": 7536,
+      "events": [
+        {
+          "id": "z060",
+          "role": "teacher",
+          "en": "A big hand for our dream show!",
+          "ko": "우리의 꿈 공연에 큰 박수를 보내요!",
+          "at": 7171,
+          "end": 7225
+        },
+        {
+          "id": "z061",
+          "role": "mom",
+          "en": "I heard you sing, and I heard your question.",
+          "ko": "윤수 노래도 듣고 친구에게 묻는 말도 들었어.",
+          "at": 7268,
+          "end": 7365
+        },
+        {
+          "id": "z062",
+          "role": "y",
+          "en": "The duck sang along!",
+          "ko": "오리도 따라 불렀어요!",
+          "at": 7378,
+          "end": 7416
+        },
+        {
+          "id": "z063",
+          "role": "mom",
+          "en": "Quack, quack! I love you, too.",
+          "ko": "꽥꽥! 엄마도 사랑해.",
+          "at": 7429,
+          "end": 7493
+        }
+      ],
+      "claps": [
+        7236,
+        7248,
+        7260
+      ]
+    }
+  ]
+}

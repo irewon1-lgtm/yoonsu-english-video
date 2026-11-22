@@ -12,6 +12,7 @@ const episodes = [
   { id: "morning-daycare", title: "좋은 아침, 어린이집 가자!" },
   { id: "open-class", title: "어린이집 참관 수업" },
   { id: "dream-class", title: "I Have a Dream · 윤수의 꿈 발표" },
+  { id: "zoo-dream", title: "쓰리와 윤수의 동물원 꿈 공연" },
 ];
 
 const slotsPerPage = 6;

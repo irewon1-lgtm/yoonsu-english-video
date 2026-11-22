@@ -1,0 +1,347 @@
+1
+00:00:01,333 --> 00:00:04,000
+Today our classroom is a zoo stage!
+
+2
+00:00:04,792 --> 00:00:06,583
+Mom, watch our show!
+
+3
+00:00:07,375 --> 00:00:10,000
+I’ll be watching from the back row.
+
+4
+00:00:11,917 --> 00:00:15,417
+There are ten children on stage today.
+
+5
+00:00:16,500 --> 00:00:18,792
+Look! Three brought a microphone!
+
+6
+00:00:21,792 --> 00:00:25,333
+One, two, three! Welcome to the zoo show!
+
+7
+00:00:26,417 --> 00:00:29,083
+Three, check the sky before we start.
+
+8
+00:00:30,167 --> 00:00:32,708
+Blue sky! No clouds today.
+
+9
+00:00:34,792 --> 00:00:36,083
+How’s the weather?
+
+10
+00:00:36,583 --> 00:00:38,083
+It’s sunny today.
+
+11
+00:00:38,417 --> 00:00:39,958
+Yoonsu, your turn.
+
+12
+00:00:40,333 --> 00:00:41,833
+It’s sunny today.
+
+13
+00:00:48,792 --> 00:00:50,042
+What is your name?
+
+14
+00:00:50,542 --> 00:00:51,958
+I am Yoonsu.
+
+15
+00:00:52,292 --> 00:00:53,833
+Yoonsu, your turn.
+
+16
+00:00:54,208 --> 00:00:55,625
+I am Yoonsu.
+
+17
+00:01:02,792 --> 00:01:05,750
+Count my blocks. One, two, three!
+
+18
+00:01:06,833 --> 00:01:09,667
+For our zoo play, I’m three years old.
+
+19
+00:01:10,750 --> 00:01:14,500
+Try Three’s answer. Later, use your own age.
+
+20
+00:01:16,792 --> 00:01:18,125
+How old are you?
+
+21
+00:01:18,625 --> 00:01:19,875
+I am three.
+
+22
+00:01:20,208 --> 00:01:21,750
+Yoonsu, your turn.
+
+23
+00:01:22,125 --> 00:01:23,375
+I am three.
+
+24
+00:01:29,792 --> 00:01:30,958
+Where do you go?
+
+25
+00:01:31,458 --> 00:01:32,542
+To the zoo!
+
+26
+00:01:32,875 --> 00:01:34,417
+Yoonsu, your turn.
+
+27
+00:01:34,792 --> 00:01:35,875
+To the zoo!
+
+28
+00:01:42,792 --> 00:01:45,500
+I go to the zoo. Who’s on stage?
+
+29
+00:01:46,583 --> 00:01:50,292
+A chicken and a duck! Listen to their sounds.
+
+30
+00:01:51,375 --> 00:01:53,458
+Cluck, cluck! Quack, quack!
+
+31
+00:01:55,792 --> 00:01:57,500
+Who says cluck, cluck?
+
+32
+00:01:58,000 --> 00:01:59,333
+It’s a chicken.
+
+33
+00:01:59,667 --> 00:02:01,208
+Yoonsu, your turn.
+
+34
+00:02:01,583 --> 00:02:02,917
+It’s a chicken.
+
+35
+00:02:09,792 --> 00:02:11,542
+Who says quack, quack?
+
+36
+00:02:12,042 --> 00:02:13,167
+It’s a duck.
+
+37
+00:02:13,500 --> 00:02:15,042
+Yoonsu, your turn.
+
+38
+00:02:15,417 --> 00:02:16,542
+It’s a duck.
+
+39
+00:02:23,792 --> 00:02:27,333
+Time for our dream song. I’ll count us in!
+
+40
+00:02:27,958 --> 00:02:29,417
+One, two, three!
+
+41
+00:02:30,042 --> 00:02:31,375
+I have a dream.
+
+42
+00:02:32,000 --> 00:02:33,625
+I like to sing a song.
+
+43
+00:02:34,250 --> 00:02:36,042
+So I want to be a singer.
+
+44
+00:02:37,792 --> 00:02:39,958
+What do you like to do on stage?
+
+45
+00:02:40,458 --> 00:02:41,750
+I like singing.
+
+46
+00:02:42,083 --> 00:02:43,625
+Yoonsu, your turn.
+
+47
+00:02:44,000 --> 00:02:45,292
+I like singing.
+
+48
+00:02:51,792 --> 00:02:53,208
+What do you want to be?
+
+49
+00:02:53,708 --> 00:02:55,083
+A singer, too!
+
+50
+00:02:55,417 --> 00:02:56,958
+Yoonsu, your turn.
+
+51
+00:02:57,333 --> 00:02:58,708
+A singer, too!
+
+52
+00:03:05,792 --> 00:03:09,500
+The singers are hungry. Who has a second dream?
+
+53
+00:03:10,583 --> 00:03:12,458
+I also want to be a cook.
+
+54
+00:03:13,542 --> 00:03:16,750
+Here’s a pot. Let’s make soup for the show!
+
+55
+00:03:18,792 --> 00:03:20,542
+What else do you want to be?
+
+56
+00:03:21,042 --> 00:03:22,333
+A cook, too!
+
+57
+00:03:22,667 --> 00:03:24,208
+Yoonsu, your turn.
+
+58
+00:03:24,583 --> 00:03:25,875
+A cook, too!
+
+59
+00:03:32,792 --> 00:03:34,708
+What shall we make together?
+
+60
+00:03:35,208 --> 00:03:36,750
+Let’s make soup.
+
+61
+00:03:37,083 --> 00:03:38,625
+Yoonsu, your turn.
+
+62
+00:03:39,000 --> 00:03:40,542
+Let’s make soup.
+
+63
+00:03:48,250 --> 00:03:51,125
+Who wants to ask a friend about their dream?
+
+64
+00:03:52,250 --> 00:03:53,708
+My hand is up!
+
+65
+00:03:54,917 --> 00:03:58,458
+Go ahead, Yoonsu. Pass the question to Three.
+
+66
+00:03:59,583 --> 00:04:00,958
+How about you?
+
+67
+00:04:02,792 --> 00:04:04,667
+Ask Three about her dream.
+
+68
+00:04:05,167 --> 00:04:06,542
+How about you?
+
+69
+00:04:06,875 --> 00:04:08,417
+Yoonsu, your turn.
+
+70
+00:04:08,792 --> 00:04:10,167
+How about you?
+
+71
+00:04:16,792 --> 00:04:18,917
+Me? I want to sing with you!
+
+72
+00:04:19,458 --> 00:04:20,833
+I have a dream.
+
+73
+00:04:21,375 --> 00:04:23,083
+I like to sing a song.
+
+74
+00:04:23,625 --> 00:04:25,417
+So I want to be a singer.
+
+75
+00:04:25,958 --> 00:04:27,958
+I also want to be a cook.
+
+76
+00:04:28,500 --> 00:04:29,875
+How about you?
+
+77
+00:04:31,792 --> 00:04:34,125
+Hi! This is my zoo picture.
+
+78
+00:04:35,208 --> 00:04:37,833
+I am happy. I love my mom.
+
+79
+00:04:38,917 --> 00:04:41,958
+Look at Mom smiling behind the children.
+
+80
+00:04:44,792 --> 00:04:46,958
+How do you feel after your show?
+
+81
+00:04:47,458 --> 00:04:48,750
+I am happy.
+
+82
+00:04:49,083 --> 00:04:50,625
+Yoonsu, your turn.
+
+83
+00:04:51,000 --> 00:04:52,292
+I am happy.
+
+84
+00:04:58,792 --> 00:05:01,042
+A big hand for our dream show!
+
+85
+00:05:02,833 --> 00:05:06,875
+I heard you sing, and I heard your question.
+
+86
+00:05:07,417 --> 00:05:09,000
+The duck sang along!
+
+87
+00:05:09,542 --> 00:05:12,208
+Quack, quack! I love you, too.
