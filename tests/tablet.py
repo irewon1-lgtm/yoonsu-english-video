@@ -106,7 +106,7 @@ def check():
                 episodes += (("wash-day", 12),)
             if (root / "episodes/small-star/data.js").is_file():
                 episodes += (("small-star", 12),)
-            episodes += (("morning-daycare", 15), ("open-class", 12))
+            episodes += (("morning-daycare", 15), ("open-class", 12), ("dream-class", 12))
             test_episode = os.environ.get("ALBUM_TEST_EPISODE")
             exercise_mic = test_episode or "rainbow"
             for slug, count in episodes:
@@ -114,7 +114,7 @@ def check():
                     continue
                 if slug == "red-ball" and slug != exercise_mic:
                     page.evaluate('sessionStorage.setItem("deny-test-mic", "yes")')
-                if slug in {"wash-day", "small-star", "morning-daycare", "open-class"}:
+                if slug in {"wash-day", "small-star", "morning-daycare", "open-class", "dream-class"}:
                     page.locator("#next-page").click()
                     expect(page.locator("#counter")).to_have_text("2 / 2")
                 page.locator(f'a[href*="/{slug}/"]').click()

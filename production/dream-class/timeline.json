@@ -1,0 +1,1566 @@
+{
+  "title": "윤수의 꿈 발표",
+  "en": "I Have a Dream",
+  "fps": 24,
+  "frames": 6936,
+  "scenes": [
+    {
+      "id": "arrival",
+      "view": "wide",
+      "seconds": 13,
+      "ko": "어서 와요! 오늘은 우리의 꿈을 이야기해요.",
+      "icon": null,
+      "lines": [
+        {
+          "id": "d01",
+          "role": "teacher",
+          "en": "Welcome! Today we’re talking about our dreams.",
+          "ko": "어서 와요! 오늘은 우리의 꿈을 이야기해요."
+        },
+        {
+          "id": "d02",
+          "role": "y",
+          "en": "Dreams? Like when I sleep?",
+          "ko": "꿈이요? 잠잘 때 꾸는 꿈이요?"
+        },
+        {
+          "id": "d03",
+          "role": "teacher",
+          "en": "Today, a dream means something you hope to do.",
+          "ko": "오늘 말하는 꿈은 언젠가 하고 싶은 일이에요."
+        }
+      ],
+      "at": 0,
+      "end": 312,
+      "events": [
+        {
+          "id": "d01",
+          "role": "teacher",
+          "en": "Welcome! Today we’re talking about our dreams.",
+          "ko": "어서 와요! 오늘은 우리의 꿈을 이야기해요.",
+          "at": 32,
+          "end": 110
+        },
+        {
+          "id": "d02",
+          "role": "y",
+          "en": "Dreams? Like when I sleep?",
+          "ko": "꿈이요? 잠잘 때 꾸는 꿈이요?",
+          "at": 136,
+          "end": 184
+        },
+        {
+          "id": "d03",
+          "role": "teacher",
+          "en": "Today, a dream means something you hope to do.",
+          "ko": "오늘 말하는 꿈은 언젠가 하고 싶은 일이에요.",
+          "at": 210,
+          "end": 289
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "families",
+      "view": "audience",
+      "seconds": 10,
+      "ko": "엄마 여기 있어. 윤수의 꿈이 궁금해.",
+      "icon": null,
+      "lines": [
+        {
+          "id": "d04",
+          "role": "mom",
+          "en": "I’m right here. I’d love to hear your dream.",
+          "ko": "엄마 여기 있어. 윤수의 꿈이 궁금해."
+        },
+        {
+          "id": "d05",
+          "role": "y",
+          "en": "I have a dream!",
+          "ko": "저도 꿈이 있어요!"
+        }
+      ],
+      "at": 312,
+      "end": 552,
+      "events": [
+        {
+          "id": "d04",
+          "role": "mom",
+          "en": "I’m right here. I’d love to hear your dream.",
+          "ko": "엄마 여기 있어. 윤수의 꿈이 궁금해.",
+          "at": 334,
+          "end": 436
+        },
+        {
+          "id": "d05",
+          "role": "y",
+          "en": "I have a dream!",
+          "ko": "저도 꿈이 있어요!",
+          "at": 462,
+          "end": 494
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_1",
+      "view": "practice",
+      "seconds": 14,
+      "ko": "꿈이 있나요?",
+      "icon": null,
+      "lines": [
+        {
+          "id": "ask1",
+          "role": "teacher",
+          "en": "Do you have a dream?",
+          "ko": "꿈이 있나요?"
+        },
+        {
+          "id": "answer1",
+          "role": "sheriff",
+          "en": "Yes, I do.",
+          "ko": "네, 있어요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer1",
+          "role": "sheriff",
+          "en": "Yes, I do.",
+          "ko": "네, 있어요."
+        },
+        {
+          "id": "wait1",
+          "role": "pause",
+          "en": "Yes, I do.",
+          "ko": "네, 있어요."
+        }
+      ],
+      "at": 552,
+      "end": 888,
+      "events": [
+        {
+          "id": "ask1",
+          "role": "teacher",
+          "en": "Do you have a dream?",
+          "ko": "꿈이 있나요?",
+          "at": 571,
+          "end": 604
+        },
+        {
+          "id": "answer1",
+          "role": "sheriff",
+          "en": "Yes, I do.",
+          "ko": "네, 있어요.",
+          "at": 616,
+          "end": 647
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 655,
+          "end": 692
+        },
+        {
+          "id": "answer1",
+          "role": "sheriff",
+          "en": "Yes, I do.",
+          "ko": "네, 있어요.",
+          "at": 701,
+          "end": 732
+        },
+        {
+          "id": "wait1",
+          "role": "pause",
+          "en": "Yes, I do.",
+          "ko": "네, 있어요.",
+          "at": 738,
+          "end": 834
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_2",
+      "view": "practice",
+      "seconds": 14,
+      "ko": "누가 꿈을 이야기해 볼래요?",
+      "icon": null,
+      "lines": [
+        {
+          "id": "ask2",
+          "role": "teacher",
+          "en": "Who wants to share a dream?",
+          "ko": "누가 꿈을 이야기해 볼래요?"
+        },
+        {
+          "id": "answer2",
+          "role": "sheriff",
+          "en": "Can I share?",
+          "ko": "제가 이야기해도 될까요?"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer2",
+          "role": "sheriff",
+          "en": "Can I share?",
+          "ko": "제가 이야기해도 될까요?"
+        },
+        {
+          "id": "wait2",
+          "role": "pause",
+          "en": "Can I share?",
+          "ko": "제가 이야기해도 될까요?"
+        }
+      ],
+      "at": 888,
+      "end": 1224,
+      "events": [
+        {
+          "id": "ask2",
+          "role": "teacher",
+          "en": "Who wants to share a dream?",
+          "ko": "누가 꿈을 이야기해 볼래요?",
+          "at": 907,
+          "end": 950
+        },
+        {
+          "id": "answer2",
+          "role": "sheriff",
+          "en": "Can I share?",
+          "ko": "제가 이야기해도 될까요?",
+          "at": 962,
+          "end": 991
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 999,
+          "end": 1036
+        },
+        {
+          "id": "answer2",
+          "role": "sheriff",
+          "en": "Can I share?",
+          "ko": "제가 이야기해도 될까요?",
+          "at": 1045,
+          "end": 1074
+        },
+        {
+          "id": "wait2",
+          "role": "pause",
+          "en": "Can I share?",
+          "ko": "제가 이야기해도 될까요?",
+          "at": 1080,
+          "end": 1176
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "question_one",
+      "view": "teacher",
+      "seconds": 12,
+      "ko": "이 모자 좀 보세요. 누가 쓸까요?",
+      "icon": "chef",
+      "lines": [
+        {
+          "id": "d06",
+          "role": "teacher",
+          "en": "Look at this hat. Who wears it?",
+          "ko": "이 모자 좀 보세요. 누가 쓸까요?"
+        },
+        {
+          "id": "d07",
+          "role": "friend",
+          "en": "A chef! I want to be a chef.",
+          "ko": "요리사요! 저는 요리사가 되고 싶어요."
+        },
+        {
+          "id": "d08",
+          "role": "teacher",
+          "en": "A chef cooks food. Let’s stir the soup!",
+          "ko": "요리사는 음식을 만들어요. 수프를 저어 봐요!"
+        }
+      ],
+      "at": 1224,
+      "end": 1512,
+      "events": [
+        {
+          "id": "d06",
+          "role": "teacher",
+          "en": "Look at this hat. Who wears it?",
+          "ko": "이 모자 좀 보세요. 누가 쓸까요?",
+          "at": 1243,
+          "end": 1297
+        },
+        {
+          "id": "d07",
+          "role": "friend",
+          "en": "A chef! I want to be a chef.",
+          "ko": "요리사요! 저는 요리사가 되고 싶어요.",
+          "at": 1323,
+          "end": 1379
+        },
+        {
+          "id": "d08",
+          "role": "teacher",
+          "en": "A chef cooks food. Let’s stir the soup!",
+          "ko": "요리사는 음식을 만들어요. 수프를 저어 봐요!",
+          "at": 1405,
+          "end": 1471
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_3",
+      "view": "practice",
+      "seconds": 14,
+      "ko": "누가 우리 음식을 만들까요?",
+      "icon": "chef",
+      "lines": [
+        {
+          "id": "ask3",
+          "role": "teacher",
+          "en": "Who cooks our food?",
+          "ko": "누가 우리 음식을 만들까요?"
+        },
+        {
+          "id": "answer3",
+          "role": "sheriff",
+          "en": "The chef does.",
+          "ko": "요리사가 만들어요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer3",
+          "role": "sheriff",
+          "en": "The chef does.",
+          "ko": "요리사가 만들어요."
+        },
+        {
+          "id": "wait3",
+          "role": "pause",
+          "en": "The chef does.",
+          "ko": "요리사가 만들어요."
+        }
+      ],
+      "at": 1512,
+      "end": 1848,
+      "events": [
+        {
+          "id": "ask3",
+          "role": "teacher",
+          "en": "Who cooks our food?",
+          "ko": "누가 우리 음식을 만들까요?",
+          "at": 1531,
+          "end": 1582
+        },
+        {
+          "id": "answer3",
+          "role": "sheriff",
+          "en": "The chef does.",
+          "ko": "요리사가 만들어요.",
+          "at": 1594,
+          "end": 1629
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 1637,
+          "end": 1674
+        },
+        {
+          "id": "answer3",
+          "role": "sheriff",
+          "en": "The chef does.",
+          "ko": "요리사가 만들어요.",
+          "at": 1683,
+          "end": 1718
+        },
+        {
+          "id": "wait3",
+          "role": "pause",
+          "en": "The chef does.",
+          "ko": "요리사가 만들어요.",
+          "at": 1724,
+          "end": 1820
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_4",
+      "view": "practice",
+      "seconds": 14,
+      "ko": "부엌에서 무엇을 할 수 있나요?",
+      "icon": "pot",
+      "lines": [
+        {
+          "id": "ask4",
+          "role": "teacher",
+          "en": "What can you do in a kitchen?",
+          "ko": "부엌에서 무엇을 할 수 있나요?"
+        },
+        {
+          "id": "answer4",
+          "role": "sheriff",
+          "en": "I can cook.",
+          "ko": "요리할 수 있어요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer4",
+          "role": "sheriff",
+          "en": "I can cook.",
+          "ko": "요리할 수 있어요."
+        },
+        {
+          "id": "wait4",
+          "role": "pause",
+          "en": "I can cook.",
+          "ko": "요리할 수 있어요."
+        }
+      ],
+      "at": 1848,
+      "end": 2184,
+      "events": [
+        {
+          "id": "ask4",
+          "role": "teacher",
+          "en": "What can you do in a kitchen?",
+          "ko": "부엌에서 무엇을 할 수 있나요?",
+          "at": 1867,
+          "end": 1910
+        },
+        {
+          "id": "answer4",
+          "role": "sheriff",
+          "en": "I can cook.",
+          "ko": "요리할 수 있어요.",
+          "at": 1922,
+          "end": 1950
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 1958,
+          "end": 1995
+        },
+        {
+          "id": "answer4",
+          "role": "sheriff",
+          "en": "I can cook.",
+          "ko": "요리할 수 있어요.",
+          "at": 2004,
+          "end": 2032
+        },
+        {
+          "id": "wait4",
+          "role": "pause",
+          "en": "I can cook.",
+          "ko": "요리할 수 있어요.",
+          "at": 2038,
+          "end": 2134
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "teacher_star",
+      "view": "teacher",
+      "seconds": 10,
+      "ko": "여기 청진기가 있어요. 심장 소리를 들어 봐요.",
+      "icon": "doctor",
+      "lines": [
+        {
+          "id": "d09",
+          "role": "teacher",
+          "en": "Here’s a stethoscope. Listen to your heartbeat.",
+          "ko": "여기 청진기가 있어요. 심장 소리를 들어 봐요."
+        },
+        {
+          "id": "d10",
+          "role": "y",
+          "en": "A doctor uses that!",
+          "ko": "의사 선생님이 쓰는 거예요!"
+        }
+      ],
+      "at": 2184,
+      "end": 2424,
+      "events": [
+        {
+          "id": "d09",
+          "role": "teacher",
+          "en": "Here’s a stethoscope. Listen to your heartbeat.",
+          "ko": "여기 청진기가 있어요. 심장 소리를 들어 봐요.",
+          "at": 2203,
+          "end": 2285
+        },
+        {
+          "id": "d10",
+          "role": "y",
+          "en": "A doctor uses that!",
+          "ko": "의사 선생님이 쓰는 거예요!",
+          "at": 2311,
+          "end": 2354
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_5",
+      "view": "practice",
+      "seconds": 14,
+      "ko": "누가 아픈 사람들을 도와주나요?",
+      "icon": "doctor",
+      "lines": [
+        {
+          "id": "ask5",
+          "role": "teacher",
+          "en": "Who helps sick people?",
+          "ko": "누가 아픈 사람들을 도와주나요?"
+        },
+        {
+          "id": "answer5",
+          "role": "sheriff",
+          "en": "A doctor does.",
+          "ko": "의사 선생님이요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer5",
+          "role": "sheriff",
+          "en": "A doctor does.",
+          "ko": "의사 선생님이요."
+        },
+        {
+          "id": "wait5",
+          "role": "pause",
+          "en": "A doctor does.",
+          "ko": "의사 선생님이요."
+        }
+      ],
+      "at": 2424,
+      "end": 2760,
+      "events": [
+        {
+          "id": "ask5",
+          "role": "teacher",
+          "en": "Who helps sick people?",
+          "ko": "누가 아픈 사람들을 도와주나요?",
+          "at": 2443,
+          "end": 2503
+        },
+        {
+          "id": "answer5",
+          "role": "sheriff",
+          "en": "A doctor does.",
+          "ko": "의사 선생님이요.",
+          "at": 2515,
+          "end": 2549
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 2557,
+          "end": 2594
+        },
+        {
+          "id": "answer5",
+          "role": "sheriff",
+          "en": "A doctor does.",
+          "ko": "의사 선생님이요.",
+          "at": 2603,
+          "end": 2637
+        },
+        {
+          "id": "wait5",
+          "role": "pause",
+          "en": "A doctor does.",
+          "ko": "의사 선생님이요.",
+          "at": 2641,
+          "end": 2737
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_6",
+      "view": "practice",
+      "seconds": 15,
+      "ko": "의사가 되었다고 생각해 봐요. 무슨 일을 하나요?",
+      "icon": "doctor",
+      "lines": [
+        {
+          "id": "ask6",
+          "role": "teacher",
+          "en": "Pretend you’re a doctor. What do you do?",
+          "ko": "의사가 되었다고 생각해 봐요. 무슨 일을 하나요?"
+        },
+        {
+          "id": "answer6",
+          "role": "sheriff",
+          "en": "I help people.",
+          "ko": "사람들을 도와요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer6",
+          "role": "sheriff",
+          "en": "I help people.",
+          "ko": "사람들을 도와요."
+        },
+        {
+          "id": "wait6",
+          "role": "pause",
+          "en": "I help people.",
+          "ko": "사람들을 도와요."
+        }
+      ],
+      "at": 2760,
+      "end": 3120,
+      "events": [
+        {
+          "id": "ask6",
+          "role": "teacher",
+          "en": "Pretend you’re a doctor. What do you do?",
+          "ko": "의사가 되었다고 생각해 봐요. 무슨 일을 하나요?",
+          "at": 2779,
+          "end": 2841
+        },
+        {
+          "id": "answer6",
+          "role": "sheriff",
+          "en": "I help people.",
+          "ko": "사람들을 도와요.",
+          "at": 2853,
+          "end": 2887
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 2895,
+          "end": 2932
+        },
+        {
+          "id": "answer6",
+          "role": "sheriff",
+          "en": "I help people.",
+          "ko": "사람들을 도와요.",
+          "at": 2941,
+          "end": 2975
+        },
+        {
+          "id": "wait6",
+          "role": "pause",
+          "en": "I help people.",
+          "ko": "사람들을 도와요.",
+          "at": 2981,
+          "end": 3077
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "apple",
+      "view": "teacher",
+      "seconds": 10,
+      "ko": "여기 붓이 있어요. 누구에게 필요할까요?",
+      "icon": "artist",
+      "lines": [
+        {
+          "id": "d11",
+          "role": "teacher",
+          "en": "Here’s a paintbrush. Who needs this?",
+          "ko": "여기 붓이 있어요. 누구에게 필요할까요?"
+        },
+        {
+          "id": "d12",
+          "role": "friend",
+          "en": "An artist! An artist paints pictures.",
+          "ko": "화가요! 화가는 그림을 그려요."
+        }
+      ],
+      "at": 3120,
+      "end": 3360,
+      "events": [
+        {
+          "id": "d11",
+          "role": "teacher",
+          "en": "Here’s a paintbrush. Who needs this?",
+          "ko": "여기 붓이 있어요. 누구에게 필요할까요?",
+          "at": 3139,
+          "end": 3202
+        },
+        {
+          "id": "d12",
+          "role": "friend",
+          "en": "An artist! An artist paints pictures.",
+          "ko": "화가요! 화가는 그림을 그려요.",
+          "at": 3228,
+          "end": 3301
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_7",
+      "view": "practice",
+      "seconds": 14,
+      "ko": "무엇을 좋아하나요?",
+      "icon": "artist",
+      "lines": [
+        {
+          "id": "ask7",
+          "role": "teacher",
+          "en": "What do you like to do?",
+          "ko": "무엇을 좋아하나요?"
+        },
+        {
+          "id": "answer7",
+          "role": "sheriff",
+          "en": "I like painting.",
+          "ko": "그림 그리기를 좋아해요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer7",
+          "role": "sheriff",
+          "en": "I like painting.",
+          "ko": "그림 그리기를 좋아해요."
+        },
+        {
+          "id": "wait7",
+          "role": "pause",
+          "en": "I like painting.",
+          "ko": "그림 그리기를 좋아해요."
+        }
+      ],
+      "at": 3360,
+      "end": 3696,
+      "events": [
+        {
+          "id": "ask7",
+          "role": "teacher",
+          "en": "What do you like to do?",
+          "ko": "무엇을 좋아하나요?",
+          "at": 3379,
+          "end": 3415
+        },
+        {
+          "id": "answer7",
+          "role": "sheriff",
+          "en": "I like painting.",
+          "ko": "그림 그리기를 좋아해요.",
+          "at": 3427,
+          "end": 3463
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 3471,
+          "end": 3508
+        },
+        {
+          "id": "answer7",
+          "role": "sheriff",
+          "en": "I like painting.",
+          "ko": "그림 그리기를 좋아해요.",
+          "at": 3517,
+          "end": 3553
+        },
+        {
+          "id": "wait7",
+          "role": "pause",
+          "en": "I like painting.",
+          "ko": "그림 그리기를 좋아해요.",
+          "at": 3559,
+          "end": 3655
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_8",
+      "view": "practice",
+      "seconds": 14,
+      "ko": "무엇을 그릴 수 있나요?",
+      "icon": "flowers",
+      "lines": [
+        {
+          "id": "ask8",
+          "role": "teacher",
+          "en": "What can you paint?",
+          "ko": "무엇을 그릴 수 있나요?"
+        },
+        {
+          "id": "answer8",
+          "role": "sheriff",
+          "en": "I paint flowers.",
+          "ko": "꽃을 그려요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer8",
+          "role": "sheriff",
+          "en": "I paint flowers.",
+          "ko": "꽃을 그려요."
+        },
+        {
+          "id": "wait8",
+          "role": "pause",
+          "en": "I paint flowers.",
+          "ko": "꽃을 그려요."
+        }
+      ],
+      "at": 3696,
+      "end": 4032,
+      "events": [
+        {
+          "id": "ask8",
+          "role": "teacher",
+          "en": "What can you paint?",
+          "ko": "무엇을 그릴 수 있나요?",
+          "at": 3715,
+          "end": 3747
+        },
+        {
+          "id": "answer8",
+          "role": "sheriff",
+          "en": "I paint flowers.",
+          "ko": "꽃을 그려요.",
+          "at": 3759,
+          "end": 3794
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 3802,
+          "end": 3839
+        },
+        {
+          "id": "answer8",
+          "role": "sheriff",
+          "en": "I paint flowers.",
+          "ko": "꽃을 그려요.",
+          "at": 3848,
+          "end": 3883
+        },
+        {
+          "id": "wait8",
+          "role": "pause",
+          "en": "I paint flowers.",
+          "ko": "꽃을 그려요.",
+          "at": 3889,
+          "end": 3985
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "try_smaller",
+      "view": "child",
+      "seconds": 9,
+      "ko": "질문을 못 들으면 어떡해요?",
+      "icon": null,
+      "lines": [
+        {
+          "id": "d13",
+          "role": "y",
+          "en": "What if I don’t hear the question?",
+          "ko": "질문을 못 들으면 어떡해요?"
+        },
+        {
+          "id": "d14",
+          "role": "sheriff",
+          "en": "You can ask your teacher to say it again.",
+          "ko": "선생님께 다시 물어봐도 돼."
+        }
+      ],
+      "at": 4032,
+      "end": 4248,
+      "events": [
+        {
+          "id": "d13",
+          "role": "y",
+          "en": "What if I don’t hear the question?",
+          "ko": "질문을 못 들으면 어떡해요?",
+          "at": 4051,
+          "end": 4101
+        },
+        {
+          "id": "d14",
+          "role": "sheriff",
+          "en": "You can ask your teacher to say it again.",
+          "ko": "선생님께 다시 물어봐도 돼.",
+          "at": 4127,
+          "end": 4193
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_9",
+      "view": "practice",
+      "seconds": 14,
+      "ko": "커서 무엇이 되고 싶나요?",
+      "icon": null,
+      "lines": [
+        {
+          "id": "ask9",
+          "role": "teacher",
+          "en": "What do you want to be when you grow up?",
+          "ko": "커서 무엇이 되고 싶나요?"
+        },
+        {
+          "id": "answer9",
+          "role": "sheriff",
+          "en": "Say it again?",
+          "ko": "다시 말해 주실래요?"
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer9",
+          "role": "sheriff",
+          "en": "Say it again?",
+          "ko": "다시 말해 주실래요?"
+        },
+        {
+          "id": "wait9",
+          "role": "pause",
+          "en": "Say it again?",
+          "ko": "다시 말해 주실래요?"
+        }
+      ],
+      "at": 4248,
+      "end": 4584,
+      "events": [
+        {
+          "id": "ask9",
+          "role": "teacher",
+          "en": "What do you want to be when you grow up?",
+          "ko": "커서 무엇이 되고 싶나요?",
+          "at": 4267,
+          "end": 4326
+        },
+        {
+          "id": "answer9",
+          "role": "sheriff",
+          "en": "Say it again?",
+          "ko": "다시 말해 주실래요?",
+          "at": 4338,
+          "end": 4366
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 4374,
+          "end": 4411
+        },
+        {
+          "id": "answer9",
+          "role": "sheriff",
+          "en": "Say it again?",
+          "ko": "다시 말해 주실래요?",
+          "at": 4420,
+          "end": 4448
+        },
+        {
+          "id": "wait9",
+          "role": "pause",
+          "en": "Say it again?",
+          "ko": "다시 말해 주실래요?",
+          "at": 4454,
+          "end": 4550
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "hands_up",
+      "view": "child",
+      "seconds": 14,
+      "ko": "물론이지. 윤수야, 네 꿈은 뭐니?",
+      "icon": "artist",
+      "lines": [
+        {
+          "id": "d15",
+          "role": "teacher",
+          "en": "Of course. What’s your dream, Yoonsu?",
+          "ko": "물론이지. 윤수야, 네 꿈은 뭐니?"
+        },
+        {
+          "id": "d16",
+          "role": "y",
+          "en": "I want to be an artist.",
+          "ko": "저는 화가가 되고 싶어요."
+        },
+        {
+          "id": "d17",
+          "role": "teacher",
+          "en": "Tell us why.",
+          "ko": "이유를 들려줄래요?"
+        },
+        {
+          "id": "d18",
+          "role": "y",
+          "en": "I love colors!",
+          "ko": "색깔을 정말 좋아해요!"
+        }
+      ],
+      "at": 4584,
+      "end": 4920,
+      "events": [
+        {
+          "id": "d15",
+          "role": "teacher",
+          "en": "Of course. What’s your dream, Yoonsu?",
+          "ko": "물론이지. 윤수야, 네 꿈은 뭐니?",
+          "at": 4638,
+          "end": 4698
+        },
+        {
+          "id": "d16",
+          "role": "y",
+          "en": "I want to be an artist.",
+          "ko": "저는 화가가 되고 싶어요.",
+          "at": 4727,
+          "end": 4771
+        },
+        {
+          "id": "d17",
+          "role": "teacher",
+          "en": "Tell us why.",
+          "ko": "이유를 들려줄래요?",
+          "at": 4802,
+          "end": 4831
+        },
+        {
+          "id": "d18",
+          "role": "y",
+          "en": "I love colors!",
+          "ko": "색깔을 정말 좋아해요!",
+          "at": 4860,
+          "end": 4894
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_10",
+      "view": "practice",
+      "seconds": 16,
+      "ko": "무엇이 되고 싶나요? 원하는 직업을 골라도 돼요.",
+      "icon": "artist",
+      "lines": [
+        {
+          "id": "ask10",
+          "role": "teacher",
+          "en": "What would you like to be? You can choose any job.",
+          "ko": "무엇이 되고 싶나요? 원하는 직업을 골라도 돼요."
+        },
+        {
+          "id": "answer10",
+          "role": "sheriff",
+          "en": "Maybe an artist.",
+          "ko": "아마 화가요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer10",
+          "role": "sheriff",
+          "en": "Maybe an artist.",
+          "ko": "아마 화가요."
+        },
+        {
+          "id": "wait10",
+          "role": "pause",
+          "en": "Maybe an artist.",
+          "ko": "아마 화가요."
+        }
+      ],
+      "at": 4920,
+      "end": 5304,
+      "events": [
+        {
+          "id": "ask10",
+          "role": "teacher",
+          "en": "What would you like to be? You can choose any job.",
+          "ko": "무엇이 되고 싶나요? 원하는 직업을 골라도 돼요.",
+          "at": 4939,
+          "end": 5021
+        },
+        {
+          "id": "answer10",
+          "role": "sheriff",
+          "en": "Maybe an artist.",
+          "ko": "아마 화가요.",
+          "at": 5033,
+          "end": 5068
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 5076,
+          "end": 5113
+        },
+        {
+          "id": "answer10",
+          "role": "sheriff",
+          "en": "Maybe an artist.",
+          "ko": "아마 화가요.",
+          "at": 5122,
+          "end": 5157
+        },
+        {
+          "id": "wait10",
+          "role": "pause",
+          "en": "Maybe an artist.",
+          "ko": "아마 화가요.",
+          "at": 5163,
+          "end": 5259
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_11",
+      "view": "practice",
+      "seconds": 15,
+      "ko": "왜 화가가 되고 싶나요?",
+      "icon": "artist",
+      "lines": [
+        {
+          "id": "ask11",
+          "role": "teacher",
+          "en": "Why do you want to be an artist?",
+          "ko": "왜 화가가 되고 싶나요?"
+        },
+        {
+          "id": "answer11",
+          "role": "sheriff",
+          "en": "I love colors.",
+          "ko": "색깔을 정말 좋아해요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer11",
+          "role": "sheriff",
+          "en": "I love colors.",
+          "ko": "색깔을 정말 좋아해요."
+        },
+        {
+          "id": "wait11",
+          "role": "pause",
+          "en": "I love colors.",
+          "ko": "색깔을 정말 좋아해요."
+        }
+      ],
+      "at": 5304,
+      "end": 5664,
+      "events": [
+        {
+          "id": "ask11",
+          "role": "teacher",
+          "en": "Why do you want to be an artist?",
+          "ko": "왜 화가가 되고 싶나요?",
+          "at": 5323,
+          "end": 5373
+        },
+        {
+          "id": "answer11",
+          "role": "sheriff",
+          "en": "I love colors.",
+          "ko": "색깔을 정말 좋아해요.",
+          "at": 5385,
+          "end": 5420
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 5428,
+          "end": 5465
+        },
+        {
+          "id": "answer11",
+          "role": "sheriff",
+          "en": "I love colors.",
+          "ko": "색깔을 정말 좋아해요.",
+          "at": 5474,
+          "end": 5509
+        },
+        {
+          "id": "wait11",
+          "role": "pause",
+          "en": "I love colors.",
+          "ko": "색깔을 정말 좋아해요.",
+          "at": 5515,
+          "end": 5611
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "introduce",
+      "view": "child",
+      "seconds": 14,
+      "ko": "꿈을 그린 그림을 보여 주세요.",
+      "icon": "flowers",
+      "lines": [
+        {
+          "id": "d19",
+          "role": "teacher",
+          "en": "Show us your dream picture.",
+          "ko": "꿈을 그린 그림을 보여 주세요."
+        },
+        {
+          "id": "d20",
+          "role": "y",
+          "en": "I have a dream.",
+          "ko": "저는 꿈이 있어요."
+        },
+        {
+          "id": "d21",
+          "role": "y",
+          "en": "I want to be an artist.",
+          "ko": "화가가 되고 싶어요."
+        },
+        {
+          "id": "d22",
+          "role": "y",
+          "en": "I like painting.",
+          "ko": "그림 그리기를 좋아해요."
+        },
+        {
+          "id": "d23",
+          "role": "teacher",
+          "en": "I can see your flowers!",
+          "ko": "윤수가 그린 꽃이 보이네요!"
+        }
+      ],
+      "at": 5664,
+      "end": 6000,
+      "events": [
+        {
+          "id": "d19",
+          "role": "teacher",
+          "en": "Show us your dream picture.",
+          "ko": "꿈을 그린 그림을 보여 주세요.",
+          "at": 5684,
+          "end": 5730
+        },
+        {
+          "id": "d20",
+          "role": "y",
+          "en": "I have a dream.",
+          "ko": "저는 꿈이 있어요.",
+          "at": 5752,
+          "end": 5784
+        },
+        {
+          "id": "d21",
+          "role": "y",
+          "en": "I want to be an artist.",
+          "ko": "화가가 되고 싶어요.",
+          "at": 5811,
+          "end": 5855
+        },
+        {
+          "id": "d22",
+          "role": "y",
+          "en": "I like painting.",
+          "ko": "그림 그리기를 좋아해요.",
+          "at": 5878,
+          "end": 5913
+        },
+        {
+          "id": "d23",
+          "role": "teacher",
+          "en": "I can see your flowers!",
+          "ko": "윤수가 그린 꽃이 보이네요!",
+          "at": 5937,
+          "end": 5979
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "turn_12",
+      "view": "practice",
+      "seconds": 15,
+      "ko": "들어 준 친구들에게 무슨 말을 하고 싶나요?",
+      "icon": null,
+      "lines": [
+        {
+          "id": "ask12",
+          "role": "teacher",
+          "en": "What would you like to say to your friends?",
+          "ko": "들어 준 친구들에게 무슨 말을 하고 싶나요?"
+        },
+        {
+          "id": "answer12",
+          "role": "sheriff",
+          "en": "Thanks for listening.",
+          "ko": "들어 줘서 고마워요."
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야."
+        },
+        {
+          "id": "answer12",
+          "role": "sheriff",
+          "en": "Thanks for listening.",
+          "ko": "들어 줘서 고마워요."
+        },
+        {
+          "id": "wait12",
+          "role": "pause",
+          "en": "Thanks for listening.",
+          "ko": "들어 줘서 고마워요."
+        }
+      ],
+      "at": 6000,
+      "end": 6360,
+      "events": [
+        {
+          "id": "ask12",
+          "role": "teacher",
+          "en": "What would you like to say to your friends?",
+          "ko": "들어 준 친구들에게 무슨 말을 하고 싶나요?",
+          "at": 6019,
+          "end": 6078
+        },
+        {
+          "id": "answer12",
+          "role": "sheriff",
+          "en": "Thanks for listening.",
+          "ko": "들어 줘서 고마워요.",
+          "at": 6090,
+          "end": 6126
+        },
+        {
+          "id": "cue",
+          "role": "sheriff",
+          "en": "Yoonsu, your turn.",
+          "ko": "윤수야, 네 차례야.",
+          "at": 6134,
+          "end": 6171
+        },
+        {
+          "id": "answer12",
+          "role": "sheriff",
+          "en": "Thanks for listening.",
+          "ko": "들어 줘서 고마워요.",
+          "at": 6180,
+          "end": 6216
+        },
+        {
+          "id": "wait12",
+          "role": "pause",
+          "en": "Thanks for listening.",
+          "ko": "들어 줘서 고마워요.",
+          "at": 6222,
+          "end": 6318
+        }
+      ],
+      "claps": []
+    },
+    {
+      "id": "clap",
+      "view": "audience",
+      "seconds": 14,
+      "ko": "윤수의 꿈을 들려줬구나!",
+      "icon": null,
+      "lines": [
+        {
+          "id": "d24",
+          "role": "mom",
+          "en": "You told us your dream!",
+          "ko": "윤수의 꿈을 들려줬구나!"
+        },
+        {
+          "id": "d25",
+          "role": "teacher",
+          "en": "Thank you for sharing, Yoonsu.",
+          "ko": "이야기해 줘서 고마워요, 윤수."
+        },
+        {
+          "id": "d26",
+          "role": "y",
+          "en": "I did it!",
+          "ko": "제가 해냈어요!"
+        },
+        {
+          "id": "d27",
+          "role": "mom",
+          "en": "I loved hearing your own words.",
+          "ko": "윤수의 생각을 들려줘서 정말 좋았어."
+        }
+      ],
+      "at": 6360,
+      "end": 6696,
+      "events": [
+        {
+          "id": "d24",
+          "role": "mom",
+          "en": "You told us your dream!",
+          "ko": "윤수의 꿈을 들려줬구나!",
+          "at": 6379,
+          "end": 6429
+        },
+        {
+          "id": "d25",
+          "role": "teacher",
+          "en": "Thank you for sharing, Yoonsu.",
+          "ko": "이야기해 줘서 고마워요, 윤수.",
+          "at": 6472,
+          "end": 6524
+        },
+        {
+          "id": "d26",
+          "role": "y",
+          "en": "I did it!",
+          "ko": "제가 해냈어요!",
+          "at": 6537,
+          "end": 6563
+        },
+        {
+          "id": "d27",
+          "role": "mom",
+          "en": "I loved hearing your own words.",
+          "ko": "윤수의 생각을 들려줘서 정말 좋았어.",
+          "at": 6576,
+          "end": 6639
+        }
+      ],
+      "claps": [
+        6440,
+        6452,
+        6464
+      ]
+    },
+    {
+      "id": "goodbye",
+      "view": "wide",
+      "seconds": 10,
+      "ko": "내일은 윤수가 정말 하고 싶은 일을 들려줘.",
+      "icon": null,
+      "lines": [
+        {
+          "id": "d28",
+          "role": "sheriff",
+          "en": "Tomorrow, you can tell them your own dream.",
+          "ko": "내일은 윤수가 정말 하고 싶은 일을 들려줘."
+        },
+        {
+          "id": "d29",
+          "role": "y",
+          "en": "My dream can be different!",
+          "ko": "제 꿈은 달라도 돼요!"
+        }
+      ],
+      "at": 6696,
+      "end": 6936,
+      "events": [
+        {
+          "id": "d28",
+          "role": "sheriff",
+          "en": "Tomorrow, you can tell them your own dream.",
+          "ko": "내일은 윤수가 정말 하고 싶은 일을 들려줘.",
+          "at": 6715,
+          "end": 6788
+        },
+        {
+          "id": "d29",
+          "role": "y",
+          "en": "My dream can be different!",
+          "ko": "제 꿈은 달라도 돼요!",
+          "at": 6814,
+          "end": 6861
+        }
+      ],
+      "claps": []
+    }
+  ]
+}

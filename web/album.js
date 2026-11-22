@@ -11,6 +11,7 @@ const episodes = [
   { id: "small-star", title: "윤수 방의 작은 별" },
   { id: "morning-daycare", title: "좋은 아침, 어린이집 가자!" },
   { id: "open-class", title: "어린이집 참관 수업" },
+  { id: "dream-class", title: "I Have a Dream · 윤수의 꿈 발표" },
 ];
 
 const slotsPerPage = 6;
